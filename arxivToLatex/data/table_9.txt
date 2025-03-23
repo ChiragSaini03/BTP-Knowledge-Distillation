@@ -1,0 +1,20 @@
+%\begin{table}[t]
+\begin{center}
+\small
+%\resizebox{0.9\linewidth}{!}{
+\begin{tabular}{c|c|c}
+\hline
+metric & ~~~mAP@.5~~~ & mAP@[.5, .95] \\
+\hline
+VGG-16 & 41.5 & 21.2 \\
+ResNet-101 & \textbf{48.4} & \textbf{27.2} \\
+\hline
+\end{tabular}
+%}
+\end{center}
+\vspace{-.5em}
+\caption{Object detection mAP (\%) on the COCO validation set using \textbf{baseline} Faster R-CNN. See also Table~\ref{tab:detection_coco_improve} for better results.
+}
+\vspace{-.5em}
+\label{tab:detection_coco}
+\end{table}

@@ -1,0 +1,42 @@
+\begin{table*}[t]
+\begin{center}
+\resizebox{0.7\linewidth}{!}{
+%\footnotesize
+\begin{tabular}{c|c|c|c|c|c|c}
+\hline
+layer name & output size & 18-layer & 34-layer & 50-layer & 101-layer & 152-layer \\
+\hline
+conv1 & 112$\times$112 & \multicolumn{5}{c}{7$\times$7, 64, stride 2}\\
+\hline
+\multirow{4}{*}{conv2\_x} & \multirow{4}{*}{56$\times$56} & \multicolumn{5}{c}{3$\times$3 max pool, stride 2} \\\cline{3-7}
+  &  & \blocka{64}{2}  & \blocka{64}{3} & \blockb{256}{64}{3} & \blockb{256}{64}{3} & \blockb{256}{64}{3}\\
+  &  &  &  &  &  &\\
+  &  &  &  &  &  &\\
+\hline
+\multirow{3}{*}{conv3\_x} &  \multirow{3}{*}{28$\times$28}  & \blocka{128}{2}  & \blocka{128}{4}  & \blockb{512}{128}{4}  & \blockb{512}{128}{4}  &
+                              \blockb{512}{128}{8}\\
+  &  &  &  &  &  & \\
+  &  &  &  &  &  & \\
+\hline
+\multirow{3}{*}{conv4\_x} & \multirow{3}{*}{14$\times$14}  & \blocka{256}{2}  & \blocka{256}{6}  & \blockb{1024}{256}{6}  & \blockb{1024}{256}{23} & \blockb{1024}{256}{36}\\
+  &  &  &  &  & \\
+  &  &  &  &  & \\
+\hline
+\multirow{3}{*}{conv5\_x} & \multirow{3}{*}{7$\times$7}  & \blocka{512}{2}  & \blocka{512}{3}  & \blockb{2048}{512}{3}  & \blockb{2048}{512}{3}
+& \blockb{2048}{512}{3}\\
+  &  &  &  &  &  & \\
+  &  &  &  &  &  & \\
+\hline
+& 1$\times$1  & \multicolumn{5}{c}{average pool, 1000-d fc, softmax} \\
+\hline
+\multicolumn{2}{c|}{FLOPs} & 1.8$\times10^9$  & 3.6$\times10^9$  & 3.8$\times10^9$  & 7.6$\times10^9$  & 11.3$\times10^9$ \\
+\hline
+\end{tabular}
+}
+\end{center}
+\vspace{-.5em}
+\caption{Architectures for ImageNet. Building blocks are shown in brackets (see also Fig.~\ref{fig:block_deeper}), with the numbers of blocks stacked. Downsampling is performed by conv3\_1, conv4\_1, and conv5\_1 with a stride of 2.
+}
+\label{tab:arch}
+\vspace{-.5em}
+\end{table*}

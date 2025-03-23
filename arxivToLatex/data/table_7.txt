@@ -1,0 +1,32 @@
+\begin{table}[t]
+\begin{center}
+\small
+\resizebox{1.0\linewidth}{!}{
+\begin{tabular}{c|c|c|l}
+\hline
+  \multicolumn{3}{c|}{method}   & error (\%) \\
+\hline
+\multicolumn{3}{c|}{Maxout \cite{Goodfellow2013}} & 9.38 \\
+\multicolumn{3}{c|}{NIN \cite{Lin2013}} & 8.81 \\
+\multicolumn{3}{c|}{DSN \cite{Lee2014}} & 8.22 \\
+\hline
+ & \# layers & \# params &  \\
+\hline
+FitNet \cite{Romero2015} & 19 & 2.5M  & 8.39 \\
+Highway \cite{Srivastava2015,Srivastava2015a} & 19 & 2.3M  & 7.54 \footnotesize (7.72$\pm$0.16) \\
+Highway \cite{Srivastava2015,Srivastava2015a} & 32 & 1.25M  & 8.80 \\
+\hline
+ResNet & 20 & 0.27M & 8.75 \\
+ResNet & 32 & 0.46M & 7.51 \\
+ResNet & 44 & 0.66M & 7.17 \\
+ResNet & 56 & 0.85M & 6.97 \\
+ResNet & 110 & 1.7M & \textbf{6.43} \footnotesize (6.61$\pm$0.16) \\ % 6.64, 6.43, 6.61, 6.53, 6.86
+ResNet & 1202 & 19.4M & 7.93 \\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Classification error on the \textbf{CIFAR-10} test set. All methods are with data augmentation. For ResNet-110, we run it 5 times and show ``best (mean$\pm$std)'' as in \cite{Srivastava2015a}.%, and our 5 results are \{6.64, 6.43, 6.61, 6.53, 6.86\}.
+}
+\label{tab:cifar}
+\end{table}

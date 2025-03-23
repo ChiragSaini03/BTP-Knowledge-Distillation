@@ -1,0 +1,20 @@
+\begin{table}[t]
+\begin{center}
+\small
+\begin{tabular}{l|c|c}
+\hline
+  & val2 & test \\
+\hline
+GoogLeNet \cite{Szegedy2015} (ILSVRC'14) & - & 43.9 \\
+\hline
+our single model (ILSVRC'15) & 60.5 & 58.8  \\
+our ensemble (ILSVRC'15) & \textbf{63.6} & \textbf{62.1} \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Our results (mAP, \%) on the ImageNet detection dataset. Our detection system is Faster R-CNN \cite{Ren2015} with the improvements in Table~\ref{tab:detection_coco_improve}, using ResNet-101.
+}
+\vspace{-.5em}
+\label{tab:imagenet_det}
+\end{table}

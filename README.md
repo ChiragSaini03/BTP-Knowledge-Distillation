@@ -64,4 +64,3 @@ Note: The third and fourth step can be combined, if we directly convert the cell
 
 - Works with table images with all borders in table.
 
-

@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\begin{center}
+\footnotesize
+\vspace{1em}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{l|x{40}|x{54}|x{20}|yyyyyyyyyyyyyyyyyyyc}
+\hline
+\ct{system} & net & data & mAP & \ct{areo} & \ct{bike} & \ct{bird} & \ct{boat} & \ct{bottle} & \ct{bus} & \ct{car} & \ct{cat} & \ct{chair} & \ct{cow} & \ct{table} & \ct{dog} & \ct{horse} & \ct{mbike} & \ct{person} & \ct{plant} & \ct{sheep} & \ct{sofa} & \ct{train} & \ct{tv} \\
+\hline
+\footnotesize baseline & \footnotesize VGG-16 & 07+12 & {73.2} & 76.5 & 79.0 & {70.9} & {65.5} & {52.1} & {83.1} & {84.7} & 86.4 & 52.0 & {81.9} & 65.7 & {84.8} & {84.6} & {77.5} & {76.7} & 38.8 & {73.6} & 73.9 & {83.0} & {72.6}\\
+\footnotesize baseline & \footnotesize ResNet-101 & 07+12 & 76.4 & 79.8 & 80.7 & 76.2 & 68.3 & 55.9 & 85.1 & 85.3 & \hl{89.8} & 56.7 & 87.8 & 69.4 & 88.3 & 88.9 & 80.9 & 78.4 & 41.7 & 78.6 & 79.8 & 85.3 & 72.0 \\
+\footnotesize baseline+++ & \footnotesize ResNet-101 & COCO+07+12 & \hl{85.6} & \hl{90.0} & \hl{89.6} & \hl{87.8} & \hl{80.8} & \hl{76.1} & \hl{89.9} & \hl{89.9} & {89.6} & \hl{75.5} & \hl{90.0} & \hl{80.7} & \hl{89.6} & \hl{90.3} & \hl{89.1} & \hl{88.7} & \hl{65.4} & \hl{88.1} & \hl{85.6} & \hl{89.0} & \hl{86.8} \\
+\hline
+\end{tabular}
+}
+\end{center}
+\vspace{-.5em}
+\caption{Detection results on the PASCAL VOC 2007 test set. The baseline is the Faster R-CNN system. The system ``baseline+++'' include box refinement, context, and multi-scale testing in Table~\ref{tab:detection_coco_improve}.}
+\label{tab:voc07_all}
+%\end{table*}

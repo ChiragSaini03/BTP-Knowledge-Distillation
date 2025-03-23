@@ -1,0 +1,27 @@
+\begin{table}[t]
+\setlength{\tabcolsep}{8pt}
+\small
+\begin{center}
+\begin{tabular}{l|c c}
+\hline
+\footnotesize method & \footnotesize top-1 err. & \footnotesize top-5 err.\\
+\hline
+VGG \cite{Simonyan2015} (ILSVRC'14) & - & 8.43$^{\dag}$\\
+GoogLeNet \cite{Szegedy2015} (ILSVRC'14) & - & 7.89\\
+\hline
+VGG \cite{Simonyan2015} \footnotesize (v5) & 24.4 & 7.1\\
+PReLU-net \cite{He2015} & 21.59 & 5.71 \\
+BN-inception \cite{Ioffe2015} & 21.99 & 5.81 \\\hline
+ResNet-34 B & 21.84 & 5.71 \\
+ResNet-34 C & 21.53 & 5.60 \\
+ResNet-50 & 20.74 & 5.25 \\
+ResNet-101 & 19.87 & 4.60 \\
+ResNet-152 & \textbf{19.38} & \textbf{4.49} \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Error rates (\%) of \textbf{single-model} results on the ImageNet validation set (except $^{\dag}$ reported on the test set).}
+\label{tab:single}
+%\vspace{-.5em}
+%\end{table}

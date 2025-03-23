@@ -1,0 +1,22 @@
+\begin{table}[t]
+\begin{center}
+\small
+\begin{tabular}{l|c|c}
+\hline
+  \multicolumn{1}{c|}{\multirow{2}{*}{method}}  & \multicolumn{2}{c}{top-5 localization err} \\\cline{2-3}
+  & val & test \\
+\hline
+OverFeat \cite{Sermanet2014} (ILSVRC'13) & 30.0 & 29.9 \\
+GoogLeNet \cite{Szegedy2015} (ILSVRC'14) & - & 26.7 \\
+VGG \cite{Simonyan2015} (ILSVRC'14) & 26.9 & 25.3 \\
+\hline
+ours (ILSVRC'15) & \textbf{8.9} & \textbf{9.0} \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Comparisons of localization error (\%) on the ImageNet dataset with state-of-the-art methods.
+}
+\vspace{-.5em}
+\label{tab:localization_all}
+\end{table}

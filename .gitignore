@@ -1,3 +1,4 @@
 /env
 pyvenv.cfg
 /arxivToLatex/env
+**/__pycache__

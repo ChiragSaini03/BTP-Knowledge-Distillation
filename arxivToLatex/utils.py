@@ -8,6 +8,7 @@ from bs4 import  BeautifulSoup
 from tqdm import tqdm
 import base64
 import shutil
+from pathlib import Path
 
 def ToBase64(file):
     with open(file, 'rb') as fileObj:
@@ -44,10 +45,42 @@ def get_name_from_arvix(url):
     title = res.text[6:].replace(" ","-")
     return title
 
-def extract_table_from_tex():
+def extract_table_from_tex(outFolder):
     # Read tex code from all files and then fetch the text between \begin{table} and \end{table} and write it in a seperate file.
-    
-    pass
+    # here folder is the output folder
+    folders = [item.name for item in Path(outFolder).iterdir() if item.is_dir()]
+    files = [f"{outFolder}{folder}/{f}" for folder in folders for f in os.listdir(f"{outFolder}{folder}/") if '.' in f]
+    for file in files:
+        with open(file, 'r') as f:
+            lines = f.readlines()
+            table_lines = []
+            inside_table = False
+            for line in lines:
+                if r"\begin{table" in line:
+                    table_lines.append(line)
+                    inside_table = True
+                elif r"\end{table" in line:
+                    if len(table_lines) > 0:
+                        table_lines.append(line)
+                        current_dir = os.getcwd()
+                        metadata_file = os.path.join(current_dir, "metadata.txt")
+                        with open(metadata_file, 'r') as cf:
+                            cnt = cf.read()
+                            if (cnt == ''):
+                                cnt = 0;
+                            else:
+                                cnt = int(cnt)
+                        with open(metadata_file, 'w') as cf:
+                            cnt += 1
+                            cf.write(str(cnt))
+                        table_file = current_dir + r"\data\table_" + str(cnt) + ".txt"
+                        print(table_file)
+                        with open(table_file, 'w') as tf:
+                            tf.writelines(table_lines)
+                    table_lines = []
+                    inside_table = False
+                elif (inside_table):
+                    table_lines.append(line)
 
 def clean_download_dir(folder):
     print(folder)

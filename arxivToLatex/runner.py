@@ -75,8 +75,8 @@ if crawling_or_not:
                     outpath = os.path.join(out,title)
                     untar(filepath,outpath)
                     
-                    time.sleep(5)
-                    clean_download_dir(base)
+                    
+                    # clean_download_dir(base)
                     
                     # finish one paper
                     bar.progress((i+1)/N)
@@ -90,8 +90,7 @@ if crawling_or_not:
                 b64 = ToBase64(filepath).decode()
             href = f"<a href='data:file/csv;base64,{b64}' download='arxiv2latex-output-{datetime.datetime.now()}.zip' color='red'>Click here to Download the Output Latex Zip Files</a>"
             st.markdown(href, unsafe_allow_html=True)
-                
-            # 状态
+            
             st.success("Finished")
     except Exception as e:
         st.error("Something goes wrong. Please check the input or concat me to fix this bug. Error message: \n"+str(e))

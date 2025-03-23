@@ -1,0 +1,22 @@
+\begin{table}[t]
+\begin{center}
+\small
+%\resizebox{0.9\linewidth}{!}{
+\begin{tabular}{c|c|c}
+\hline
+training data & 07+12 & 07++12 \\
+\hline
+test data & VOC 07 test & VOC 12 test \\
+\hline
+VGG-16 & 73.2 & 70.4 \\
+ResNet-101 & \textbf{76.4} & \textbf{73.8} \\
+\hline
+\end{tabular}
+%}
+\end{center}
+\vspace{-.5em}
+\caption{Object detection mAP (\%) on the PASCAL VOC 2007/2012 test sets using \textbf{baseline} Faster R-CNN. See also Table~\ref{tab:voc07_all} and \ref{tab:voc12_all} for better results.
+}
+\vspace{-.5em}
+\label{tab:detection_voc}
+%\end{table}

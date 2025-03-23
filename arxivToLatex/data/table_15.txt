@@ -1,0 +1,26 @@
+\begin{table}[t]
+\begin{center}
+\small
+\resizebox{1.0\linewidth}{!}{
+\begin{tabular}{c|c|c|c|c|c}
+\hline
+\tabincell{c}{LOC \\ method} & \tabincell{c}{LOC \\ network} & testing & \tabincell{c}{LOC error \\on GT CLS} & \tabincell{c}{classification\\ network} & \tabincell{c}{top-5 LOC error \\ on predicted CLS} \\
+\hline
+VGG's \cite{Simonyan2015} & VGG-16 & 1-crop & 33.1 \cite{Simonyan2015} & & \\
+RPN & ResNet-101 & 1-crop & 13.3 & & \\
+RPN & ResNet-101 & dense & 11.7 & & \\
+\hline
+RPN & ResNet-101 & dense & & ResNet-101 & 14.4 \\
+RPN+RCNN & ResNet-101 & dense & & ResNet-101 & \textbf{10.6} \\
+RPN+RCNN & ensemble & dense & & ensemble & \textbf{8.9} \\
+\hline
+\end{tabular}
+}
+\end{center}
+\vspace{-.5em}
+\caption{Localization error (\%) on the ImageNet validation. In the column of ``LOC error on GT class'' (\cite{Simonyan2015}), the ground truth class is used.
+In the ``testing'' column, ``1-crop'' denotes testing on a center crop of 224$\times$224 pixels, ``dense'' denotes dense (fully convolutional) and multi-scale testing.
+}
+\vspace{-.5em}
+\label{tab:localization}
+\end{table}

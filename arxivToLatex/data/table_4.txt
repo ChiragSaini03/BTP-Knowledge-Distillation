@@ -1,0 +1,33 @@
+\begin{table}[t]
+\setlength{\tabcolsep}{8pt}
+\begin{center}
+\small
+\begin{tabular}{l|cc}
+\hline
+  \footnotesize model          & \footnotesize top-1 err. & \footnotesize top-5 err. \\
+\hline
+%\footnotesize SPP-net \cite{He2014} & 29.68 & 10.95 \\
+\footnotesize VGG-16 \cite{Simonyan2015} & 28.07 & 9.33\\
+\footnotesize GoogLeNet \cite{Szegedy2015} & - & 9.15 \\
+\footnotesize PReLU-net \cite{He2015}  & 24.27 & 7.38 \\
+%\footnotesize Deep Neural Decision Forest \cite{Kontschieder2015}  & - & 7.08 \\
+\hline
+\hline
+\footnotesize plain-34 & 28.54 & 10.02 \\
+%\hline
+\footnotesize ResNet-34 A & 25.03 & 7.76 \\
+\footnotesize ResNet-34 B & 24.52 & 7.46 \\
+\footnotesize ResNet-34 C & 24.19 & 7.40 \\
+\hline
+\footnotesize ResNet-50 & 22.85 & 6.71 \\
+\footnotesize ResNet-101 & 21.75 & 6.05 \\
+\footnotesize ResNet-152 & \textbf{21.43} & \textbf{5.71} \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Error rates (\%, \textbf{10-crop} testing) on ImageNet validation.
+VGG-16 is based on our test. ResNet-50/101/152 are of option B that only uses projections for increasing dimensions.}
+\label{tab:10crop}
+\vspace{-.5em}
+\end{table}

@@ -1,0 +1,23 @@
+%\begin{table}[t]
+\setlength{\tabcolsep}{12pt}
+\small
+\begin{center}
+\begin{tabular}{l|c}
+\hline
+\footnotesize method & top-5 err. (\textbf{test}) \\
+\hline
+VGG \cite{Simonyan2015} (ILSVRC'14) & 7.32\\
+GoogLeNet \cite{Szegedy2015} (ILSVRC'14) & 6.66\\
+\hline
+VGG \cite{Simonyan2015} \footnotesize (v5) & 6.8 \\
+PReLU-net \cite{He2015} & 4.94 \\
+BN-inception \cite{Ioffe2015} & 4.82 \\\hline
+\textbf{ResNet (ILSVRC'15)} & \textbf{3.57} \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Error rates (\%) of \textbf{ensembles}. The top-5 error is on the test set of ImageNet and reported by the test server.}
+\label{tab:ensemble}
+%\vspace{-.5em}
+\end{table}

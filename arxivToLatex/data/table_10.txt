@@ -1,0 +1,21 @@
+%\begin{table}[t]
+%\begin{center}
+%\small
+%\resizebox{1.0\linewidth}{!}{
+%\begin{tabular}{c|c|c|c|c}
+%\hline
+%dataset & VOC 07 & VOC 12 & \multicolumn{2}{c}{MS COCO} \\
+%\hline
+%metric & mAP@.5 & mAP@.5 & mAP@.5 & mAP@[.5, .95] \\
+%\hline
+%VGG-16 & 73.2 & 70.4 & 41.5 & 21.2 \\
+%ResNet-101 & \textbf{76.4} & \textbf{73.8} & \textbf{48.4} & \textbf{27.2} \\
+%\hline
+%\end{tabular}
+%}
+%\end{center}
+%\vspace{-.5em}
+%\caption{\textbf{Object detection} mAP (\%) on the PASCAL VOC 2007/2012 test sets and the MS COCO validation set using Faster R-CNN \cite{Ren2015}. Following \cite{Ren2015}, for the VOC 2007 test, the training data is 2007 trainval and 2012 trainval; for the VOC 2012 test, the training data is 2007 trainval+test and 2012 trainval. For MS COCO, the training data is the 80k COCO training set. ``mAP@.5'' means that IoU=0.5 is used for evaluation.
+%}
+%\label{tab:detection}
+%\end{table}

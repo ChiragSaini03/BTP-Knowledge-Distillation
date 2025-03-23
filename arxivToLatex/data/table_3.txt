@@ -1,0 +1,16 @@
+\begin{table}[t]
+\begin{center}
+\small
+\begin{tabular}{l|x{42}|c}
+\hline
+            & plain & ResNet \\
+\hline
+18 layers & 27.94 & 27.88 \\
+34 layers & 28.54  & \textbf{25.03}  \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-.5em}
+\caption{Top-1 error (\%, 10-crop testing) on ImageNet validation. Here the ResNets have no extra parameter compared to their plain counterparts. Fig.~\ref{fig:imagenet} shows the training procedures.}
+\label{tab:plain_vs_shortcut}
+\end{table}
