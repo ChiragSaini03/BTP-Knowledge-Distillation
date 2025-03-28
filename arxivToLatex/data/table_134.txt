@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+    \centering
+    \caption{\textsf{HD} among clients' label distributions at varying levels of non-IID partitioning by time and space} 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c||}
+    \hline
+    Dataset &  \textsf{HD} = 0 & \textsf{HD} = 0.25 & \textsf{HD} = 0.50 & \textsf{HD} = 0.75 & \textsf{HD} = 0.9\\
+    \hline\hline
+    Serengeti & 0.01 & 0.09 & 0.22 & 0.36 & 0.53 \\ \cline{1  - 6}
+    % 5GTraffic & 0.02 & 0.15 & 0.34 & 0.54 & 0.71 \\ \cline{1 - 6}
+    5GNTF & 0.03 & 0.20 & 0.29 & 0.30  & 0.49 \\ \cline{1 - 6} 
+    \end{tabular}
+    }
+\label{tab:SpatioTemporalSkew_HD}
+\end{table}

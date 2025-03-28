@@ -1,0 +1,62 @@
+\begin{table}[h]
+\centering
+\caption{List of 36 compounds found on the convex hull, with calculated lattice constants $a$ and $c$ (in \AA), and magnetization (in $\mu_B$/formula).}
+\label{tab:convex_hull}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{@{}c l c c c@{}}
+\toprule
+\textbf{C} & \textbf{Formula} & \textbf{$a$} & \textbf{$c$} & \textbf{Mag.} \\
+\midrule
+% Group 11 (C = Au)
+\multirow{3}{*}{Group 11} 
+  & \ce{CaBe3Au5}  & 5.03 & 6.74  \\
+  & \ce{SrBe3Au5}  & 5.12 & 6.76  \\
+  & \ce{PmBe3Au5}  & 5.05 & 6.75  \\
+\midrule
+% Group 12 (C = Hg)
+\multirow{2}{*}{Group 12} 
+  & \ce{KPd3Hg5}  & 5.75 & 7.47  \\
+  & \ce{RbPd3Hg5} & 5.78 & 7.52  \\
+\midrule
+% Group 13 (C = Tl)
+\multirow{5}{*}{Group 13} 
+  & \ce{RbPd3Tl5} & 5.76 & 8.33  \\
+  & \ce{CsPd3Tl5} & 5.69 & 9.44  \\
+  & \ce{KPt3Tl5}  & 5.67 & 8.79 \\
+  & \ce{RbPt3Tl5} & 5.67 & 9.32  \\
+  & \ce{CsPt3Tl5} & 5.66 & 9.94  \\
+\midrule
+% Group 15 (C = Sb, Bi)
+\multirow{16.5}{*}{Group 15} 
+  & \ce{CsTi3Sb5}~\cite{Jiang2022b}   & 5.68 & 9.80  \\
+  & \ce{KTi3Bi5}~\cite{Jiang2022b}    & 5.80 & 9.44  \\
+  & \ce{RbTi3Bi5}~\cite{Yi2022,Yi2023}   & 5.82 & 9.66  \\
+  & \ce{CsTi3Bi5}~\cite{Yi2022,Yi2023}   & 5.83 & 9.92  \\
+  & \ce{CsHf3Bi5}~\cite{Jiang2022b}   & 6.11 & 9.63  \\
+  & \ce{BaTi3Bi5}   & 5.85 & 8.89  \\
+  & \ce{KV3Sb5}~\cite{Ortiz2019}     & 5.48 & 9.31  \\
+  & \ce{RbV3Sb5}~\cite{Ortiz2019}    & 5.49 & 9.55  \\
+  & \ce{CsV3Sb5}~\cite{Ortiz2019}    & 5.51 & 9.82  \\
+  & \ce{IV3Sb5}   & 5.45 & 8.78  \\
+  & \ce{HgV3Sb5}  & 5.44 & 8.79  \\
+  & \ce{RbNb3Bi5}~\cite{Jiang2022b}  & 5.90 & 9.51  \\
+  & \ce{CsNb3Bi5}~\cite{Jiang2022b}  & 5.91 & 9.77  \\
+  & \ce{INb3Bi5}   & 5.85 & 9.03  \\
+  & \ce{KMn3Sb5}~\cite{Jiang2022b}   & 5.43 & 9.26 & 7.75 \\
+  & \ce{RbMn3Sb5}~\cite{Jiang2022b}  & 5.44 & 9.53 & 7.76 \\
+\midrule
+% Group Ce
+\multirow{11}{*}{Ce} 
+  & \ce{PbRu3Ce5}  & 5.84 & 7.34 & \\
+  & \ce{InOs3Ce5}  & 5.81 & 7.45 & \\
+  & \ce{TlOs3Ce5}  & 5.82 & 7.44 & \\
+  & \ce{PbOs3Ce5}  & 5.84 & 7.44 & \\
+  & \ce{BiOs3Ce5}  & 5.87 & 7.41 & \\
+  & \ce{CdCo3Ce5}  & 5.46 & 7.34 & \\
+  & \ce{HgCo3Ce5}  & 5.45 & 7.34 & \\
+  & \ce{InCo3Ce5}  & 5.49 & 7.32 & \\
+  & \ce{TlCo3Ce5}  & 5.51 & 7.32 & \\
+  & \ce{PbCo3Ce5}  & 5.56 & 7.28 & 0.91 \\
+\bottomrule
+\end{tabular}
+\end{table}

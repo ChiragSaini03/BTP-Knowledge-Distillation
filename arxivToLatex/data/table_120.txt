@@ -1,0 +1,61 @@
+\begin{table*}[htbp]
+    \centering
+    \caption{Mean and standard deviation Accuracy for each dataset for CL, FedAvg, Rand, FedProx, Power-Of-Choice, and MOON, considering different levels of non-IIDness as measured by \textsf{HD} for $K = 30$. Each model has undergone ten different trials. }
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+    \hline
+    Category& Dataset & \textsf{HD} & CL & FedAvg & Rand & FedProx & POC & MOON\\
+    \hline\hline
+
+    %CIFAR10 dataset
+    \multirow[c]{20}{*}{ \rotatebox[origin=c]{90}{Label distribution skew}} & \multirow[c]{5}{*}{CIFAR10}& 0 & \multirow[c]{5}{*}{70.50\% $\pm$ 0.60\%} & 66.12\% $\pm$ 0.73\% & 66.16\% $\pm$ 0.74\%  & \textbf{66.35\% $\pm$ 0.72\%} & 66.26\% $\pm$ 0.70\% & 64.45\% $\pm$ 1.05\%  \\ \cline{3-3}\cline{5-9}
+    
+    && 0.25 && \textbf{65.91\% $\pm$ 0.49\%} & 65.49\% $\pm$ 0.52\%  & 65.86\% $\pm$ 0.60\% & 65.61\% $\pm$ 0.67\% & 63.40\% $\pm$ 0.74\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.5 && 63.41\% $\pm$ 0.95\% & 62.93\% $\pm$ 1.55\%  & \textbf{63.56\% $\pm$ 0.83\%} & 62.86\% $\pm$ 1.71\% & 60.95\% $\pm$ 1.33\%  \\ \cline{3-3}\cline{5-9}
+    
+    && 0.75 && \textbf{58.85\% $\pm$ 1.06\%} & 56.80\% $\pm$ 2.24\%  & 58.80\% $\pm$ 1.04\% & 55.84\% $\pm$ 1.48\% & 55.27\% $\pm$ 0.51\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.9 && 43.22\% $\pm$ 2.24\% & 40.95\% $\pm$ 2.43\%  & \textbf{44.33\% $\pm$ 2.83\%}  & 39.04\% $\pm$ 2.99\% & 38.84\% $\pm$ 2.31\% \\ \cline{2-9}
+
+
+     %FMNIST dataset
+    & \multirow[c]{5}{*}{FMNIST}& 0 & \multirow[c]{5}{*}{90.90\% $\pm$ 0.20\%} & 90.68\% $\pm$ 0.18\% & 90.63\% $\pm$ 0.18\% & \textbf{90.69\% $\pm$ 0.15\%} &  90.62\% $\pm$ 0.17\% & 88.70\% $\pm$ 0.27\%  \\ \cline{3-3}\cline{5-9}
+    
+    && 0.25 && 90.44\% $\pm$ 0.14\% & \textbf{90.52\% $\pm$ 0.17\%} & 90.51\% $\pm$ 0.17\% &  90.51\% $\pm$ 0.18\% & 88.17\% $\pm$ 0.22\% \\ \cline{3-3}\cline{5-9}
+
+    && 0.5 && 89.92\% $\pm$ 0.11\% & 89.84\% $\pm$ 0.31\% & \textbf{89.96\% $\pm$ 0.20\%} &  89.74\% $\pm$ 0.35\% & 87.37\% $\pm$ 0.22\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.75 && 88.15\% $\pm$ 0.54\% & 87.51\% $\pm$ 0.81\% & \textbf{88.17\% $\pm$ 0.47\%} & 87.23\% $\pm$ 0.78\%  & 84.70\% $\pm$ 0.84\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.9 && 80.37\% $\pm$ 3.78\% & 79.08\% $\pm$ 4.67\% & \textbf{81.10\% $\pm$ 2.21\%} & 77.83\% $\pm$ 3.28\%  & 70.79\% $\pm$ 5.73\% \\ \cline{2-9}
+    
+    %Physionet dataset
+    & \multirow[c]{5}{*}{Physionet}& 0 & \multirow[c]{5}{*}{63.74\% $\pm$ 1.24\%}& 57.97\% $\pm$ 0.49\% & 57.48\% $\pm$ 0.40\%  & 58.16\% $\pm$ 0.62\% & 57.86\% $\pm$ 0.76\% & \textbf{61.80\% $\pm$ 0.62\%} \\ \cline{3-3}\cline{5-9}
+
+    && 0.25 && 57.65\% $\pm$ 0.47\% & 57.42\% $\pm$ 0.54\%  & 57.79\% $\pm$ 0.55\% & 57.48\% $\pm$ 0.53\% & \textbf{60.94\% $\pm$ 0.60\%} \\ \cline{3-3} \cline{5-9}
+
+    && 0.5 && 55.69\% $\pm$ 0.93\% & 55.26\% $\pm$ 1.05\%  & 56.29\% $\pm$ 1.00\% & 55.24\% $\pm$ 1.48\% & \textbf{58.76\% $\pm$ 0.71\%} \\ \cline{3-3} \cline{5-9}
+    
+    && 0.75 && 50.88\% $\pm$ 1.18\% & 50.19\% $\pm$ 2.07\%  & 51.47\% $\pm$ 1.20\% & 49.51\% $\pm$ 2.30\% & \textbf{53.51\% $\pm$ 1.37\%}  \\ \cline{3-3}\cline{5-9}
+    
+    && 0.9 && 41.35\% $\pm$ 2.70\% & 39.68\% $\pm$ 3.01\%  & 41.95\% $\pm$ 2.07\% & 38.81\% $\pm$ 3.68\% & \textbf{42.49\% $\pm$ 3.00\%}  \\  
+    \cline{2-9}
+    
+    %Covtype dataset
+    & \multirow[c]{5}{*}{Covtype}& 0 & \multirow[c]{5}{*}{95.60\% $\pm$ 0.10\%} & 94.95\% $\pm$ 0.06\% & 94.89\% $\pm$ 0.08\% & 94.96\% $\pm$ 0.09\% & 94.84\% $\pm$ 0.10\%  & \textbf{95.64\% $\pm$ 0.06\%}  \\ \cline{3-3}\cline{5-9}
+    
+    && 0.25 && 92.05\% $\pm$ 1.14\% & 91.63\% $\pm$ 1.52\% & 92.10\% $\pm$ 1.28\% & \textbf{93.89\% $\pm$ 0.73\%} & 93.36\% $\pm$ 1.18\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.5 && 84.92\% $\pm$ 3.71\% & 83.10\% $\pm$ 2.79\% & 85.54\% $\pm$ 3.39\% & \textbf{88.21\% $\pm$ 2.17\%} & 84.61\% $\pm$ 3.44\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.75 && \textbf{77.55\% $\pm$ 3.63\%} & 76.25\% $\pm$ 4.10\% & 77.55\% $\pm$ 3.64\%
+    & 74.68\% $\pm$ 5.31\%  & 57.79\% $\pm$ 12.66\% \\ \cline{3-3}\cline{5-9}
+    
+    && 0.9 && 59.10\% $\pm$ 8.70\% & 59.02\% $\pm$ 9.19\% & \textbf{59.46\% $\pm$ 8.74\%} & 57.29\% $\pm$ 10.72\%  & 50.51\% $\pm$ 5.57\% \\ \cline{1-9}
+    
+    \multicolumn{4}{||c|}{Number of times that performed the best} & 3 & 1 & 8 & 2 & 6   \\ \cline{1 -9}
+
+    \end{tabular}}
+    \label{tab:FL_all_agg}
+\end{table*}

@@ -1,0 +1,18 @@
+\begin{table}[!b]
+	\begin{center}
+		\begin{tabular}{|ccccccccc|}
+			\hline 
+			$\mathsf{R}$ & $\mathsf{B}$ & $\mathsf{S}$ & $\mathsf{D}$ & $k_0$ & $\Delta k$ & $\eta_0$ & $\delta$ & $\mathcal{A}g$ \\
+			\hline
+			\hline
+			$2.196$ & $0.125$ & $1.537$ & $2.668$ & $48$ & $6$ & $0.032$ & $0.056$ & $0.3$ \\
+			%\hline
+			$7.271$ & $0.525$ & $2.861$ & $2.217$ & $61$ & $32$ & $0.047$ & $0.036$ & $6.75$ \\
+			%\hline
+			$31.64$ & $0.174$ & $0.708$ & $0.806$ & $23$ & $4$ & $0.031$ & $0.035$ & $6.85$ \\
+			\hline
+		\end{tabular}
+		\caption{Initialization parameters of the 3 DNS used as examples to illustrate the \textit{diffusive}, \textit{intermediate} and \textit{inertial} regimes, respectively from top to bottom. All simulations have an Atwood number $\mathcal{A}=0.05$, a lateral box size equal to $2\pi$, a grid resolution of $1024^2\times2048$ and a viscosity $\nu=7.5\times10^{-4}$.}
+		\label{tab:inits_examples_3_regimes}
+	\end{center}
+\end{table}

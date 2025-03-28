@@ -1,0 +1,23 @@
+\begin{table}[H]
+  \caption{Diffusion Transformer Architecture}
+  \label{table:DiT Architecture}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+     \textbf{Layers} & \textbf{Input Dimension}  & \textbf{Output Dimension}\\
+    \midrule
+    \textbf{Sequence Distribution Embedding Module}  & vocab size &  1024\\
+    \hspace{5mm} Feed-Forward + GeLU & vocab size  & 1024\\
+    \textbf{DiT Blocks} $\times 32$ & &\\
+    \hspace{5mm} Adaptive Layer Norm (time conditioning) & 1024 & 1024\\
+    \hspace{5mm} Multi-Head Self-Attention ($h=16$) \\\hspace{10mm}+ Rotary Positional Embeddings & 1024  & 1024\\
+     \hspace{5mm} Dropout + Residual &  1024 & 1024\\
+    \hspace{5mm} Adaptive Layer Norm (time conditioning) & 1024 & 1024\\
+    \hspace{5mm} FFN + GeLU & 1024  & 1024\\
+
+    \textbf{DiT Final Block} & &\\
+    \hspace{5mm} Adaptive Layer Norm (time conditioning) & 1024 & 1024\\
+    \hspace{5mm} Linear & 1024 & vocab size \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Comparison with traditional ML models}
+  \scalebox{0.70}{
+    \begin{tabular}{rrrrrrrrrrr}
+    \toprule
+    \diagbox{\textbf{Year}}{\textbf{Method}} & \multicolumn{2}{r}{KGML-SM} & \multicolumn{2}{r}{LR} & \multicolumn{2}{r}{MLP} & \multicolumn{2}{r}{RR} & \multicolumn{2}{r}{RF} \\
+\cmidrule{2-11}          & RMSE  & R2    & RMSE  & R2    & RMSE  & R2    & RMSE  & R2    & RMSE  & R2 \\
+    \midrule
+    2019  & \textbf{0.964} & \textbf{0.741} & 1.328 & 0.621 & 1.169 & 0.607 & 1.214 & 0.607 & 1.040  & 0.712 \\
+    2020  & \textbf{0.980} & \textbf{0.792} & 1.304 & 0.690  & 1.207 & 0.734 & 1.230  & 0.661 & 1.120  & 0.719 \\
+    2021  & \textbf{1.104} & \textbf{0.836} & 1.167 & 0.790  & 1.247 & 0.761 & 1.129 & 0.808 & 1.236 & 0.794 \\
+    2022  & \textbf{1.085} & \textbf{0.837} & 1.471 & 0.740  & 1.400   & 0.765 & 1.318 & 0.781 & 1.185 & 0.821 \\
+    2023  & \textbf{1.071} & \textbf{0.807} & 1.226 & 0.737 & 1.225 & 0.738 & 1.140  & 0.776 & 1.196 & 0.791 \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:result_tradition_model}%
+\end{table}%

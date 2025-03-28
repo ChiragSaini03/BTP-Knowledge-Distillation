@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+    \vskip +0.1in
+    \centering
+     \caption{Experiments on out-of-domain datasets.} 
+     \resizebox{.8\textwidth}{!} {
+     \begin{tabular}{lcccccc}
+     \toprule
+          \multirow{2}{*}{Methods}&  \multicolumn{2}{c}{MNIST}&  \multicolumn{2}{c}{F-MNIST}&  \multicolumn{2}{c}{Flowers}\\
+ & ACC& NMI& ACC& NMI& ACC&NMI\\
+ \midrule
+         Spectral Clustering~\citep{Shi:TPAMI00}&  74.5&  67.0&  64.3&  56.8&  85.6& 94.6\\
+         EnSC~\citep{You:CVPR16-EnSC}&  91.0&  85.3&  69.1&  65.1&  90.0& 95.9\\
+         CPP~\citep{Chu:ICLR24}&  \underline{95.7}&  \underline{90.4}&  \underline{70.9}&  \underline{68.8}&  \underline{91.3}& \underline{96.4}\\
+         PRO-DSC&  \textbf{96.1}&  \textbf{90.9}&  \textbf{71.3}&  \textbf{70.3}&  \textbf{92.0}& \textbf{97.4}\\
+         \bottomrule
+    \end{tabular}
+    }
+    \label{out of domain table}
+    % \vskip -0.15in
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[]
+	\centering
+	\caption{Comparison of the NCV accuracy, $F_1$ score, precision, and recall (in \%) of the XGBoost, topogivity, and t-SNE approaches.
+    The Area Under the Receiver Operating Characteristic Curve (ROC\_AUC) is also reported in \%.}
+    \setlength{\tabcolsep}{14pt}
+	\begin{tabular}{lccccc}
+    \hline
+    \hline
+	& Accuracy & $F_1$ score & Precision & Recall & ROC\_AUC \\
+    \hline
+	XGBoost    & 92.4 & 88.5 & 89.5 & 87.5 & 97.5 \\
+	Topogivity & 87.2 & 79.5 & 85.6 & 74.1 & 90.6 \\
+	t-SNE      & 75.7 & 70.8 & 59.0 & 88.3 & 89.1 \\
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:com_mtt}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Breakdown of the Alerts/Alert Summaries by Platform}
+\label{tab:platform_summary_stats}
+\centering
+\begin{tabular}{lrr}
+\toprule
+\textbf{Platform} & \textbf{Alerts} & \textbf{Alert Summaries} \\
+\midrule
+Windows & 6241 & 1754 \\
+macOS & 5298 & 1615 \\
+Linux & 4210 & 1302 \\
+Android & 2217 & 330 \\
+Other & 23 & 23 \\
+\midrule
+\textbf{Total}    & \textbf{17989} & \textbf{3912}           \\ 
+\bottomrule
+\end{tabular}
+\end{table}

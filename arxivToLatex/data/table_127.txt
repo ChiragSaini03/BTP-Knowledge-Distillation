@@ -1,0 +1,32 @@
+% \begin{table*}[htbp]
+%     \centering
+%     \caption{Mean and standard deviation Accuracy for each dataset for FedAvg, Rand, FedProx, Power-Of-Choice, and MOON, considering different levels of non-IIDness as measured by HD. Each model has undergone ten different trials.}
+%     \begin{tabular}{||c|c|c|c|c|c|c|c||}
+%     \hline
+%     Category& Dataset & HD & FedAvg & Rand & FedProx & POC & MOON\\[1ex]
+%     \hline\hline
+%     \multirow[c]{10}{*}{ \rotatebox[origin=c]{90}{Label distribution skew}} & \multirow[c]{5}{*}{Physionet}& 0 & 49.95\% $\pm$ 0.3\% & 49.5\% $\pm$ 0.5\%  & \textbf{50.05\% $\pm$ 0.52\%} & 49.89\% $\pm$ 0.43\% & - \\ \cline{3-8}
+    
+%     && 0.25& 49.4\% $\pm$ 0.3\% & 49.56\% $\pm$ 0.2\% & \textbf{49.67\% $\pm$ 0.33\% } & 49.63\% $\pm$ 0.46\% & - \\ \cline{3-8}
+    
+%     && 0.5& 48.02\% $\pm$ 0.6\% & 47.87\% $\pm$ 0.6\% & \textbf{ 48.26\% $\pm$ 0.7\%} & 48.03\% $\pm$ 0.45\% & - \\ \cline{3-8}
+
+%     && 0.75& 43.95\% $\pm$ 1.71\% & 43.59\% $\pm$ 1.09\% & \textbf{44.87\% $\pm$ 1.51\%} & 43.56\% $\pm$ 1.38\% & - \\ \cline{3-8}
+
+%     && 0.9& 31.95\% $\pm$ 4.16\% & \textbf{35.77\% $\pm$ 2.06\% } & 35.21\% $\pm$ 2.69\% & 35.64\% $\pm$ 2.42\%  & - \\  
+%     \cline{2-8}
+    
+%     & \multirow[c]{5}{*}{FMNIST}& 0& 89.34\% $\pm$ 0.17\% & 89.33\% $\pm$ 0.15\% & \textbf{89.43\% $\pm$ 0.19\%} & 89.41\% $\pm$ 0.12\% & 80.96\% $\pm$ 0.57\% \\ \cline{3-8}
+    
+%     && 0.25 & 89.1\% $\pm$ 0.25 & 89.21\% $\pm$ 0.21\% & \textbf{89.27\% $\pm$ 0.18\% } & \textbf{89.27\% $\pm$ 0.18\%} & 80.06\% $\pm$ 0.95\% \\ \cline{3-8}
+    
+%     && 0.5& 88.11\% $\pm$ 0.27\% & 87.92\% $\pm$ 0.6\% & \textbf{88.34\% $\pm$ 0.32\% } & 88.32\% $\pm$ 0.45\% & 78.16\% $\pm$ 1\% \\ \cline{3-8}
+    
+%     && 0.75 & 82.71\% $\pm$ 3.21\% & 83.46\% $\pm$ 2.72\% & \textbf{84.4\% $\pm$ 1.54\% } & 84.1\% $\pm$ 1.54\% & 70.85\% $\pm$ 3.18\%\\ \cline{3-8}
+    
+%     && 0.9& 68.07\% $\pm$ 5.47\% & 72.94\% $\pm$ 2.88\% & 71.74\% $\pm$ 5.02\% & \textbf{73.93\% $\pm$ 3.68\% } & 43.49\% $\pm$ 7.9\%\\  
+%     \cline{1-8}
+    
+%     \end{tabular}
+%     \label{tab:FL_all_agg}
+% \end{table*}

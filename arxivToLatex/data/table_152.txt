@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+  \centering
+  \caption{\textbf{Clustering accuracy of CLIP features and learned representations.} We apply $k$-means, spectral clustering, and EnSC to cluster the representations.}
+  \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{l|ccc|ccc|ccc|ccc}
+    \toprule
+          & \multicolumn{3}{c|}{CIFAR-10} & \multicolumn{3}{c|}{CIFAR-100} & \multicolumn{3}{c|}{CIFAR-20} & \multicolumn{3}{c}{TinyImgNet-200} \\
+          & $k$-means & SC    & EnSC  & $k$-means & SC    & EnSC  & $k$-means & SC    & EnSC  & $k$-means & SC    & EnSC \\
+    \midrule
+    CLIP  & \underline{74.7}  & 70.2  & 95.4  & 52.8  & 66.4  & 67.0  & 46.9  & \underline{49.2}  & \textbf{60.8}  & 54.1  & \underline{62.8}  & 64.5  \\
+    SEDSC & 16.4 & 18.9 &  16.9 &  5.4 & 4.9 & 5.3 & 11.7 & 10.6 & 12.8  & 5.7 & 3.9 &  7.2\\
+    CPP   & 71.3  & \underline{70.3}  & \textbf{95.6}  & \underline{75.3}  & \underline{75.0}  & \underline{77.5}  & \underline{55.5}  & 43.6  & 58.3  & \underline{62.1}  & 58.0  & \underline{67.0}  \\
+    PRO-DSC & \textbf{93.4}  & \textbf{92.1}  & \underline{95.5}  & \textbf{76.5}  & \textbf{75.2}  & \textbf{77.6}  & \textbf{66.0}  & \textbf{59.7}  & \underline{60.0}  & \textbf{67.6}  & \textbf{67.0}  & \textbf{69.5}  \\
+    \bottomrule
+    \end{tabular}}%
+  \label{tab:feature acc}%
+\end{table}%

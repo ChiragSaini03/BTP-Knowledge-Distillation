@@ -1,0 +1,26 @@
+% \begin{table}[!ht]
+% \begin{center}
+% \caption{Hardware specification used to train models}
+% \label{table:architecture_config}
+% \resizebox{\columnwidth}{!}{
+% \begin{tabular}{ |p{4cm}||p{5.2cm}| }
+%  \hline
+% \textbf{Component} & \textbf{Specification} \\ [0.4ex] 
+%  \hline\hline
+% Disk size & 200 GB \\
+% \hline
+% Processors' model & Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz \\
+% \hline
+% Number of processors & 16 \\
+% \hline
+% Memory & 125 GB \\
+% \hline
+% Operating System & (Linux) Ubuntu 22.04.4 LTS \\
+% % \hline
+% % GPU & - \\
+% \hline
+% Python version & 3.10.12 \\
+% \hline
+% \end{tabular}}
+% \end{center}
+% \end{table}

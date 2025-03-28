@@ -1,0 +1,38 @@
+% \begin{table}[htbp]
+%     \centering
+%     \caption{Mean and standard deviation Accuracy for each dataset with FedAvg aggregation algorithm, considering different levels of non-IIDness as measured by HD. Each model has undergone ten different trials.}
+%     \begin{tabular}{||c|c|c|c||}
+%     \hline
+%     Category& Dataset & HD & FedAvg\\[1ex]
+%     \hline\hline
+%     \multirow[c]{20}{*}{ \rotatebox[origin=c]{90}{Label distribution skew}} & \multirow[c]{5}{*}{Physionet}& 0& 51.0\% $\pm$ 0.4\% \\ \cline{3-4}
+%     && 0.25& 50.9\% $\pm$ 0.4\% \\ \cline{3-4}
+%     && 0.5& 49.7\% $\pm$ 0.2\% \\ \cline{3-4}
+%     && 0.75& 46.3\% $\pm$ 0.9\% \\ \cline{3-4}
+%     && 0.9& 38.7\% $\pm$ 1.6\% \\  
+%     \cline{2-4}
+    
+%     & \multirow[c]{5}{*}{CIFAR10}& 0& 60.4\% $\pm$ 0.5\% \\ \cline{3-4}
+%     && 0.25& 59.0\% $\pm$ 0.9\% \\ \cline{3-4}
+%     && 0.5& 54.0\% $\pm$ 1.6\% \\ \cline{3-4}
+%     && 0.75& 45.6\% $\pm$ 2.4\% \\ \cline{3-4}
+%     && 0.9& 28.3\% $\pm$ 6.9\% \\  
+%     \cline{2-4}
+
+%     & \multirow[c]{5}{*}{FMNIST}& 0& 88.4\% $\pm$ 0.1\% \\ \cline{3-4}
+%     && 0.25& 88.2\% $\pm$ 0.2\% \\ \cline{3-4}
+%     && 0.5& 87.3\% $\pm$ 0.2\% \\ \cline{3-4}
+%     && 0.75& 84.0\% $\pm$ 1.4\% \\ \cline{3-4}
+%     && 0.9& 75.1\% $\pm$ 2.5\% \\  
+%     \cline{2-4}
+
+%     & \multirow[c]{5}{*}{Covtype}& 0& 91.6\% $\pm$ 0.0\% \\ \cline{3-4}
+%     && 0.25& 88.5\% $\pm$ 1.2\% \\ \cline{3-4}
+%     && 0.5& 83.1\% $\pm$ 2.6\% \\ \cline{3-4}
+%     && 0.75& 74.4\% $\pm$ 2.8\% \\ \cline{3-4}
+%     && 0.9& 52.2\% $\pm$ 8.1\% \\  
+%     \hline
+    
+%     \end{tabular}
+%     \label{tab:federated_learning_fedavg}
+% \end{table}

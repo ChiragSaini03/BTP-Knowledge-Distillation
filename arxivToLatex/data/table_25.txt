@@ -1,0 +1,26 @@
+% \begin{table}[]
+%     \caption{Characteristics of the 482 performance bugs in the dataset}
+%     \label{tab:bug_characteristics}
+%     \centering
+%     \begin{tabular}{llr}
+%     \toprule
+%         \textbf{Bug Severity} & \textbf{Bug Status} & \textbf{\# of Bugs} \\
+%     \midrule
+%         \multirow{2}{*}{S2} & RESOLVED & 22 \\
+%         & VERIFIED & 4 \\
+%         \midrule
+%         \multirow{4}{*}{S3} & ASSIGNED & 1 \\
+%         & NEW & 21 \\
+%         & RESOLVED & 97 \\
+%         & VERIFIED & 6 \\
+%         \midrule
+%         \multirow{3}{*}{S4} & ASSIGNED & 2 \\
+%         & NEW & 9 \\
+%         & RESOLVED & 22 \\
+%         \midrule
+%         \multirow{4}{*}{Unknown} & NEW & 5 \\
+%         & REOPENED & 1 \\
+%         & RESOLVED & 286 \\
+%         & VERIFIED & 6 \\
+%     \end{tabular}
+% \end{table}

@@ -1,0 +1,16 @@
+% \begin{table}[htbp]
+%   \centering
+%   \caption{Comparison of the results of the attention model using soil moisture as input with the results without soil moisture in drought-affected states.}
+%     \begin{tabular}{lllll}
+%     \toprule
+%     \multirow{2}[4]{*}{\textbf{Year}} & \multicolumn{2}{l}{\textbf{Att with SM}} & \multicolumn{2}{l}{\textbf{Att wo SM}} \\
+% \cmidrule{2-5}          & \textbf{RMSE} & \textbf{R2} & \textbf{RMSE} & \textbf{R2} \\
+%     \midrule
+% 2020  & 1.476(+0.015) & 0.562(-0.009) & 1.461 & 0.571 \\
+% 2021  & 1.552(+0.351) & 0.472(-0.211) & 1.201 & 0.683 \\
+% 2022  & 2.101(-0.042) & 0.531(+0.019) & 2.143 & 0.512 \\
+% 2023  & 1.713(+0.185) & 0.636(-0.074) & 1.528 & 0.710 \\
+%     \bottomrule
+%     \end{tabular}%
+%   \label{tab:att_with_wo_sm_arid}%
+% \end{table}%

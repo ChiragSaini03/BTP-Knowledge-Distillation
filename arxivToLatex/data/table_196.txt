@@ -1,0 +1,27 @@
+\begin{table*}[!tbhp]
+\small
+\begin{minipage}{\textwidth}
+\centering
+\begin{tabular}{p{4cm}p{6cm}p{7.2cm}}
+\toprule
+\textbf{Algorithms} &  \textbf{Classical}  & \textbf{Quantum} \footnote{Here we use \textbf{(1)}, \textbf{(2)}, \textbf{(3)} to denote Algorithms~\ref{Algo1},~\ref{Algo2},~\ref{Algo3} in Sections~\ref{weak_online},~\ref{quantum_walk}. }\\
+\midrule
+Version space perceptron 
+\footnote{In the version space perceptron, we take into account our Theorem~\ref{theorem_1}, in the limit of $\gamma\rightarrow0$ and $D>2$ is a constant.} 
+&$O^* (\frac{N}{\gamma^{D}}  )$
+& $O^* (\sqrt{\frac{N}{\gamma^{D}}} )$ ~\cite{liao2024quadratic}\\
+Online perceptron  &  $O^* (\frac{1}{\gamma^2}\cdot (D+N)  ) $ & $O^* (\frac{1}{\gamma^2}\cdot(D+\sqrt{N})  )$~\cite{kapoor2016quantum} \\
+Ellipsoid & $O^* ( D^2\log(\frac{1}{\gamma})(N+D^2)  )$
+& $O^* ( D^2\log(\frac{1}{\gamma})(\sqrt{N}+D^2))$ \textbf{(\ref{Algo1})}\\
+\midrule
+\multirow{2}*{Cutting plane
+\footnote{Here for cutting plane algorithms, we only show the bounds when $\log^2N>D$.} }
+& \multirow{2}*{$ O^* (D\log{(\frac{1}{\gamma})} (N + D^5\log{(\frac{1}{\gamma})}  + D^6  )$} & $O^* (D\log{(\frac{1}{\gamma})}(\sqrt{N} + D^{4.5}\sqrt{\log{(\frac{1}{\gamma})}}  +  D^6))$~\textbf{(\ref{Algo2})}\\
+& {}
+& $O^* (D\log{(\frac{1}{\gamma})} (\sqrt{N}+ D^{3}  \sqrt{\log{(\frac{1}{\gamma})}}  ) + D^{4.5} )$~\textbf{(\ref{Algo3})}\\
+\bottomrule
+\end{tabular}
+\smallskip
+\caption{Summary of algorithms and complexities.} \label{tab1}
+\end{minipage}
+\end{table*}

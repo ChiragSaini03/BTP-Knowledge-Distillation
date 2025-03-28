@@ -1,0 +1,21 @@
+\begin{table}[ht!]
+\centering
+\caption{\small \textbf{BERT Classification: NdLinear vs. Linear.} 
+NdLinear reduces parameters from 1,544 to 222 and uniformly improves accuracy and ROC AUC on  CoLA and SST-2 datasets.
+Namely, NdLinear achieves significantly better performance using only 1/7 the parameter count.}
+\renewcommand{\arraystretch}{1.15}
+\setlength\extrarowheight{0pt}
+\begin{tabular}{ccccc}
+\toprule
+\textbf{Dataset} & \textbf{Method} & \textbf{Params} & \textbf{Accuracy} & \textbf{ROC AUC} \\ \midrule
+\multirow{2}{*}[0.5ex]{CoLA}  
+    & Linear & 1544 & 0.7790 $\pm$ 0.0143 & 0.7127 $\pm$ 0.0264 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 222 & \cellcolor{LightCyan} \textbf{0.7906 $\pm$ 0.0142} & \cellcolor{LightCyan} \textbf{0.7405 $\pm$ 0.0209} \\ 
+\midrule
+\multirow{2}{*}[0.5ex]{SST-2} 
+    & Linear & 1544 & 0.8872 $\pm$ 0.0079 & 0.8867 $\pm$ 0.0080 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 222 & \cellcolor{LightCyan} \textbf{0.8933 $\pm$ 0.0093} & \cellcolor{LightCyan} \textbf{0.8932 $\pm$ 0.0073} \\ 
+\bottomrule
+\end{tabular}
+\label{tab:text_classify}
+\end{table}

@@ -1,0 +1,23 @@
+\begin{table}[b]
+    \centering
+    \caption{Performance obtained with DT trained with HC features.}
+    \setlength{\tabcolsep}{6pt}
+    \label{tab:hc_dt}
+    \begin{tabular}{l c c c c c c c c}
+        \toprule
+        \textbf{Desc.} & \textbf{A} & \textbf{P} & \textbf{R} & \textbf{S} & \textbf{F1} & \textbf{MCC} & \textbf{BACC} \\
+        \toprule
+        AC & 62.78 & 69.39 & 68.97 & 53.26 & 69.18 & 22.20 & 61.12 \\
+        Haar & 59.70 & 62.56 & 83.31 & 23.43 & 71.46 & 8.33 & 53.37 \\
+        Hist & 68.78 & 74.49 & 73.71 & 61.22 & 74.10 & 34.84 & 67.46 \\
+        \midrule
+        HAR & 68.78 & 74.85 & 72.99 & 62.32 & 73.91 & 35.10 & 67.66 \\
+        LBP & 71.22 & 76.23 & 76.26 & 63.47 & 76.25 & 39.74 & 69.87 \\
+        \midrule
+        CH\_1 & 71.11 & 76.15 & 76.17 & 63.35 & 76.16 & 39.52 & 69.76 \\
+        CH\_2 & 71.05 & 76.12 & 76.07 & 63.35 & 76.09 & 39.41 & 69.71 \\
+        LM & 71.32 & 76.16 & 76.64 & 63.16 & 76.40 & 39.87 & 69.90 \\
+        ZM & 58.06 & 65.74 & 64.24 & 48.57 & 64.98 & 12.73 & 56.40 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

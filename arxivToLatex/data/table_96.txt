@@ -1,0 +1,20 @@
+\begin{table}[!htp]
+ \fontsize{9pt}{10pt}\selectfont
+    \centering
+    % \setlength{\tabcolsep}{2pt} 
+\makebox[0.4\textwidth][c]{
+\begin{tabular}{cccccc}
+\hline
+Iter & $j=10$ & $j=20$ & $j=30$ & $j=40$ & $j=50$ \\
+\hline
+200 & 8.39E-4 & 5.38E-4 & 4.66E-4 & 5.00E-4 & 4.01E-4 \\
+500 & 2.38E-4 & 3.79E-5 & 1.93E-4 & 7.38E-5 & 1.99E-4 \\
+1000 & 2.43E-5 & 4.62E-5 & 8.21E-5 & 9.60E-5 & 3.14E-5 \\
+1500 & 1.67E-5 & 7.46E-6 & 8.15E-6 & 8.60E-6 & 3.71E-5 \\
+2000 & 3.69E-6 & 4.50E-6 & 3.33E-6 & 4.58E-6 & 8.34E-6 \\
+\hline
+\end{tabular}
+}
+\caption{Test loss of the Verhulst-Pearl equation over iterations on the evolution time $[0, 1]$}
+\label{loss of VP}
+\end{table}

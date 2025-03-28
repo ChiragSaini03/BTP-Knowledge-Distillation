@@ -1,0 +1,23 @@
+\begin{table}[t!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        & \textbf{Experiment} & $\mathbf{HV}$ & \textbf{Feasible} \\
+        \hline\hline
+        I & 64 Sobol + 64 BO & $1990.9$ & $26\%$
+        \\\hline\hline
+        II & 128 Sobol & $1626.6$ & $18\%$
+        \\\hline
+        III & 8 Sobol + 120 NSGA-II & $1659.2$ & $49\%$
+        \\\hline\hline
+        IV & 1024 Sobol & $1711.5$ & $13\%$
+        \\\hline
+        V & 32 Sobol + 992 NSGA-II & $1820.3$ & $64\%$
+        \\\hline
+    \end{tabular}
+    \caption{The hypervolume of the feasible solution set and the percentage of total samples taken that were feasible for each of the experiments run.
+    Here, we compare the $64$ Sobol + $64$ BO experiment from \cref{sec:bo-optimisation-of-pf} with pure Sobol sampling and the NSGA-II algorithm, each with the same number of samples (128).
+    We also display Sobol and NSGA-II experiments that use $8\times$ the number of samples (1024).
+    All hypervolumes are calculated with respect to the same reference point.}
+    \label{tab:experiments-hypervolume}
+\end{table}

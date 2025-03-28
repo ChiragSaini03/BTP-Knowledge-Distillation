@@ -1,0 +1,19 @@
+\begin{table}[h]
+	\begin{center}
+        \caption{Potentialness of standard matrix games.  \label{tab:matrix_games}}
+        \begin{tabular}{lcr}
+            \toprule
+            Game & Actions & $P(u)$ \\
+            \midrule
+            Matching Pennies    & 2x2 & 0.00 \\
+            Battle of the Sexes & 2x2 & 0.94  \\
+            Prisoners' Dilemma    & 2x2& 1.00  \\
+            Shapley Game    & 3x3 & 0.36       \\
+            Jordan Game $(\alpha, \beta)$& 2x2 & [0.00, 0.50]\\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    \footnotesize
+    The payoff matrices for the first three games are from \cite{nisan2007AlgorithmicGameTheory}, while the matrix for the Shapley game is given in \cref{fig:ex_shapley}. The matrix for the Jordan game is taken from \citet[Def 2.1]{Jor93}. OMD converges to a pure NE only in the Battle of the Sexes and the Prisoner's Dilemma, both of which exhibit relatively high values of potentialness.
+       
+\end{table}

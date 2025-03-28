@@ -1,0 +1,16 @@
+\begin{table}[h!]
+  \centering
+    \small
+  \setlength{\tabcolsep}{3pt}
+  \caption{Overview of Model and Output Characteristics}
+  \scalebox{0.8}{
+    \begin{tabular}{c|c|c|c|c|c}
+    \toprule
+          & IGWR & FS & BGWR   & MGWR  & GWL \\ \midrule
+    Explanatory power & Good  & Good & Good & Excellent & Moderate \\
+    Selected subset in local models & Homogeneous & Homogeneous & NA    & NA    & Heterogeneous \\ 
+    Spatially varying pattern & Distinct & Distinct & Less distinct & Distinct & Extremely Varying \\ \bottomrule
+    \end{tabular}%  
+  }
+  \label{tab:overview}
+\end{table}%

@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of variables comprising the APSIM field-level dataset, including inputs, outputs, and other features}
+    \begin{tabular}{ll}
+    \toprule
+    \textbf{Category} & \textbf{Variables} \\
+    \midrule
+    \multirow[t]{4}[1]{*}{\textbf{Weather data}} & Radn (MJ/m$^2$) (input) \\
+          & Tmax (\(^\circ\mathrm{C}\)) (input) \\
+          & Tmin (\(^\circ\mathrm{C}\)) (input) \\
+          & PPT (mm) (input) \\
+    \multirow[t]{2}[0]{*}{\textbf{Soil moisture}} &  SM\_surface (simulated) \\
+          &  SM\_rootzone (simulated) \\
+    \textbf{Corn yield} & Corn yield (t/ha) (simulated) \\
+    \multirow[t]{3}[1]{*}{\textbf{Others}} 
+          & Prediction year \\
+          & Location (Latitude and longitude)  \\
+          & Historical average corn yield  (t/ha) (simulated) \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:apsim_dataset}%
+\end{table}%

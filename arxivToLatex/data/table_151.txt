@@ -1,0 +1,29 @@
+\begin{table*}[h]
+\caption{\textbf{Clustering performance comparison on BYOL pre-training.} The best results are in bold font and the second best results are underlined. Performance marked with ``*'' is based on our re-implementation.}
+\label{tab:Benchmark-scratch}
+%\vskip -0.25in
+\begin{center}
+\begin{footnotesize}
+\resizebox{.95\textwidth}{!} {
+\begin{tabular}{lcccccccccc}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{CIFAR-20} & \multicolumn{2}{c}{CIFAR-100} & \multicolumn{2}{c}{TinyImgNet-200} &  \multicolumn{2}{c}{ImgNetDogs-15}\\
+        & ACC   & NMI   & ACC   & NMI   & ACC   & NMI   & ACC   & NMI  & ACC&NMI\\
+\midrule
+ $k$-means & 22.9 & 8.7 & 13.0 & 8.4 & 9.2 & 23.0 & 2.5& 6.5 & 10.5&5.5\\
+ SC & 24.7 & 10.3 & 13.6 & 9.0 & 7.0 & 17.0 & 2.2& 6.3 & 11.1&3.8\\
+ CC & 79.0 & 70.5 & 42.9 & 43.1 & 26.9* & 48.1* & 14.0& 34.0 & 42.9&44.5\\
+ GCC & 85.6 & 76.4 & 47.2 & 47.2 & 28.2* & 49.9* & 13.8& 34.7 & 52.6&49.0\\
+NNM & 84.3 & 74.8 & 47.7 & 48.4 & 41.2 & 55.1 & -& - & 31.1* & 34.3*\\
+SCAN & 88.3  & 79.7  & 50.7  & 48.6  & 34.3  & 55.7  & -&  - & 29.6*&30.3*\\
+ NMCE & 89.1& 81.2 & \underline{53.1}& 52.4& 40.0*& 53.9*& 21.6* & 40.0* & 39.8 & 39.3\\
+IMC-SwAV & 89.7  & 81.8  & 51.9  & 52.7  & 45.1  & \underline{67.5}  & 28.2&  \textbf{52.6} & - & -\\
+MLC & \underline{92.2} & \underline{85.5} & \textbf{58.3}& \underline{59.6}& \underline{49.4}& \textbf{68.3}&  \underline{28.7}*& \underline{52.2}* & \underline{71.0}*& \underline{68.3}*\\
+Our PRO-DSC& $\mcb \textbf{93.0}{\scriptstyle\pm 0.6}$ &\mcb $\textbf{86.5}{\scriptstyle\pm 0.2}$ &\mcb $\textbf{58.3}{\scriptstyle \pm 0.9}$ &\mcb $\textbf{60.1}{\scriptstyle\pm 0.6}$ &\mcb $\textbf{56.3}{\scriptstyle\pm0.6}$ &\mcb $66.7.0{\scriptstyle\pm1.0}$ & \mcb $\textbf{31.1}{\scriptstyle\pm0.3}$ & \mcb $46.0{\scriptstyle\pm1.0}$ &\mcb $\textbf{74.1}{\scriptstyle\pm0.5}$&\mcb $\textbf{69.5}{\scriptstyle\pm0.6}$\\
+\bottomrule
+\end{tabular}
+}
+\end{footnotesize}
+\end{center}
+%\vskip -0.25in
+\end{table*}

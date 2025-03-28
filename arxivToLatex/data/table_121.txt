@@ -1,0 +1,60 @@
+% \begin{table*}[htbp]
+%     \centering
+%     \caption{The percentage drop when transitioning from a CL approach to FL $\left(\frac{Accuracy_{FL} - Accuracy_{CL}}{Accuracy_{CL}}\right)$ using varied levels of non-IID cases in four datasets and different aggregation algorithms for K = 30.} 
+%     \resizebox{\textwidth}{!}{
+%     \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+%     \hline
+%     Category& Dataset & HD & CL & FedAvg & Rand & FedProx & POC & MOON\\[1ex]
+%     \hline\hline
+
+%     %CIFAR10 dataset
+%     \multirow[c]{20}{*}{ \rotatebox[origin=c]{90}{Label distribution skew}} & \multirow[c]{5}{*}{CIFAR10}& 0 & \multirow[c]{5}{*}{70.50\%} & - 6.21\% & - 6.15\%  & -5.88\%  & - 6.01\%  & - 8.58\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.25 && - 6.51\% & - 7.10\%  & - 6.58\% & - 6.93\% & - 10.07\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.5 && - 10.05\% & - 10.73\%  & - 9.84\% & - 10.83\% & - 13.54\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.75 && - 16.25\% & - 19.43\%  & - 16.59\% & - 20.79\% & - 21.60\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.9 && - 38.69\% & - 41.91\%  & - 37.12\%  & -44.62\% & - 44.90 \% \\ \cline{2-9}
+
+
+%      %FMNIST dataset
+%     & \multirow[c]{5}{*}{FMNIST}& 0 & \multirow[c]{5}{*}{90.90\%} & -0.24\% & - 0.29\% & - 0.23\% &  - 0.30\% & -2.42\%  \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.25 && -0.41\% & - 0.50\% & - 0.42\%  &  - 0.42\% & - 3.00\% \\ \cline{3-3}\cline{5-9}
+
+%     && 0.5 && - 1.07\% & - 1.16\% & - 1.03\% &  - 1.27\% & - 3.88\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.75 && - 3.02\% & -3.72\% & - 3.00\% & - 4.03\% & - 6.82\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.9 && - 11.58\% & - 13.00\% & - 10.78\% & - 14.37\%  &  - 22.12\%\\ \cline{2-9}
+    
+%     %Physionet dataset
+%     & \multirow[c]{5}{*}{Physionet}& 0 & \multirow[c]{5}{*}{63.74\%}& -9.05\% & -9.82\% & -8.75\% & -9.22\% & -3.04\% \\ \cline{3-3}\cline{5-9}
+
+%     && 0.25 && -9.55\% & -9.91\% & -9.33\% & -9.82\% & -4.39\% \\ \cline{3-3} \cline{5-9}
+
+%     && 0.5 && -12.62\% & -13.30\% & -11.68\% & -13.33\% & -7.81\% \\ \cline{3-3} \cline{5-9}
+    
+%     && 0.75 && -20.17\% & -21.25\% & -19.25\% & -22.32\% & -16.04\%  \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.9 && -35.12\% & -37.74\% & -34.18\% & -39.11\% & -33.33\%  \\  
+%     \cline{2-9}
+    
+%     %Covtype dataset
+%     & \multirow[c]{5}{*}{Covtype}& 0 & \multirow[c]{5}{*}{95.60\%} & - 0.67\% & - 0.74\% & - 0.66\%  & - 0.79\%  & 0.04\%  \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.25 && - 3.71\% & - 4.15\% & - 3.66\% & - 1.78\%  & -2.34\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.5 && - 11.17\% & - 13.07\% & - 10.52\%  & - 7.73\% & -11.49\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.75 && - 18.88\% & - 20.24\% & - 18.88\% & - 21.88\% &  -39.55\% \\ \cline{3-3}\cline{5-9}
+    
+%     && 0.9 && - 38.14\% & - 38.26\% & - 37.80\% & - 40.07\%  & -47.16\% \\ \cline{1-9}
+    
+%     % \multicolumn{4}{||c|}{Number of times that performed the best} & * & * & * & * & * \\ \cline{1 -9}
+
+%     \end{tabular}}
+%     \label{tab:FL_all_agg_normalized}
+% \end{table*}

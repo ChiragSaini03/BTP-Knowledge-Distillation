@@ -1,0 +1,17 @@
+% \begin{table}[htbp]
+%   \centering
+%   \caption{The comparison results for all regions after excluding soil moisture-related features (Att-ex).}
+%     \begin{tabular}{lllll}
+%     \toprule
+%     \multirow{2}[4]{*}{\textbf{Year}} & \multicolumn{2}{l}{\textbf{Att-ex with SM}} & \multicolumn{2}{l}{\textbf{Att-ex wo SM}} \\
+% \cmidrule{2-5}          & \textbf{RMSE} & \textbf{R2} & \textbf{RMSE} & \textbf{R2} \\
+%     \midrule
+% 2019  & 1.271(-0.096) & 0.594(+0.057) & 1.367 & 0.537 \\
+% 2020  & 1.045(-0.100) & 0.755(+0.049) & 1.145 & 0.706 \\
+% 2021  & 1.408(-0.084) & 0.734(+0.094) & 1.492 & 0.640 \\
+% 2022  & 1.368(-0.105) & 0.695(+0.042) & 1.473 & 0.653 \\
+% 2023  & 1.257(-0.115) & 0.684(+0.105) & 1.372 & 0.579 \\
+%     \bottomrule
+%     \end{tabular}%
+%   \label{tab:attex_with_wo_sm}%
+% \end{table}%

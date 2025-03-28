@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of management parameters in APSIM simulation}
+  \scalebox{0.8}{
+    \begin{tabular}{lll}
+    \toprule
+    Factor & \multicolumn{1}{l}{Value range} & \multicolumn{1}{l}{Source} \\
+    \midrule
+    Start of sowing window &   Apr-20 to Apr-25    & \citep{sowing_date_ia, sowing_date_mn} \\
+    End of sowing window &   May-15 to May-20    & \citep{sowing_date_ia, sowing_date_mn, scym} \\
+    Plant population &    6-9 plants/m$^2$   & \citep{usda_nass_quickstats} \\
+    Fertilizer amount &    200-300 kg/ha   & \citep{iowaiem} \\
+    Intial soil water &   40\%-60\%    & \citep{scym} \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:apsim_management}%
+\end{table}%

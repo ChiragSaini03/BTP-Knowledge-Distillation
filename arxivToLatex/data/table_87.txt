@@ -1,0 +1,16 @@
+\begin{table}[]
+	\centering
+	\caption{NCV accuracy, $F_1$ score, precision and recall (in \%) of the two different topogivity models using the 18,637 compounds of the $M\cup T$ dataset which only include the 54 elements for which $\tau_E$ is provided in Ref.~\cite{ma2023topogivity}.}
+    \setlength{\tabcolsep}{15pt}
+	\begin{tabular}{lccccc}
+    \hline
+    \hline
+	\textbf{}     & Accuracy & $F_1$ score & Precision & Recall    \\
+    \hline
+	This work                     & 90.2 & 76.8  & 83.5 & 71.2 \\
+	Ref.~\cite{ma2023topogivity}  & 89.6 & 77.3  & 77.1 & 77.5\\
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:score_topog}
+\end{table}

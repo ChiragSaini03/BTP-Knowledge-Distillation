@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Public datasets used in this study. a, b, and c indicate different purposes: a for APSIM simulation, b for model pretraining, and c for model finetuning.}
+  \scalebox{0.65}{
+    \begin{tabular}{llll}
+    \toprule
+    \textbf{Dataset} & \multicolumn{1}{l}{\textbf{Use}} & \multicolumn{1}{l}{\textbf{Description}} & \multicolumn{1}{l}{\textbf{References}} \\
+    \midrule
+   Iowa Environmental Mesonet & a, b &  In-situ weather data    & \citep{iowaiem} \\
+    PRISM &   c    &   Gridded weather data    & \citep{prism1, prism2} \\
+    MODIS &    c   &   Vegetation indices   & \citep{modis, modismcd} \\
+    MODIS MCD18A1.061 &    c   &  Radiation data  & \citep{modismcd18a1v061} \\
+    USDA-CDL   &   c    &   Crop data layer     & \citep{cdl}  \\
+    SMAP  &   c    &   Soil moisture data     & \citep{smap} \\
+    USDA NASS yield &   c    &   County-level yield    & \citep{usda_nass_quickstats} \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:Dataset_in_this_study}%
+\end{table}%

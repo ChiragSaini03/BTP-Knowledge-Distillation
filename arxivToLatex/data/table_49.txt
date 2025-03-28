@@ -1,0 +1,19 @@
+\begin{table}[]
+	\centering
+	\caption{Accuracy (in \%) of the different nested cross-validation (NCV) and generalization tests depending on the training dataset.
+    The results on (part of) the training dataset evaluated by NCV are indicated by a star.}
+	\label{tab:train_test_results1}
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{lccccccc}
+    \hline
+    \hline
+    Test\textbackslash{}Train & $M$\0 & $T$\0 & $M\backslash T$\0 & $M\cap T$\0 & $T\backslash M$\0 & $(M\backslash T)\cup (T\backslash M)$\0 & $M\cup T$\0  \\  \hline 
+    NCV             & 85.7\0 & 80.7\0 & 84.1\0 & 85.1\0 & 72.1\0 & 79.9\0 & 82.9\0 \\
+    $M\backslash T$ & 84.8*  & 80.3\0 & 84.1*  & 78.9\0 & 77.1\0 & 85.6*  & 85.8* \\ 
+    $M\cap T$       & 86.1*  & 86.0*  & 82.0\0 & 85.1*  & 81.6\0 & 83.6\0 & 86.6* \\
+    $T\backslash M$ & 71.8\0 & 73.2*  & 69.8\0 & 70.2\0 & 72.1*  & 73.3*  & 74.3* \\ 
+    $M\cup T$       & 81.8\0 & 80.6\0 & 79.3\0 & 79.0\0 & 77.5\0 & 81.4\0 & 82.9\0 \\
+    \hline
+    \hline
+    \end{tabular}
+\end{table}

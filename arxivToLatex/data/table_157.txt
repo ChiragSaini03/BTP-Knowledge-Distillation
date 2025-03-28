@@ -1,0 +1,16 @@
+\begin{table}[htbp]\color{black}
+\caption{\mcb Configuration of hyper-parameters for experiments on Reuters, UCI HAR, EYale-B, ORL and COIL-100.}
+    \centering
+    \begin{tabular}{lcccccccc}
+      \toprule
+      Dataset & $\eta$ & $d_{pre}$&  $d$&  \#epochs& $n_b$ & \#warm-up&  $\gamma$&$\beta$\\
+      \midrule
+      REUTERS-10k & $10^{-4}$ & 1024 & 128 & 100 & 1024 & 50 & 50 & 200\\
+      UCI HAR     & $10^{-4}$ & 1024 & 128 & 100 & 2048 & 20 & 100 & 300\\
+      EYale-B & $10^{-4}$ & 1080 & 256 & 10000 & 2432 & 100 & 200 & 50\\
+      ORL & $10^{-4}$ & 80 & 64 & 5000 & 400 & 100 & 75 & 10\\
+      COIL-100 & $10^{-4}$ & 12800 & 100 & 10000 & 7200 & 100 & 200 & 100\\
+      \bottomrule
+    \end{tabular}
+    \label{tab:hyper-param for reuters etal}
+\end{table}

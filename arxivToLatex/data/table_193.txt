@@ -1,0 +1,30 @@
+\begin{table*}[t]
+    \centering
+    \scriptsize
+    \caption{\footnotesize Performance comparison of Recall and No Graph Constraint Recall metrics evaluated on the real data test set. The "Real Dataset" row shows results for the CausalTDE model trained exclusively on real data, while other rows represent the same model trained on various augmented datasets. Green cells indicate performance equal to or better than the baseline (real data only training), while red cells show performance degradation. The Mean $\Delta$ columns display the average performance change relative to the Real Dataset baseline.}
+    \resizebox{\linewidth}{!}{
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            \multirow{2}{*}{\textbf{Model}} & \multicolumn{2}{c|}{\textbf{Attention Mask}} & \multicolumn{4}{c|}{\textbf{Recall}} & \multicolumn{4}{c|}{\makecell{\textbf{No Graph Constraint} \\ \textbf{Recall}}} \\
+            \cline{2-3}\cline{4-11}
+            & SGC-Att & S-Att & R@20 & R@50 & R@100 & \makecell{Mean $\Delta$} & NG-R@20 & NG-R@50 & NG-R@100 & \makecell{Mean $\Delta$} \\
+            \hline
+            \hline
+            \makecell{Real \\ Dataset} & / & /& 0.0983 & 0.1428 & 0.1763 & - & 0.1039 & 0.1619 & 0.2125 & - \\
+            \hline
+            \hline
+            \makecell{Stable \\ Diffusion 2.0} & /& /  & \cellcolor{lightgreen}0.1022 & \cellcolor{lightgreen}0.1469 & \cellcolor{lightgreen}0.1791 & \cellcolor{lightgreen}0.0036 & \cellcolor{lightgreen}0.1108 & \cellcolor{lightgreen}0.1706 & \cellcolor{lightgreen}0.2223 & \cellcolor{lightgreen}0.0085 \\
+            \hline
+            \hline
+            \makecell{SGAdapter\\Configuration 1} & \checkmark & \checkmark & \cellcolor{lightgreen}\textbf{0.1200} & \cellcolor{lightgreen}\textbf{0.1695} & \cellcolor{lightgreen}\textbf{0.2057} & \cellcolor{lightgreen}\textbf{0.0259} & \cellcolor{lightgreen}\textbf{0.1278} & \cellcolor{lightgreen}\textbf{0.1912} & \cellcolor{lightgreen}\textbf{0.2441} & \cellcolor{lightgreen}\textbf{0.0283} \\
+            \hline 
+            \makecell{SGAdapter\\Configuration 2} & \checkmark & $\times$ & \cellcolor{lightgreen}0.1102 & \cellcolor{lightgreen}0.1599 & \cellcolor{lightgreen}\underline{0.1968} & \cellcolor{lightgreen}0.0165 & \cellcolor{lightgreen}0.1185 & \cellcolor{lightgreen}\underline{0.1834} & \cellcolor{lightgreen}\underline{0.2379} & \cellcolor{lightgreen}0.0205 \\
+            \hline
+            \makecell{SGAdapter\\Configuration 3} & $\times$ & \checkmark  & \cellcolor{lightgreen}0.1065 & \cellcolor{lightgreen}0.1545 & \cellcolor{lightgreen}0.1907 & \cellcolor{lightgreen}0.0114 & \cellcolor{lightgreen}0.1179 & \cellcolor{lightgreen}0.1812 & \cellcolor{lightgreen}0.2351 & \cellcolor{lightgreen}0.0186 \\
+            \hline
+            \makecell{SGAdapter\\Configuration 4} & $\times$ & $\times$ & \cellcolor{lightgreen}\underline{0.1150} & \cellcolor{lightgreen}\underline{0.1609} & \cellcolor{lightgreen}0.1946 & \cellcolor{lightgreen}\underline{0.0177} & \cellcolor{lightgreen}\underline{0.1215} & \cellcolor{lightgreen}0.1826 & \cellcolor{lightgreen}0.2345 & \cellcolor{lightgreen}\underline{0.0201} \\
+            \hline
+        \end{tabular}
+    }
+    \label{tab:AugRecall}
+\end{table*}

@@ -1,0 +1,51 @@
+\begin{table*}[htbp]
+    \centering
+    \caption{Mean and standard deviation Accuracy for each dataset for CL, FedAvg, Rand, FedProx, Power-Of-Choice, and MOON, considering different levels of non-IID partitioning of the records based on their space (SP) and time (TMP) measured by \textsf{STHD} for $K = 30$. Each model has undergone five trials.} 
+    
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c|c|c||}
+    \hline
+    Category& Type & Method & Dataset & CL & \textsf{STHD} & FedAvg & Rand & FedProx & POC & MOON\\
+    \hline\hline
+
+    % Serengeti dataset
+    \multirow[c]{10}{*}{ \rotatebox[origin=c]{90}{SPT distribution skew}}& 
+    \multirow[c]{5}{*}{ \rotatebox[origin=c]{90}{SP skew}}&\multirow[c]{10}{*}{ \rotatebox[origin=c]{90}{St-Dirichlet}} & \multirow[c]{5}{*}{Serengeti}& \multirow[c]{5}{*}{96.95\% $\pm$ 0.11\%} & 0 & 95.58\% $\pm$ 0.08\% & 95.56\% $\pm$ 0.09\% & 95.62\% $\pm$ 0.14 & 95.48\% $\pm$ 0.09 & \textbf{96.69\% $\pm$ 0.06} \\ \cline{6-11}
+
+    &&&&& 0.25 & 95.63\% $\pm$ 0.05\% & 95.50\% $\pm$ 0.10\% & 95.64\% $\pm$ 0.03 & 95.51\% $\pm$ 0.11 & \textbf{96.76\% $\pm$ 0.08} \\ \cline{6-11}
+    
+    &&&&& 0.5 & 95.40\% $\pm$ 0.08\% & 95.32\% $\pm$ 0.07\% & 95.36\% $\pm$ 0.06 & 95.32\% $\pm$ 0.06 & \textbf{96.51\% $\pm$ 0.04} \\ \cline{6-11}
+    
+    &&&&& 0.75 & 94.09\% $\pm$ 0.25\% & 93.91\% $\pm$ 0.36\% & 94.15\% $\pm$ 0.21 & 94.06\% $\pm$ 0.09 & \textbf{95.80\% $\pm$ 0.16} \\ \cline{6-11}
+    
+    &&&&& 0.9 & 88.65\% $\pm$ 0.18\% & 87.68\% $\pm$ 0.58\% & 88.49\% $\pm$ 0.13 & 88.20\% $\pm$ 0.39
+    & \textbf{91.74\% $\pm$ 0.20} \\ \cline{2-2}\cline{4-11} 
+
+    % % 5GNTF dataset
+    % &\multirow[c]{10}{*}{ \rotatebox[origin=c]{90}{TMP skew}}&& \multirow[c]{5}{*}{5GNTF} & \multirow[c]{5}{*}{75.95\% $\pm$ 0.34} & 0 & 65.90\% $\pm$ 6.80 & 69.75\% $\pm$ 9.74 & 61.61\% $\pm$ 7.15 & 61.66\% $\pm$ 7.34 & \textbf{72.19\% $\pm$ 5.42} \\ \cline{6-11}
+
+    % &&&&& 0.25 & 66.15\% $\pm$ 6.63 & 68.77\% $\pm$ 6.79 & 60.89\% $\pm$ 7.30 & 65.91\% $\pm$ 6.65 & \textbf{70.46\% $\pm$ 9.34} \\ \cline{6-11}
+    
+    % &&&&& 0.5 & 54.92\% $\pm$ 4.86 & 52.89\% $\pm$ 3.65 & 53.22\% $\pm$ 3.99 & 58.12\% $\pm$ 4.61 & \textbf{65.71\% $\pm$ 11.67} \\ \cline{6-11}
+    
+    % &&&&& 0.75 & 53.01\% $\pm$ 3.94 & 50.88\% $\pm$ 4.27 & 50.37\% $\pm$ 0.93 & 55.0\% $\pm$ 4.67 & \textbf{59.91\% $\pm$ 8.45} \\ \cline{6-11}
+    
+    % &&&&& 0.9 & 50.88\% $\pm$ 4.01 & 53.54\% $\pm$ 3.89 & 57.25\% $\pm$ 9.87 & 53.08\% $\pm$ 4.34 & \textbf{59.19\% $\pm$ 11.43} \\ \cline{4-11}
+
+
+    &\multirow[c]{5}{*}{ \rotatebox[origin=c]{90}{TMP skew}}&& \multirow[c]{5}{*}{5GNTF} & \multirow[c]{5}{*}{92.39\% $\pm$ 0.10\%} & 0 & 92.15\% $\pm$ 0.04\% & 92.15\% $\pm$ 0.02\% & 92.14\% $\pm$ 0.02\% & 92.15\% $\pm$ 0.04\% & \textbf{92.23\% $\pm$ 0.02\%}  \\ \cline{6-11}
+
+    &&&&& 0.25 & 92.07\% $\pm$ 0.12\% & 92.05\% $\pm$ 0.15\% & 92.07\% $\pm$ 0.18\% & 92.15\% $\pm$ 0.05\% & \textbf{92.28\% $\pm$ 0.04\%}  \\ \cline{6-11}
+    
+    &&&&& 0.5 & 88.28\% $\pm$ 1.87\% & 87.92\% $\pm$ 2.00\% & 89.19\% $\pm$ 2.09\% & \textbf{92.08\% $\pm$ 0.08\%} & 89.24\% $\pm$ 1.80\%  \\ \cline{6-11}
+    
+    &&&&& 0.75 & 85.82\% $\pm$ 0.06\% & 85.64\% $\pm$ 0.08\% & 85.83\% $\pm$ 0.08\% & \textbf{91.77\% $\pm$ 0.32\%} & 86.51\% $\pm$ 1.79\%  \\ \cline{6-11}
+    
+    &&&&& 0.9 & 84.62\% $\pm$ 0.36\% & 84.50\% $\pm$ 0.20\% & 84.55\% $\pm$ 0.37\% & \textbf{89.23\% $\pm$ 2.13\%} & 83.94\% $\pm$ 0.02\%  \\ \cline{1-11}
+
+    
+    \multicolumn{6}{||c|}{Number of times that performed the best} & 0 & 0 & 0 & 3 & 7   \\ \cline{1-11}
+
+    \end{tabular}}
+    \label{tab:FL_all_agg_spatiotemporal_skew}
+\end{table*}

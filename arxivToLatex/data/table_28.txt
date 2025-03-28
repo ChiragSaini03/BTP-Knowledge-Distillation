@@ -1,0 +1,38 @@
+\begin{table}[h]
+
+\begin{subtable}{1\linewidth}
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{c|c|c|c}
+        \toprule
+        \textbf{DLA} & \textbf{Full PSR} & \textbf{g-sim} & \textbf{Alternate} \\
+        \midrule
+        XY & 0.898 $\pm$ 0.009 & 0.860 $\pm$ 0.004 & 0.897 $\pm$ 0.018 \\
+        YZ & 0.911 $\pm$ 0.008 & 0.853 $\pm$ 0.005 & 0.907 $\pm$ 0.013 \\
+        ZX & 0.905 $\pm$ 0.007 & 0.864 $\pm$ 0.013 & 0.908 $\pm$ 0.007 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Test Accuracy across different methods}
+    \label{test_accuracy}
+\end{subtable}
+    
+\begin{subtable}{1\linewidth}
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{c|c|c|c}
+        \toprule
+        \textbf{DLA} & \textbf{Full PSR} & \textbf{g-sim} & \textbf{Alternate} \\
+        \midrule
+        XY & 36736 $\pm$ 30481 & - & 13381 $\pm$ 6143 \\
+        YZ & 32800 $\pm$ 28216 & - & 7080 $\pm$ 3540 \\
+        ZX & 25256 $\pm$ 17172 & - & 11894 $\pm$ 9386 \\
+        \bottomrule
+    \end{tabular}
+    \caption{QPU Calls across different methods}
+    \label{qpu_calls}
+
+\end{subtable}
+
+\caption{\raggedright Classification task using \g, Alternate and Full-PSR Training (with 9 layers in PSR block) for 12 qubits. Three different choices of \textit{poly}-DLA (referred to as $\mathfrak{g}_{XY}, \mathfrak{g}_{YZ}$ and $\mathfrak{g}_{ZX}$) are explored for \g, and also to construct the Block G for Alternate and Full-PSR Method. Average peak test accuracy and number of QPU calls required to reach peak accuracy is reported for each of the configuration. For all examples, the Alternate improves over the accuracy of \g, and is similar to the Full-PSR training with dramatically reduced QPU calls}
+\label{class_all}
+\end{table}

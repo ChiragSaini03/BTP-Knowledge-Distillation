@@ -1,0 +1,58 @@
+\begin{table}[H]
+\centering
+\resizebox{1.\textwidth}{!}{%}
+\begin{tabular}{ccc|ccccccc|cc}
+\midrule
+\tabalign{\textsc{Model}}      & \tabalign{\textsc{Method}}    & WikiText-2\textcolor{mylightbluetext}{$\downarrow$} & PTB\textcolor{mylightbluetext}{$\downarrow$} & C4\textcolor{mylightbluetext}{$\downarrow$}   &   {SNIPS\textcolor{mylightbluetext}{$\downarrow$}}   & {AlpacaEval\textcolor{mylightbluetext}{$\downarrow$}}   & {MCTest\textcolor{mylightbluetext}{$\downarrow$}}    & {CMRC (CN)} & {AlpacaEval (JP)}   & Avg. Impro.
+\\ \midrule 
+\tabalign{}   & \tabalign{ASVD-0} & 283.29   & 2861.49  & 345.30   & 142.17 & 122.25 & 20.38  & 1018.54 & 534.31 & --\\
+\tabalign{Vicuna-7B}   & \tabalign{ASVD-I} & 14.23   & 3022.79  & 42.16   & 26.05 & 11.21 & 3.63  & 912.86 & 565.20 & --\\
+\cmidrule{2-11} 
+\tabalign{}  
+& \tabalign{\nestdecom } 
+& {14.36} (\textcolor{mylightbluetext}{$\uparrow$0.9\%})            & \textbf{1376.72} (\textcolor{mylightbluetext}{$\downarrow$51.9\%})
+& \textbf{38.53} (\textcolor{mylightbluetext}{$\downarrow$8.6\%})   & \textbf{24.32} (\textcolor{mylightbluetext}{$\downarrow$6.6\%})    
+& \textbf{10.12} (\textcolor{mylightbluetext}{$\downarrow$9.7\%})   & \textbf{3.50} (\textcolor{mylightbluetext}{$\downarrow$3.6\%}) 
+& \textbf{405.33} (\textcolor{mylightbluetext}{$\downarrow$55.6\%}) & \textbf{253.98} (\textcolor{mylightbluetext}{$\downarrow$55.1\%}) & 27.6\%
+\\
+\midrule
+\tabalign{}   & \tabalign{ASVD-0} & 320.73   & 1177.23  & 479.52   & 155.27 & 183.24 & 20.15  & 1679.11 & 884.30 & --\\
+\tabalign{Mistral-7B}   & \tabalign{ASVD-I} & 48.48   & 135.40  & 58.28   & 18.12 & 21.29 & 4.15  & 18.63 & \textbf{14.93} & -- \\
+\cmidrule{2-11} 
+\tabalign{}  
+& \tabalign{\nestdecom } 
+& {42.33} (\textcolor{mylightbluetext}{$\downarrow$12.7\%})            & \textbf{133.68} (\textcolor{mylightbluetext}{$\downarrow$1.3\%})
+& \textbf{53.20} (\textcolor{mylightbluetext}{$\downarrow$8.7\%})   & \textbf{17.37} (\textcolor{mylightbluetext}{$\downarrow$4.1\%})    
+& \textbf{19.39} (\textcolor{mylightbluetext}{$\downarrow$8.9\%})   & \textbf{3.85} (\textcolor{mylightbluetext}{$\downarrow$7.2\%}) 
+& \textbf{18.29} (\textcolor{mylightbluetext}{$\downarrow$1.8\%})   & {15.10} (\textcolor{mylightbluetext}{$\uparrow$1.2\%}) & 4.4\% 
+\\
+\midrule
+\tabalign{}   & \tabalign{ASVD-0} & 98.99   & 109.48  & 88.69   & 42.15 & 28.58 & 5.48  & 27.04 & 130.86 & --\\
+\tabalign{OPT-6.7B}   & \tabalign{ASVD-I} & 27.66   & 37.25  & 40.06   & 26.20 & 14.75 & 3.47  & 14.03 & 32.35 & --\\
+\cmidrule{2-11} 
+\tabalign{}  
+& \tabalign{\nestdecom } 
+& {19.55} (\textcolor{mylightbluetext}{$\downarrow$29.3\%})            & \textbf{25.05} (\textcolor{mylightbluetext}{$\downarrow$32.8\%})
+& \textbf{26.13} (\textcolor{mylightbluetext}{$\downarrow$34.8\%})   & \textbf{16.28} (\textcolor{mylightbluetext}{$\downarrow$37.9\%})    
+& \textbf{9.73} (\textcolor{mylightbluetext}{$\downarrow$34.0\%})   & \textbf{2.85} (\textcolor{mylightbluetext}{$\downarrow$17.9\%}) 
+& \textbf{11.69} (\textcolor{mylightbluetext}{$\downarrow$16.7\%}) & \textbf{20.50} (\textcolor{mylightbluetext}{$\downarrow$36.6\%}) & 30.1\%
+\\
+\midrule
+%\tabalign{}   & \tabalign{ASVD-0} & 90.21   & 117.07  & 111.96    & 57.47 & 41.06 & 10.02 & 282.47 & 278.47 & --\\
+%\tabalign{LLaMA-13B}   & \tabalign{ASVD-I} & 7.63   & 17.84  & 18.87   & 14.58 & 7.22 & 2.59  & 154.13 & 82.42 & --\\
+%\cmidrule{2-11} 
+%\tabalign{}  
+%& \tabalign{\nestdecom } 
+%& {7.69} (\textcolor{mylightbluetext}{$\uparrow$0.8\%})             & \textbf{17.10} (\textcolor{mylightbluetext}{$\downarrow$4.1\%})
+%& \textbf{17.30} (\textcolor{mylightbluetext}{$\downarrow$8.3\%})   & \textbf{12.11} (\textcolor{mylightbluetext}{$\downarrow$16.9\%})    
+%& \textbf{6.66} (\textcolor{mylightbluetext}{$\downarrow$7.8\%})   & \textbf{2.53} (\textcolor{mylightbluetext}{$\downarrow$2.3\%}) 
+%& \textbf{102.39} (\textcolor{mylightbluetext}{$\downarrow$33.6\%})  & \textbf{65.00} (\textcolor{mylightbluetext}{$\downarrow$21.1\%}) & 13.4\%
+%\\
+%\midrule
+\end{tabular}
+}
+\captionof{table}{Zero-shot performance of Vicuna-7B, Mistral-7B, and OPT-6.7B compressed by NSVD-I and baselines under a 30\% compression ratio, across \textcolor{black}{eight} language modeling datasets (measured by perplexity  (\textcolor{mylightbluetext}{$\downarrow$})). The best performance is highlighted in bold. The relative performance gain compared to the best-performing baseline (here, ASVD-0 or ASVD-I) is indicated in blue text with bracket.
+In all scenarios, we apply NSVD-I with $k_1=0.95\cdot k$, $k_2=k-k_1$, where $k$ is the low-rank parameter used in  ASVD approaches.
+}
+\label{tab:nsce_ppl4_diffmodels}
+\end{table}

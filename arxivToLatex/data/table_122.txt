@@ -1,0 +1,39 @@
+% \begin{table*}[htbp]
+%     \centering
+%     \caption{The decrease of the model's performance for the four datasets in moving from CL to FL, as well as from the highest to the lowest level of non-IIDness considering FedAvg performance. } 
+%     \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+%     \hline
+%     Category& Dataset & Case & Accuracy & CL to FL (HD=0) & FL(HD=0) to FL(HD=0.9) & CL to FL(HD=0.9) \\[1ex]
+%     \hline\hline
+
+%     %CIFAR10 dataset
+%     \multirow[c]{12}{*}{ \rotatebox[origin=c]{90}{Label distribution skew}} & \multirow[c]{3}{*}{CIFAR10}& CL & 70.50\% & \multirow[c]{3}{*}{4.38\%} & \multirow[c]{3}{*}{22.9\%} & \multirow[c]{3}{*}{27.28\%}\\ \cline{3-4}
+
+%     & & HD=0 & 66.12\% & & &\\ \cline{3-4}
+    
+%     & & HD=0.9 & 43.22\% & & &\\ \cline{2-7}
+
+%     %FMNIST dataset
+%     & \multirow[c]{3}{*}{FMNIST}& CL & 90.90\% & \multirow[c]{3}{*}{0.22\%} & \multirow[c]{3}{*}{10.31\%} & \multirow[c]{3}{*}{10.53\%}\\ \cline{3-4}
+
+%     & & HD=0 & 90.68\% & & &\\ \cline{3-4}
+    
+%     & & HD=0.9 & 80.37\% & & &\\ \cline{2-7}
+
+%     %Covtype dataset
+%     & \multirow[c]{3}{*}{Covtype}& CL & 95.6 & \multirow[c]{3}{*}{0.55\%} & \multirow[c]{3}{*}{0.65\%} & \multirow[c]{3}{*}{36.5}\\ \cline{3-4}
+
+%     & & HD=0 & 94.95 & & &\\ \cline{3-4}
+    
+%     & & HD=0.9 & 59.10 & & &\\ \cline{2-7}
+
+%     %Physionet dataset
+%     & \multirow[c]{3}{*}{Physionet}& CL & -- & \multirow[c]{3}{*}{-} & \multirow[c]{3}{*}{-} & \multirow[c]{3}{*}{-}\\ \cline{3-4}
+
+%     & & HD=0 & -- & & &\\ \cline{3-4}
+    
+%     & & HD=0.9 & -- & & &\\ \cline{1-7}
+    
+%     \end{tabular}
+%     \label{tab:CL_to_FL_datasets}
+% \end{table*}

@@ -1,0 +1,30 @@
+\begin{table}[]
+	\centering
+	\caption{The set of Matminer featurizers to generate the numerical descriptors in MODNet. They are used for algorithm MODNet and XGBoost.}
+ %    \setlength{\tabcolsep}{3pt}% column separation
+	% \begin{tabular}{lll}
+    
+    \begin{tabular}{p{3.2cm}p{3.5cm}p{5.0cm}}
+    \hline 
+    \hline
+    Composition                       & Structure                  & Site                                  \\ \hline
+    AtomicOrbitals                    & BondFractions              & AGNIFingerprints                      \\
+    AtomicPackingEfficiency           & ChemicalOrdering           & AverageBondAngle                      \\
+    BandCenter                        & CoulombMatrix              & AverageBondLength                     \\
+    ElectronegativityDiff             & DensityFeatures            & BondOrientationalParameter            \\
+    ElementFraction                   & EwaldEnergy                & ChemEnvSiteFingerprint                \\
+    ElementProperty  & GlobalSymmetryFeatures     & CoordinationNumber                    \\
+     (“magpie” preset)             &  & \\
+
+    IonProperty                       & MaximumPackingEfficiency   & CrystalNNFingerprint                  \\
+    Miedema                           & RadialDistributionFunction & GaussianSymmFunc                      \\
+    OxidationStates                   & SineCoulombMatrix          & GeneralizedRadialDistributionFunction \\
+    Stoichiometry                     & StructuralHeterogeneity    & LocalPropertyDifference               \\
+    TMetalFraction                    & XRDPowderPattern           & OPSiteFingerprint                     \\
+    ValenceOrbital                    &                            & VoronoiFingerprint                    \\
+    YangSolidSolution                 &                            &                      \\  
+        \hline
+        \hline
+	\end{tabular}
+	\label{tab:allfeas}
+\end{table}	

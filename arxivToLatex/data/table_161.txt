@@ -1,0 +1,24 @@
+\begin{table*}
+\caption{\textbf{Evaluation metrics for generative quality of protein sequences.} Metrics were calculated on 100 unconditionally generated sequences from each model, including EvoDiff and ProtGPT2. The arrow indicates whether $(\uparrow)$ or $(\downarrow)$ values are better. }
+\label{table:Protein Design}
+\begin{center}
+\begin{small}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+\textbf{Model} & \textbf{Params} ($\downarrow$) & \textbf{pLDDT} ($\uparrow$) & \textbf{pTM} ($\uparrow$)& \textbf{pAE} ($\downarrow$) & \textbf{Entropy} ($\uparrow$)& \textbf{Diversity} (\%) ($\uparrow$) \\
+\midrule
+Test Dataset (random 1000) & - & 74.00 & 0.63 & 12.99 & 4.0 & 71.8 \\
+\midrule
+EvoDiff & 640M & 31.84 & 0.21 & 24.76 & 4.05 & 93.2 \\
+ProtGPT2 & 738M & 54.92 & 0.41 & 19.39 & 3.85 & 70.9 \\
+ProGen2-small & 151M & 49.38 & 0.28 & 23.38 & 2.55 & 89.3 \\
+\textbf{Gumbel-Softmax Flow Matching} (Ours) & 198M & 52.54 & 0.27 & 16.67 & 3.41 & 86.1  \\
+\textbf{Gumbel-Softmax Score Matching} (Ours) & 198M & 49.40 & 0.29 & 15.71 & 3.37 & 82.5 \\
+
+\bottomrule
+\end{tabular}
+}
+\end{small}
+\end{center}
+\end{table*}

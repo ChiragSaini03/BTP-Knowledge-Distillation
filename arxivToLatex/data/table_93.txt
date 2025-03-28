@@ -1,0 +1,16 @@
+\begin{table}[]
+	\centering
+	\caption{NCV accuracy, $F_1$ score, precision and recall (in \%) on the datasets $\widetilde{M\backslash T}$, $\widetilde{M\cap T}$ and $\widetilde{T\backslash M}$.} 
+    \setlength{\tabcolsep}{22.5pt}% column separation
+	\begin{tabular}{lcccc}
+    \hline
+    \hline
+		\textbf{}  & Accuracy    & $F_1$ score    & Precision    & Recall    \\ \hline\\[-1.7ex]
+		$\widetilde{M\backslash T}$     & 79.2 & 82.8 & 92.8 & 74.7 \\[3pt]
+		$\widetilde{M\cap T}$           & 79.9 & 84.4 & 90.7 & 78.8 \\[3pt]
+		$\widetilde{T\backslash M}$     & 77.3 & 78.4 & 88.1 & 70.7 \\
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:ncv_sample}
+\end{table}

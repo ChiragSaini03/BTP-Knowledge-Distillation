@@ -1,0 +1,13 @@
+\begin{table*}[]
+\centering
+\caption{Generalization performance of E2E-trained energy model: DEEPEN(boldfaced) and ELDER.}
+\begin{tabular}{ll|ccc|}
+\cline{3-5}
+\multicolumn{2}{c|}{}                                                                                                               & \multicolumn{3}{c|}{Train setting}                                                                                                                                                            \\ \cline{3-5} 
+\multicolumn{2}{c|}{}                                                                                                               & \multicolumn{1}{c|}{4x 2D mask}                                      & \multicolumn{1}{c|}{6x 2D mask}                                      & 2x 1D mask                                      \\ \hline
+\multicolumn{1}{|l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Test \\ \\ setting\end{tabular}}} & 4x 2D mask                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}} $\mathbf{39.15+/- 1.43}$\\ $38.66 +/-1.23$\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$\mathbf{37.60+/- 1.53}$\\ $38.88 +/-1.24$\end{tabular}} & \begin{tabular}[c]{@{}c@{}}$\mathbf{38.64+/-1.55}$\\ $37.86+/-1.20$\end{tabular} \\ \cline{2-5} 
+\multicolumn{1}{|l|}{}                                                                            & 6x 2D mask                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$\mathbf{37.50+/- 1.29}$\\ $36.82+/-1.18$\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$\mathbf{37.18 +/-1.32}$\\ $37.39+/-1.17$\end{tabular}} & \begin{tabular}[c]{@{}c@{}}$\mathbf{37.20 +/-1.37}$\\$36.26+/-1.14$\end{tabular} \\ \cline{2-5} 
+\multicolumn{1}{|l|}{}                                                                            & \multicolumn{1}{c|}{2x 1D mask} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$\mathbf{38.23+/- 1.99}$\\ $36.28+/1.43$\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}$\mathbf{37.66+/- 1.98}$\\ $36.54 +/-1.46$\end{tabular}} & \begin{tabular}[c]{@{}c@{}}$\mathbf{38.91+/- 2.21}$\\ $38.02+/-1.52$\end{tabular} \\ \hline
+\end{tabular}
+\label{generalization}
+\end{table*} 

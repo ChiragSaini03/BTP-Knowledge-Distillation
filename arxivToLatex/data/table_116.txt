@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Characteristics of the datasets} 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c||}
+    \hline
+    Dataset & Type & \makecell{\#training \\examples} & \makecell{\#test \\examples} & \#features & \# classes & Class  distr. \\
+    \hline\hline
+    CIFAR10 & Images & 50,000  & 10,000 & 3,072 & 10 & Balanced \\
+    \hline
+    FMNIST & Images & 60,000  & 10,000 & 784 & 10 & Balanced \\
+    \hline
+    Physionet & Tabular & 39,895  & 2,095 & 120 & 27 & Balanced \\
+    \hline
+    Covtype & Tabular & 522,910  & 58,102 & 54 & 7 & Unbalanced \\
+    \hline
+    Serengeti & Tabular & 257,927 & 28,659 & 64 & 13 & Unbalanced \\
+    \hline
+    5G NTF & Tabular & 74,838 &  13,207 & 7 & 12 & Unbalanced \\
+    \hline
+    \end{tabular}}
+    \label{tab:characteristics_datasets}
+\end{table}

@@ -1,0 +1,25 @@
+\begin{table*}[t]
+    \centering
+    \caption{\footnotesize Performance comparison of Recall and No Graph Constraint Recall metrics evaluated on the real data test set for CausalTDE models trained on the various synthetic datasets. Green cells indicate performance equal to or better than the baseline (synthetic data generated from Stable Diffusion 2.0), while red cells show performance degradation.}
+    \scriptsize
+    \begin{tabularx}{\linewidth}{|c|Y|Y|c|c|c|Y|Y|c|}
+        \hline
+        \multirow{2}{*}{\textbf{Model}} & \multicolumn{2}{c|}{\textbf{Attention Mask}} & \multicolumn{3}{c|}{\textbf{Recall}} &\multicolumn{3}{c|}{\makecell{\textbf{No Graph Constraint} \\ \textbf{Recall}}} \\
+        \cline{2-3}\cline{4-9}
+        & SGC-Att & S-Att & R@20 & R@50 & R@100 & NG-R@20 & NG-R@50 & NG-R@100 \\
+        \hline
+        \hline
+        \makecell{Stable \\ Diffusion 2.0} & / & / & \underline{0.0074} & \textbf{0.0126} & \textbf{0.0186} & \textbf{0.0079} & \textbf{0.0135} & \textbf{0.0181}\\
+        \hline
+        \hline
+        \makecell{SGAdapter\\Configuration 1} & \checkmark & \checkmark & \cellcolor{lightred}0.0063 & \cellcolor{lightred}0.0105 & \cellcolor{lightred}0.0153 & \cellcolor{lightred}0.0067 & \cellcolor{lightred}0.0106 & \cellcolor{lightred}0.0137 \\
+        \hline
+        \makecell{SGAdapter\\Configuration 2} & \checkmark & $\times$  & \cellcolor{lightred}0.0064 & \cellcolor{lightred}0.0103 & \cellcolor{lightred}0.0144 & \cellcolor{lightred}0.0072 & \cellcolor{lightred}0.0112 & \cellcolor{lightred}0.0142 \\
+        \hline
+        \makecell{SGAdapter\\Configuration 3} & $\times$ & \checkmark  & \cellcolor{lightred}0.0069 & \cellcolor{lightred}\underline{0.0112} & \cellcolor{lightred}0.0165 & \cellcolor{lightred}0.0072 & \cellcolor{lightred}0.0114 & \cellcolor{lightred}0.0148 \\
+        \hline
+        \makecell{SGAdapter\\Configuration 4} & $\times$ & $\times$ & \cellcolor{lightgreen}\textbf{0.0078} & \cellcolor{lightgreen}\textbf{0.0126} & \cellcolor{lightred}\underline{0.0185} & \cellcolor{lightred}\underline{0.0075} & \cellcolor{lightred}\underline{0.0124} & \cellcolor{lightred}\underline{0.0160}\\
+        \hline
+    \end{tabularx}
+    \label{tab:Recall}
+\end{table*}

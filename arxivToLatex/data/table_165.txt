@@ -1,0 +1,28 @@
+\begin{table}[H]
+  \caption{Peptide-Binding Affinity Classifier}
+  \label{table:affinity-predictor}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+     \textbf{Layers} & \textbf{Protein Dimension} & \textbf{Peptide Dimension} \\
+    \midrule
+    Embedding Module  & $1280$ &  $1280$\\
+    \textbf{CNN Layers} $\times 3$ (Kernel Sizes: 3,5,7) & $(1280, L)$ & $(64\times 3,  L)$ per kernel \\
+    \quad ReLU Activation & $(64, L)$ per kernel & $(64, L)$ per kernel \\
+    \textbf{Global Pooling} (Max + Avg) & $(64\times 3, L)$  & $64\times 3\times 2$ \\
+    Linear Layer & $384$ & $384$ \\
+    Layer Norm & $384$ & $384$ \\
+    \textbf{Cross-Attention} $\times 4$ & &\\
+    \hspace{5mm} Multi-Head Attention ($h=8$) & $384$  & $384$\\
+     \hspace{5mm} Linear Layer &  $2048$& $2048$\\
+    \hspace{5mm} ReLU & $2048$  & $2048$\\
+    \hspace{5mm} Dropout & $2048$  & $2048$\\
+    \hspace{5mm} Linear Layer &  $384$& $384$\\
+    \textbf{Shared Prediction Head} & &\\
+    \hspace{5mm} Linear Layer & \multicolumn{2}{c}{$1024$} \\
+    \hspace{5mm} ReLU & \multicolumn{2}{c}{$1024$} \\
+    \hspace{5mm} Dropout & \multicolumn{2}{c}{$1024$} \\
+    \textbf{Regression Head} &  \multicolumn{2}{c}{$1$} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

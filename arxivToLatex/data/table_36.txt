@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The number of stations selected for each state.}
+  \scalebox{0.8}{
+    \begin{tabular}{crrrrrrrrrrrr}
+    \toprule
+    \multicolumn{1}{l}{\textbf{State}} & \multicolumn{1}{l}{IA} & \multicolumn{1}{l}{IL} & \multicolumn{1}{l}{IN} & \multicolumn{1}{l}{KS} & \multicolumn{1}{l}{MI} & \multicolumn{1}{l}{MN} & \multicolumn{1}{l}{MO} & \multicolumn{1}{l}{ND} & \multicolumn{1}{l}{NE} & \multicolumn{1}{l}{OH} & \multicolumn{1}{l}{SD} & \multicolumn{1}{l}{WI} \\
+    \midrule
+    \textbf{Station number} & 113   & 120   & 89    & 150   & 140   & 140   & 130   & 79    & 128   & 100   & 114   & 147 \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:apsim_station}%
+\end{table}%

@@ -1,0 +1,21 @@
+\begin{table}[htb]
+	\small
+	\centering
+	\begin{tabular}{@{}lp{1.7cm}p{1.7cm}p{1.7cm}p{1.7cm}p{1.7cm}p{1.7cm}p{1.7cm}@{}}\toprule
+		&  volume fraction & average chord length [\si{\micro\meter}] & specific surface  area[\si{\micro\meter^{-1}}] & constrictivity & mean geodesic tortuosity\\[2pt] \midrule
+		
+		solid electrolyte (data) & 0.42 & 2.31 & 0.64 & 0.50  & 1.11\\
+		solid electrolyte ($\anisotropicCathodeModel$) & $0.45 \pm 0.006 $ & $3.80 \pm 0.066$ & $0.47 \pm 0.003$  & $0.65 \pm 0.034$ &  $1.08 \pm 0.002$\\[4pt]
+		
+		%\hline 
+		active material (data) & 0.51 & 2.13 & 0.87 & 0.75  & 1.07\\
+		active material ($\anisotropicCathodeModel$) & $0.48 \pm 0.005$ & $1.99 \pm 0.017$ & $0.92 \pm 0.007$ & $0.85 \pm 0.050 $ & $1.07 \pm 0.001$\\[4pt]
+		%\hline
+		
+		pore space (data) & 0.07 & 0.50 & 0.58 & - & -\\
+		pore space ($\anisotropicCathodeModel$) & $0.08 \pm 0.001$ & $0.49 \pm 0.002 $ & $0.57 \pm 0.009$  & - & -\\
+		\bottomrule
+	\end{tabular}
+	\caption{Structural descriptors computed for experimentally measured 3D image data. Averages and standard deviations of the descriptors considered for the model, $\anisotropicCathodeModel$, were computed based on ten 3D microstructures.}
+	\label{tab:validation3D}
+\end{table}

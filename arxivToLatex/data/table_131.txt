@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+    \centering
+    \caption{The number of rounds required for FedAvg, Rand, FedProx, POC, and MOON to achieve 90\% of the maximum accuracy reached in different levels of quantity non-IID cases as determined by \textsf{QHD} over CIFAR10 and Covtype using Min-size Dirichlet method for K = 30
+    % \todo[inline]{Interestingly, the more quantity skewness we have, the sooner we reach the point of convergence}
+    }
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c||}
+    \hline
+    Category& Method & Dataset & \makecell{Aggregation \\algorithm } & \textsf{QHD} = 0 & \textsf{QHD} = 0.10 & \textsf{QHD} = 0.17 \\
+    \hline\hline
+
+    % Gaussian noise
+    \multirow[c]{10}{*}{\makecell{Quantity \\distribution \\skew}} & \multirow[c]{10}{*}{\makecell{Min-size\\ Dirichlet}} & \multirow[c]{5}{*}{CIFAR10} & FedAvg & 5 & 3 & 2 \\ \cline{4-7}
+    % Rand
+    &&& Rand & 5 & 3 & 1 \\ \cline{4-7}
+    % FedProx
+    &&& FedProx & 5 & 3 & 2 \\ \cline{4-7}
+    % POC
+    &&& POC & 5 & 3 & 2 \\ \cline{4-7}
+    % MOON
+    &&& MOON & 6 & 3 & 2 \\ \cline{3-7}   
+    % Covtype
+    && \multirow[c]{5}{*}{Covtype} & FedAvg & 3 & 2 & 1  \\ \cline{4-7}
+    &&& Rand & 3 & 2 & 1 \\ \cline{4-7}
+    &&& FedProx & 3 & 2 & 1 \\ \cline{4-7}
+    &&& POC & 3 & 2 & 1 \\ \cline{4-7}
+    &&& MOON & 4 & 2 & 1 \\ \cline{1-7}   
+    \end{tabular}}
+\label{tab:Round_to_max_accuracy_QuantitySkew}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[]
+	\centering
+	\caption{Comparison of the NCV accuracy, $F_1$ score, precision and recall (in \%) on the whole dataset $T\backslash M$ with the same results on the subsets 1 obtained by excluding the materials containing selected elements (Cr, Mn, Fe, Cu, Tc, Eu, Os or Np), and subset 2 constructed by further excluding materials without MP-ID.}
+    \setlength{\tabcolsep}{17pt}% column separation
+	\begin{tabular}{lccccc}
+    \hline
+    \hline
+		\textbf{}     & Count & Accuracy    & $F_1$ score     & Precision    & Recall      \\
+        \hline
+		All data  & 9,925 & 72.0 & 78.2 & 89.1 & 69.7 \\
+		Subset 1  & 7,364 & 77.3 & 79.9 & 90.1 & 71.8 \\
+        Subset 2  & 3,550 & 78.3 & 82.9 & 90.4 & 76.6 \\ 
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:score_elel_mpid1}
+\end{table}

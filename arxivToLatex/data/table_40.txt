@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of obviously yield-reduced states within drought-affected areas.}
+  \scalebox{0.8}{
+    \begin{tabular}{crr}
+    \toprule
+    \diagbox{\textbf{Year}}{\textbf{Area type}} & Drought-affected states & Obviously yield-reduced states  \\
+    \midrule
+    2019 & IA,MI & MI   \\
+    2020 & IA,ND,SD,NE,IL & IA   \\
+    2021 & ND,SD,MN,NE,IA & ND,SD   \\
+    2022 & NE,KS,SD,IA & NE,KS,SD   \\
+    2023 & NE,KS,MN,IA,WI,MO & IA,MO   \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:drought_reduced_yield_stat}%
+\end{table}%

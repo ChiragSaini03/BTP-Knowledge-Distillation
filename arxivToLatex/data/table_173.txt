@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+  \centering
+  \small
+  \setlength{\tabcolsep}{2pt}
+	\caption{Goodness of Fit Comparisons for All Models for Georgia Dataset}
+	\label{tab:table5}
+
+    \scalebox{0.9}{
+    \begin{tabular}{c | c | c | c | c | c | c}
+    \toprule
+          & IGWR-G & IGWR-L & FS & BGWR &     MGWR &       GWL \\ \hline
+    Fit measures $\backslash \mbox{ } p$ &  $p=4$   &  $p=4$   & $p=4$  & All    & All  & $p \approx 4$ \\ \hline
+    RSS   & 1393  &  1419  & 1351  & 1477     & 1031   & 1322 \\
+    $R^2$ & 0.728 & 0.723 & 0.736 & 0.712  & 0.798 & 0.742 \\ 
+    $R^2_{\text{adj}}$ & 0.721 & 0.716 & 0.730 & 0.700  & 0.815 & 0.735 \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}%

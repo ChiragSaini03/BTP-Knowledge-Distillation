@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\caption{\textbf{Clustering performance Comparison on the CLIP features.} The best results are in bold and the second best results are underlined. ``OOM'' means out of GPU memory.}
+\label{tab:Benchmark-CLIP}
+\vskip -0.25in
+\begin{center}
+\resizebox{1.0\textwidth}{!} {
+\begin{tabular}{lcccccccccccc}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{CIFAR-20} & \multicolumn{2}{c}{CIFAR-100} &  \multicolumn{2}{c}{TinyImgNet-200}& \multicolumn{2}{c}{ImgNetDogs-15}&\multicolumn{2}{c}{ImageNet-1k} \\
+        & ACC   & NMI   & ACC   & NMI   & ACC   & NMI   &  ACC& NMI& ACC& NMI&ACC   & NMI \\
+\midrule
+ $k$-means& 83.5& 84.1& 46.9& 49.4& 52.8& 66.8&  54.1& 73.4& 52.7& 53.6&53.9&79.8\\
+ SC& 79.8& 84.8& 53.3& 61.6& 66.4& 77.0&  62.8& 77.0& 48.3& 45.7&56.0&81.2\\
+ SSCOMP& 85.5 & 83.0 & 61.4& 63.4 & 55.6 & 69.7 & 56.7 & 72.7 & 25.6 & 15.9 & 44.1 & 74.4\\
+ EnSC& 95.4& 90.3& 61.0& 68.7& 67.0& 77.1&  \underline{64.5}& \underline{77.7}& 57.9& 56.0& 59.7 & \textbf{83.7}\\
+SENet& 91.2& 82.5& 65.3& 68.6& 67.0& 74.7&  63.9& 76.6& 58.7& 55.3& 53.2& 78.1\\
+ \midrule
+ SCAN& 95.1& 90.3& 60.8& 61.8& 64.1& 70.8&  56.5& 72.7& 70.5& 68.2&54.4&76.8\\
+TEMI& \underline{96.9}  & \underline{92.6}& 61.8  & 64.5  & 73.7  & 79.9  &  -& -& -& -&\underline{64.0}  &  -\\
+ \midrule
+ CPP& 96.8& 92.3& \underline{67.7}& \underline{70.5}& \underline{75.4} & \underline{82.0} &  63.4& 75.5& \underline{83.0}& \textbf{81.5}&62.0 & 82.1\\
+ EDESC& 84.2& 79.3& 48.7& 49.1& 53.1& 68.6&  51.3& 68.8& 53.3& 47.9& 46.5& 75.5\\
+ DSCNet&   78.5&   73.6&   38.6&  45.7&  39.2&   53.4&   62.3&   68.3& 40.5  & 30.1  &  OOM & OOM \\
+  {\mcb Our PRO-DSC }& $\mcb\textbf{97.2}{\scriptstyle\pm 0.2}$  &$\mcb\textbf{92.8}{\scriptstyle\pm 0.4}$ &  $\mcb\textbf{71.6}{\scriptstyle\pm 1.2}$ &$\mcb\textbf{73.2}{\scriptstyle\pm 0.5}$&  $\mcb\textbf{77.3}{\scriptstyle\pm 1.0}$ & $\mcb\textbf{82.4}{\scriptstyle\pm 0.5}$  & $\mcb\textbf{69.8}{\scriptstyle\pm 1.1}$  &$\mcb\textbf{80.5}{\scriptstyle\pm 0.7}$& $\mcb\textbf{84.0}{\scriptstyle\pm 0.6}$  &$\mcb\underline{81.2}{\scriptstyle\pm 0.8}$& $\mcb\textbf{65.0}{\scriptstyle\pm 1.2}$ &$\mcb\underline{83.4}{\scriptstyle\pm 0.6}$\\
+\bottomrule
+
+\end{tabular}
+}
+\end{center}
+\vskip -0.15in
+\end{table*}

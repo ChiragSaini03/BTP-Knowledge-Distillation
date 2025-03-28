@@ -1,0 +1,14 @@
+% \begin{table}[ht]
+% \centering
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{|c|c|c|c|c|c|}
+% \hline
+% \textbf{Noise Profile} & \textbf{OK} & \textbf{OUTLIERS} & \textbf{SKEWED} & \textbf{N/A} & \textbf{MODAL} \\
+% \hline
+% \textbf{Count} & 12232 & 3012 & 2112 & 446 & 187 \\
+% \hline
+% \end{tabular}
+% }
+% \caption{Count of Occurrences of Unique Values in single\_alert\_noise\_profile}
+% \label{table:noise_profile_counts}
+% \end{table}

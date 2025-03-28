@@ -1,0 +1,21 @@
+\begin{table}[]
+\centering
+\caption{Average ranking of the $\Delta$-spread metric obtained by different algorithms on both synthetic and RE tasks. Detailed results are provided in \cref{app:res}.}
+\label{tab:divranking}
+\begin{tabular}{l|cc}
+\hline
+\textbf{Method}                    & \multicolumn{1}{c|}{\textbf{Synthetic}} & \textbf{RE}   \\ \hline
+MultiHead-GradNorm                 & 7.12                                    & 8.27          \\
+MultiHead-PcGrad                   & 5.92                                    & 7.0           \\
+MultiHead                          & 8.83                                    & 7.2           \\
+MultipleModels-COM                 & 6.5                                     & 5.47          \\
+MultipleModels-ICT                 & 6.5                                     & 5.87          \\
+MultipleModels-IOM                 & 6.42                                    & 6.8           \\
+MultipleModels-RoMA                & 5.92                                    & 6.4           \\
+MultipleModels-TriMentoring        & 6.0                                     & 4.6           \\
+MultipleModels                     & 9.25                                    & 7.53          \\ \hline
+ParetoFlow                         & 10.0                                    & 9.0           \\ \hline
+\textbf{PGD-MOO + Data Pruning (Ours)} & \textbf{2.67}                           & \textbf{4.0}  \\
+\textbf{PGD-MOO (Ours)}                & 2.83                                    & \textbf{4.28}
+\end{tabular}
+\end{table}

@@ -1,0 +1,31 @@
+\begin{table*}
+\caption{\textbf{Comparison of ipTM and VINA docking scores for existing and designed peptide binders to protein targets.} The ipTM scores are calculated by AlphaFold3 for peptide-protein complexes using both existing peptides and peptides designed by guided Gumbel-Softmax FM. *Contains unnatural amino acid X which cannot be processed by AlphaFold3.}
+\label{table:Peptide Existing Binder}
+\begin{center}
+\begin{small}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}llccccccc@{}}
+\toprule
+\textbf{PDB ID} & \textbf{existing binder} &\multicolumn{2}{c}{\textbf{ipTM ($\uparrow$)}} & \multicolumn{2}{c}{\textbf{pTM ($\uparrow$)}} & \multicolumn{2}{c}{\textbf{VINA Docking Score (kcal/mol) ($\downarrow$)}} \\ \midrule
+ & & existing & designed & existing & designed & existing & designed \\
+\midrule
+GLP-1R (3C5T) & HXEGTFTSDVSSYLEGQAAKEFIAWLVRGRG & * & 0.65 & * & 0.66 & -5.7 & -7.5  \\
+1AYC & ARLIDDQLLKS & 0.68 & 0.67 & 0.88 & 0.88 & -5.3 & -4.6  \\
+2Q8Y & ALRRELADW & 0.44 & 0.70 & 0.83 & 0.84 & -6.7 & -6.8 \\
+3EQS & GDHARQGLLALG & 0.80 & 0.71 & 0.88 & 0.86 & -4.4 & -4.7 \\
+3NIH & RIAAA & 0.85 & 0.86 & 0.91 & 0.90 & -6.2 & -5.7 \\
+4EZN & VDKGSYLPRPTPPRPIYNRN & 0.54 & 0.59 & 0.85 & 0.87 & -4.1 & -6.5 \\
+4GNE & ARTKQTA & 0.89 & 0.76 & 0.76 & 0.76 & -5.0 & -4.8 \\
+4IU7 & HKILHRLLQD & 0.93 & 0.79 & 0.91 & 0.94 & -4.6 & -5.9  \\
+5E1C & KHKILHRLLQDSSS & 0.83 & 0.80 & 0.91 & 0.91 & -4.3 & -5.1 \\
+5EYZ & SWESHKSGRETEV & 0.73 & 0.81 & 0.77 & 0.78 & -2.9 & -6.9 \\
+5KRI & KHKILHRLLQDSSS & 0.83 & 0.77 & 0.91 & 0.91 & -3.5 & -5.5 \\
+7LUL & RWYERWV & 0.94 & 0.91 & 0.93 & 0.92 & -6.5& -7.6 \\
+8CN1 & ETEV & 0.90 & 0.86 & 0.72 & 0.82 & -6.0 & -6.9  \\
+
+\bottomrule
+\end{tabular}
+}
+\end{small}
+\end{center}
+\end{table*}

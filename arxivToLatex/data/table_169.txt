@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+  \centering
+  \small
+    \caption{Variables in Georgia Dataset}
+    \label{tab:table2}
+    \scalebox{0.8}{
+    \begin{tabular}{c|c|l}
+    \toprule
+    Variable name & Class & Description \\ \midrule 
+    $PctBach$ & DV & Percentage of the county population with a bachelor’s degree \\ \midrule 
+    $TotPop90$ & \multirow{6}{*}{IV} & Population of the county in 1990 \\
+    $PctRural$ & & Percentage of the county population defined as rural \\
+    $PctEld$ & & Percentage of the county population aged 65 or over \\
+    $PctFB$ & & Percentage of the county population born outside the United States\\
+    $PctPov$ & & Percentage of the county population living below the poverty line \\
+    $PctBlack$ & & Percentage of the county population that is black \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}%

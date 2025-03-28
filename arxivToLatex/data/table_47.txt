@@ -1,0 +1,16 @@
+% \begin{table}[htbp]
+%   \centering
+%   \caption{The comparison results for drought-affected area after excluding soil moisture-related features.}
+%     \begin{tabular}{lllll}
+%     \toprule
+%     \multirow{2}[4]{*}{\textbf{Year}} & \multicolumn{2}{l}{\textbf{Att-ex with SM}} & \multicolumn{2}{l}{\textbf{Att-ex wo SM}} \\
+% \cmidrule{2-5}          & \textbf{RMSE} & \textbf{R2} & \textbf{RMSE} & \textbf{R2} \\
+%     \midrule
+% 2020  & 1.513(-0.154) & 0.529(+0.088) & 1.667 & 0.441 \\
+% 2021  & 1.573(-0.061) & 0.457(+0.108) & 1.634 & 0.349 \\
+% 2022  & 2.155(-0.160) & 0.506(+0.038) & 2.315 & 0.468 \\
+% 2023  & 1.589(-0.085) & 0.686(+0.094) & 1.674 & 0.592 \\
+%     \bottomrule
+%     \end{tabular}%
+%   \label{tab:attex_with_wo_sm_arid}%
+% \end{table}%

@@ -1,0 +1,46 @@
+\begin{table}[H]
+\centering
+\resizebox{1.\textwidth}{!}{%}
+\begin{tabular}{ccc|ccccccc|cc}
+\midrule
+\tabalign{\textsc{Model}}      & \tabalign{\textsc{Method}}    & WikiText-2\textcolor{mylightbluetext}{$\downarrow$} & PTB\textcolor{mylightbluetext}{$\downarrow$} & C4\textcolor{mylightbluetext}{$\downarrow$}   &   {SNIPS\textcolor{mylightbluetext}{$\downarrow$}}   & {AlpacaEval\textcolor{mylightbluetext}{$\downarrow$}}   & {MCTest\textcolor{mylightbluetext}{$\downarrow$}}    & {CMRC (CN)} & {AlpacaEval (JP)}   & Avg. Impro.
+\\ \midrule 
+\toppp  & \tabalign{ASVD-0} & 228.77 & 326.20 & 312.18 & 115.65 & 157.33 & 42.37  & 1406.88 & 1359.26& --         \\
+\tabalign{LLaMA-7B}  & \tabalign{ASVD-I} & 9.51   & 27.11  & 25.81   & 17.89 & 9.45 & 3.06 & 688.23 & 813.23& --\\
+\cmidrule{2-11}   
+%\toppp  & \tabalign{ASVD-II} & 9.51   & 27.15  & 25.81   & 17.95 & 9.45 & 3.06 \\
+\toppp  & \tabalign{\nestdecom} & {9.64} (\textcolor{mylightbluetext}{$\uparrow$1.4\%})  & \textbf{25.19} (\textcolor{mylightbluetext}{$\downarrow$7.1\%})& \textbf{24.41} (\textcolor{mylightbluetext}{$\downarrow$5.4\%})    
+& \textbf{15.74} (\textcolor{mylightbluetext}{$\downarrow$12.1\%})    
+& \textbf{8.85} (\textcolor{mylightbluetext}{$\downarrow$6.3\%})    & \textbf{3.02} (\textcolor{mylightbluetext}{$\downarrow$1.3\%})  
+& \textbf{577.63} (\textcolor{mylightbluetext}{$\downarrow$16.1\%}) & \textbf{367.79} (\textcolor{mylightbluetext}{$\downarrow$54.8\%}) & 14.7\%
+\\
+\midrule
+\tabalign{}   & \tabalign{ASVD-0} & 90.21   & 117.07  & 111.96    & 57.47 & 41.06 & 10.02 & 282.47 & 278.47 & --\\
+\tabalign{LLaMA-13B}   & \tabalign{ASVD-I} & 7.63   & 17.84  & 18.87   & 14.58 & 7.22 & 2.59  & 154.13 & 82.42 & --\\
+\cmidrule{2-11} 
+\tabalign{}  
+& \tabalign{\nestdecom } 
+& {7.69} (\textcolor{mylightbluetext}{$\uparrow$0.8\%})             & \textbf{17.10} (\textcolor{mylightbluetext}{$\downarrow$4.1\%})
+& \textbf{17.30} (\textcolor{mylightbluetext}{$\downarrow$8.3\%})   & \textbf{12.11} (\textcolor{mylightbluetext}{$\downarrow$16.9\%})    
+& \textbf{6.66} (\textcolor{mylightbluetext}{$\downarrow$7.8\%})   & \textbf{2.53} (\textcolor{mylightbluetext}{$\downarrow$2.3\%}) 
+& \textbf{102.39} (\textcolor{mylightbluetext}{$\downarrow$33.6\%})  & \textbf{65.00} (\textcolor{mylightbluetext}{$\downarrow$21.1\%}) & 13.4\%
+\\
+\midrule
+\tabalign{}   & \tabalign{ASVD-0} & 27.76   & 35.59  & 35.90    & 18.28 & 13.11 & 3.40 & 51.71 & 77.66 & --\\
+\tabalign{LLaMA-30B}   & \tabalign{ASVD-I} & 6.35   & 11.41 & 13.26    & 8.24 & 5.21 &  2.25  & 15.81 & 17.59 & --\\
+\cmidrule{2-11} 
+\tabalign{}  
+& \tabalign{\nestdecom } 
+& {6.38 } (\textcolor{mylightbluetext}{$\uparrow$0.5\%})             & \textbf{11.05 } (\textcolor{mylightbluetext}{$\downarrow$3.2\%})
+& \textbf{12.55} (\textcolor{mylightbluetext}{$\downarrow$5.4\%})   & \textbf{7.95} (\textcolor{mylightbluetext}{$\downarrow$3.5\%})    
+& \textbf{5.00} (\textcolor{mylightbluetext}{$\downarrow$4.0\%})   & \textbf{2.22} (\textcolor{mylightbluetext}{$\downarrow$1.3\%}) 
+& \textbf{15.37} (\textcolor{mylightbluetext}{$\downarrow$2.8\%})  & \textbf{17.29} (\textcolor{mylightbluetext}{$\downarrow$1.7\%}) & 3.1\%
+\\
+\midrule
+\end{tabular}
+}
+\captionof{table}{Zero-shot performance of LLaMA-7B, LLaMA-13B, and LLaMA-30B compressed using NSVD-I and baselines under a 30\% compression ratio, across \textcolor{black}{eight} language modeling datasets (measured by perplexity  (\textcolor{mylightbluetext}{$\downarrow$})). The best performance is highlighted in bold. The relative performance gain compared to the best-performing baseline (here, ASVD-0 or ASVD-I) is indicated in blue text with bracket.
+In all scenarios, we apply NSVD-I with $k_1=0.95\cdot k$, $k_2=k-k_1$, where $k$ is the low-rank parameter used in  ASVD approaches.
+}
+\label{tab:nsce_ppl_diffscale}
+\end{table}

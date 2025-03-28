@@ -1,0 +1,21 @@
+\begin{table*}[h]
+\vskip -0.01in
+  \centering
+  \caption{\text{Comparison on time (s) and memory cost (MiB). ``OOM'' means out of GPU memory.} 
+  } 
+  \vskip 0in
+  \resizebox{.8\textwidth}{!} {
+    \begin{tabular}{l|c|cc|cc|cc}
+     \toprule
+  \multirow{2}{*}{Methods}&  \multirow{2}{*}{Complexity}& \multicolumn{2}{c|}{CIFAR-10} & \multicolumn{2}{c|}{CIFAR-100}& \multicolumn{2}{c}{ImageNet-1k}\\
+          &  & Time & Memory & Time & Memory & Time &Memory \\
+        \midrule
+ SEDSC& $\mathcal{O}(N^2d)$& - & OOM & - & OOM & - & OOM\\
+ TEMI& $\mathcal{O}(Hn_bd^2)$& 6.9& \textbf{1,766}& 5.1& 2,394& 262.1&2,858\\
+    CPP   &  $\mathcal{O}((n_b+1)\min\{n_b^3,d^3\})$& \textbf{3.5}& 3,802& 7.1& 10,374& 1441.2&22,433\\
+    PRO-DSC &  $\mathcal{O}(k n_b^2 + \min\{n_b^3, d^3\})$& 4.5& 2,158& \textbf{4.0}& \textbf{2,328}& \textbf{90.0}&\textbf{2,335}\\
+    \bottomrule
+    \end{tabular}}
+  \label{Tab:Time consuming}
+  \vskip -0.01in
+\end{table*}

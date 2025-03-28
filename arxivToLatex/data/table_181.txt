@@ -1,0 +1,16 @@
+\begin{table}[H]
+\resizebox{1.\textwidth}{!}{%}
+\begin{tabular}{cccccccccc}
+\midrule
+\tabalign{\textsc{Similarity}}    & WikiText-2 & PTB & C4   &   {SNIPS}   & {AlpacaEval}   & {MCTest} 
+& {CMRC (CN)} & {AlpacaEval (JP)}   & \\ \midrule
+\tabalign{\textsc{Mean (std)}}    & \textcolor{black}{0.94 (0.04)} & \textcolor{black}{0.59 (0.17)} & \textcolor{black}{0.75 (0.19)}   &  \textcolor{black}{0.52 (0.23)}  & \textcolor{black}{0.72 (0.19)}   & \textcolor{black}{0.58 (0.22)}
+& \textcolor{mylightbluetext}{0.46 (0.19)} & \textcolor{mylightbluetext}{0.45 (0.2)}  
+\\ \midrule
+\end{tabular}
+}
+\captionof{table}{The mean similarities and the standard deviations between the activations from the calibration set and those from other evaluation sets under LLaMA-7B. 
+The calibration set shows an average similarity of less than 0.5 with both  CMRC (CN) or AlpacaEval (JP), while it has an average similarity of 0.94 with the test split of WikiText-2.
+}
+\label{tab:nsce_ppl0}
+\end{table}

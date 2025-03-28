@@ -1,0 +1,62 @@
+\begin{table}[t]
+    \centering
+    \caption{\footnotesize Recall@100 for each predicate of the trained model, comparing performance when trained on augmented datasets versus the Real Data baseline, all evaluated on the same test set. Green cells indicate values equal to or exceeding the Real Data baseline, whereas red cells indicate lower values. Predicates with 0 Recall across all models have been omitted.}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c||c||c||c|c|c|c|}
+            \hline
+             \textbf{Predicate} & \textbf{Real Data} & \textbf{Stable Diffusion 2.0} & \makecell{\textbf{SGAdapter} \\ \textbf{Configuration 1}}  & \makecell{\textbf{SGAdapter} \\ \textbf{Configuration 2}} & \makecell{\textbf{SGAdapter} \\ \textbf{Configuration 3}} & \makecell{\textbf{SGAdapter} \\ \textbf{Configuration 4}}  \\   
+             \hline
+           above & \underline{0.0890} &    \cellcolor{lightgreen}\textbf{0.0933} & \cellcolor{lightred}0.0406 & \cellcolor{lightred}0.0556 & \cellcolor{lightred}0.0683 & \cellcolor{lightred}0.0494 \\ \hline
+            %across & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            %against & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            along & \textbf{0.0887} & \cellcolor{lightred}0.0550 & \cellcolor{lightred}0.0474 & \cellcolor{lightred}\underline{0.0726} & \cellcolor{lightred}0.0596 & \cellcolor{lightred}0 \\ \hline
+            and & \underline{0.0118} & \cellcolor{lightgreen}\textbf{0.0237} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            at & 0.2233 & \cellcolor{lightred}0.2173 & \cellcolor{lightgreen}0.2442 & \cellcolor{lightgreen}\textbf{0.2599} & \cellcolor{lightgreen}\underline{0.2459} & \cellcolor{lightgreen}0.2431 \\ \hline
+            attached to & \textbf{0.0539} & \cellcolor{lightred}\underline{0.0325} & \cellcolor{lightred}0.0078 & \cellcolor{lightred}0.0097 & \cellcolor{lightred}0.0008 & \cellcolor{lightred}0.0063 \\ \hline
+            behind & 0.2323 & \cellcolor{lightred}0.2246 & \cellcolor{lightgreen}0.2443 & \cellcolor{lightgreen}\textbf{0.2547} & \cellcolor{lightgreen}\underline{0.2491} & \cellcolor{lightgreen}0.2480 \\ \hline
+            belonging to & \underline{0.1093} & \cellcolor{lightgreen}\textbf{0.1780} & \cellcolor{lightred}0 & \cellcolor{lightred}0.0048 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            %between & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            carrying & 0.2068 & \cellcolor{lightgreen}0.2165 & \cellcolor{lightgreen}\textbf{0.2495} \cellcolor{lightgreen}& \cellcolor{lightgreen}0.2278 & \cellcolor{lightgreen}0.2183 & \cellcolor{lightgreen}\underline{0.2280} \\ \hline
+            %covered in & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            %covering & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            eating & \underline{0.0889} & \cellcolor{lightgreen}\textbf{0.0920} & \cellcolor{lightred}0.0199 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            %flying in & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            for & 0.0123 & \cellcolor{lightred}0.0012 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightgreen}\textbf{0.0389} & \cellcolor{lightgreen}\underline{0.0369} \\ \hline
+            %from & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            %growing on & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            hanging from & \textbf{0.0378} & \cellcolor{lightred}\underline{0.0120} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            has & 0.3421 & \cellcolor{lightgreen}0.3493 & \cellcolor{lightgreen}\underline{0.3700} & \cellcolor{lightgreen}\textbf{0.3774} & \cellcolor{lightgreen}0.3675 & \cellcolor{lightgreen}0.3695 \\ \hline
+            holding & 0.1738 & \cellcolor{lightgreen}0.1859 & \cellcolor{lightgreen}\textbf{0.2038} & \cellcolor{lightred}0.1583 & \cellcolor{lightgreen}\underline{0.1896} & \cellcolor{lightred}0.1665 \\ \hline
+            in & \textbf{0.1082} & \cellcolor{lightred}0.0977 & \cellcolor{lightred}0.1013 & \cellcolor{lightred}0.0973 & \cellcolor{lightred}\underline{0.1050} & \cellcolor{lightred}0.0988 \\ \hline
+            in front of & 0.1737 & \cellcolor{lightred}0.1524 & \cellcolor{lightgreen}\underline{0.1755} & \cellcolor{lightred}0.1653 & \cellcolor{lightgreen}\textbf{0.1914} & \cellcolor{lightred}0.1351 \\ \hline
+            laying on & \textbf{0.0913} & \cellcolor{lightred}\underline{0.0045} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            looking at & \textbf{0.1329} & \cellcolor{lightred}0.1058 & \cellcolor{lightred}0.0407 & \cellcolor{lightred}0.0789 & \cellcolor{lightred}\underline{0.1076} & \cellcolor{lightred}0.0662 \\ \hline
+            %lying on & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            %made of & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            mounted on & \textbf{0.0078} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            near & \textbf{0.0524} & \cellcolor{lightred}\underline{0.0481} & \cellcolor{lightred}0.0314 & \cellcolor{lightred}0.0240 & \cellcolor{lightred}0.0366 & \cellcolor{lightred}0.0195 \\ \hline
+            of & 0.2689 & \cellcolor{lightred}0.2026 & \cellcolor{lightgreen}\underline{0.3438} & \cellcolor{lightgreen}0.3236 & \cellcolor{lightgreen}0.3092 & \cellcolor{lightgreen}\underline{0.3541} \\ \hline
+            on & 0.0619 & \cellcolor{lightgreen}0.0701 & \cellcolor{lightgreen}\textbf{0.0970} & \cellcolor{lightgreen}\underline{0.0904} & \cellcolor{lightgreen}0.0884 & \cellcolor{lightgreen}0.0672 \\ \hline
+            %on back of & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            over & \textbf{0.0273} & \cellcolor{lightred}\underline{0.0186} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            %painted on & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            parked on & 0.3508 & \cellcolor{lightgreen}\underline{0.3790} & \cellcolor{lightgreen}0.3711 & \cellcolor{lightred}0.3500 & \cellcolor{lightgreen}\textbf{0.3813} & \cellcolor{lightred}0.0169 \\ \hline
+            %part of & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            %playing & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            riding & 0.3820 & \cellcolor{lightgreen}0.3836 & \cellcolor{lightgreen}\underline{0.4290} & \cellcolor{lightgreen}0.4203 & \cellcolor{lightgreen}0.4213 & \cellcolor{lightgreen}\textbf{0.4474} \\ \hline
+            %says & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            sitting on & 0.1647 & \cellcolor{lightgreen}\underline{0.1760} & \cellcolor{lightred}0.1427 & \cellcolor{lightgreen}\textbf{0.1813} & \cellcolor{lightred}0.1634 & \cellcolor{lightgreen}0.1742 \\ \hline
+            standing on & \textbf{0.0683} & \cellcolor{lightred}\underline{0.0561} & \cellcolor{lightred}0.0155 & \cellcolor{lightred}0.0379 & \cellcolor{lightred}0.0384 & \cellcolor{lightred}0.0078 \\ \hline
+            %to & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            under & \underline{0.1281} & \cellcolor{lightred}0.1258 & \cellcolor{lightgreen}\textbf{0.1506} & \cellcolor{lightred}0.1241 & \cellcolor{lightred}0.1101 & \cellcolor{lightred}0.0928 \\ \hline
+            using & \textbf{0.1263} & \cellcolor{lightred}\underline{0.0927} & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 & \cellcolor{lightred}0 \\ \hline
+            %walking in & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+            walking on & 0.1886 & \cellcolor{lightgreen}0.2113 & \cellcolor{lightgreen}\underline{0.2661} & \cellcolor{lightgreen}0.2272 & \cellcolor{lightgreen}0.2318 & \cellcolor{lightgreen}\textbf{0.2660} \\ \hline
+            watching & 0.0934 & \cellcolor{lightgreen}\underline{0.1773} & \cellcolor{lightgreen}\textbf{0.2015} & \cellcolor{lightgreen}0.1571 & \cellcolor{lightgreen}0.1423 & \cellcolor{lightgreen}0.1682 \\ \hline
+            wearing & 0.3886 & \cellcolor{lightgreen}\underline{0.4633} & \cellcolor{lightgreen}0.4546 & \cellcolor{lightgreen}0.4166 & \cellcolor{lightred}0.3568 & \cellcolor{lightgreen}\textbf{0.4871} \\ \hline
+            wears & \underline{0.0450} & \cellcolor{lightred}0.0035 & \cellcolor{lightred}0.0270 & \cellcolor{lightred}0.0389 & \cellcolor{lightgreen}\textbf{0.1155} & \cellcolor{lightred}0.0017 \\ \hline
+            with & 0.0230 & \cellcolor{lightgreen}0.0230 & \cellcolor{lightgreen}\underline{0.0388} & \cellcolor{lightgreen}0.0257 & \cellcolor{lightgreen}0.0331 & \cellcolor{lightgreen}\textbf{0.0415} \\ \hline
+        \end{tabular}
+    }
+    \label{tab:AugPredRecall}
+\end{table}

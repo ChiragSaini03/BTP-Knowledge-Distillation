@@ -1,0 +1,18 @@
+\begin{table}[ht!]
+  \begin{center}
+    \caption{Values of $M$ per method and
+      scenario} \label{tab:M}
+    \begin{tabular}{|l|r|r|} \hline
+      Method $\setminus$ Scenario & Pendulum & Cartpole
+      \\ \hline
+      D-FQ~\cite{distributed.TD} & \num{500} & \num{500} \\
+      D-LSTD~\cite{distributed.LSTD} & \num{2500} & \num{2500}
+      \\
+      Gossip-NN~\cite{NN.gossip} & \num{1000} & \num{2000}
+      \\
+      D-TD[ADMM] & \num{2000} & \num{2000} \\
+      \cref{algo} & \num{50} & \num{50} \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}

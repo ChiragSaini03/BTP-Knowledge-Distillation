@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of variables in GEE county-level dataset}
+  \scalebox{0.68}{
+    \begin{tabular}{rlll}
+    \toprule
+    \multicolumn{1}{l}{\textbf{Category}} & \textbf{Variables} & \textbf{Spatial resolution} & \textbf{Source} \\
+    \midrule
+    \multicolumn{1}{l}{\multirow[t]{4}[1]{*}{\textbf{Vegetation index}}} & Green Chlorophyll Index (GCI) & \multirow[t]{5}[1]{*}{500m} & \multirow[t]{5}[1]{*}{MODIS} \\
+          & Enhanced Vegetation Index (EVI)  &       &  \\
+          & Normalized Difference Water Index (NDWI) &       &  \\
+          & Normalized Difference Vegetation Index (NDVI) &       &  \\
+    \multicolumn{1}{l}{\multirow[t]{4}[0]{*}{\textbf{Weather data}}} & Radn (W/\(m^2\)) &       &  \\
+          & Tmax (\(^\circ\mathrm{C}\)) & \multirow[t]{3}[0]{*}{4km} & \multirow[t]{3}[0]{*}{PRISM} \\
+          & Tmin (\(^\circ\mathrm{C}\)) &       &  \\
+          & PPT (mm) &       &  \\
+    \multicolumn{1}{l}{\multirow[t]{2}[0]{*}{\textbf{Soil moisture}}} & SM\_surface & \multirow[t]{2}[0]{*}{9km} & \multirow[t]{2}[0]{*}{SMAP} \\
+          & SM\_rootzone  &       &  \\
+        \multicolumn{1}{l}{{\textbf{Corn yield}}}  & USDA NASS corn yield (t/ha) &   N/A    & USDA NASS \\
+    \multicolumn{1}{l}{\multirow[t]{3}[1]{*}{\textbf{Others}}} & Prediction year & &  \\
+          & Location (Latitude and longitude) &       &  \\
+          & Historical average yield (t/ha) &       &\\
+          
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:gee_dataset}
+\end{table}%

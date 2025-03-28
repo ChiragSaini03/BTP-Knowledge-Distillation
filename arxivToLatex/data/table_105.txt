@@ -1,0 +1,23 @@
+\begin{table}[h]
+    \centering
+    \caption{Performance obtained with SVM trained with HC features.}
+    \setlength{\tabcolsep}{6pt}
+    \label{tab:hc_svm}
+    \begin{tabular}{l c c c c c c c c}
+        \toprule
+        \textbf{Desc.} & \textbf{A} & \textbf{P} & \textbf{R} & \textbf{S} & \textbf{F1} & \textbf{MCC} & \textbf{BACC} \\
+        \toprule
+        AC & 67.30 & 69.18 & 82.99 & 43.20 & 75.45 & 28.71 & 63.09 \\
+        Haar & 62.18 & 62.38 & 94.59 & 12.38 & 75.18 & 12.45 & 53.49 \\
+        Hist & 44.67 & 96.29 & 9.00 & 99.47 & 16.47 & 17.91 & 54.23 \\
+        \midrule
+        HAR & 62.07 & 73.64 & 58.21 & 68.00 & 65.02 & 25.64 & 63.10 \\
+        LBP & 62.64 & 70.00 & 67.06 & 55.85 & 68.50 & 22.69 & 61.46 \\
+        \midrule
+        CH\_1 & 75.92 & 77.37 & 85.14 & 61.75 & 81.07 & 48.61 & 73.45 \\
+        CH\_2 & 72.50 & 71.57 & 90.55 & 44.76 & 79.95 & 40.78 & 67.66 \\
+        LM & 73.32 & 72.65 & 89.73 & 48.11 & 80.29 & 42.61 & 68.92 \\
+        ZM & 63.84 & 69.78 & 71.08 & 52.72 & 70.43 & 23.93 & 61.90 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

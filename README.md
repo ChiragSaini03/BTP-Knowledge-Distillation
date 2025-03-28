@@ -64,3 +64,10 @@ Note: The third and fourth step can be combined, if we directly convert the cell
 
 - Works with table images with all borders in table.
 
+
+> Analysis on tex data size
+- sample = 200 tex files <=> size = 800 kb
+- total = 100,000 <=> size = 160,000 kb == 400 mB
+> Analysis on table image data size
+
+

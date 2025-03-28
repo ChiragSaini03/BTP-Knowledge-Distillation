@@ -1,0 +1,17 @@
+\begin{table}[]
+	\centering
+	\caption{Hyperparameter grid searched for the XGBoost model.}
+    \setlength{\tabcolsep}{8pt}
+	\begin{tabular}{llll}
+    \hline
+    \hline
+	Parameter & Value & Parameter & Value \\
+    \hline
+	Learning rate $\eta$  & 0.23  & $L^{2}$ regularization $\lambda$ & 1.33 \\
+	Maximal tree depth & [9, 10, 11] &  Miniaml child weight & [0.1, 0.3, 0.5] \\ 
+	Column subsampling by tree & [0.75, 0.78] & Column subsampling by node & [0.75, 0.78] \\ 
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:params_xgbt}
+\end{table}

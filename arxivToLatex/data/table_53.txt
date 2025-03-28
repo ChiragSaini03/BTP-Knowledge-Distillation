@@ -1,0 +1,31 @@
+% \begin{table}
+% \caption{Alert status count in alerts per repository}
+% \label{tab:alert_status_stat_per_project}
+% \centering
+% % \resizebox{\columnwidth}{!}{%
+% % \begin{tabular}{lrrrrrrr}
+% % \toprule
+% % \textbf{Status} & \textbf{Autoland} & \textbf{Firefox Android} & \textbf{Mozilla Beta} & \textbf{Mozilla Central} & \textbf{Mozilla Release} & \textbf{Total} \\
+% % \midrule
+% % True alerts & 7567 & 775 & 2135 & 2 & 0 & 10479 \\
+% % False alerts & 703 & 20 & 123 & 0 & 0 & 846 \\
+% % Uncertain alerts & 5323 & 1 & 1339 & 0 & 1 & 6664 \\
+% % \bottomrule
+% % \end{tabular}%
+% \begin{tabular}{lrrr}
+% \toprule
+% & \multicolumn{3}{c}{\textbf{Alert Labelling}} \\
+% \textbf{Repository} & \textbf{True alerts} & \textbf{False alerts} & \textbf{Uncertain alerts} \\
+% \midrule
+% Autoland          & 7567                 & 703                   & 5323                     \\
+% Firefox Android   & 775                  & 20                    & 1                        \\
+% Mozilla Beta      & 2135                 & 123                   & 1339                     \\
+% Mozilla Central   & 2                    & 0                     & 0                        \\
+% Mozilla Release   & 0                    & 0                     & 1                        \\
+% % Total             & 10479                & 846                   & 6664                     \\
+% \bottomrule
+% \end{tabular}%
+
+
+% }
+% \end{table}

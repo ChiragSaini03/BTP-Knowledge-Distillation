@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+  \centering
+  \small
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Comparison of Proposed and Benchmark Models} \label{tab:table1}
+  \scalebox{0.8}{
+    \begin{tabular}{c|c|c|c|c|c}
+    \toprule
+          & Proposed model (IGWR) & Basic GWR (BGWR) & FS & MGWR  & GWL \\ \hline
+    Goals & \makecell{Simultaneous coefficient and \\ bandwidth estimation with \\subset selection} & \makecell{Capturing spatially \\ varying pattern}  & Subset selection  & \makecell{Varying bandwidth for \\ each DV and IV pair} & \makecell{Reducing \\ multicollinearity}  \\ \hline
+    \makecell{Objective\\ (coefficient)} & \makecell{Integrated maximum \\ likelihood function} & \multicolumn{4}{c}{Weighted sum of squares} \\ \hline
+    \makecell{Objective\\ (bandwidth)} & \makecell{Integrated maximum \\ likelihood function} & \multicolumn{4}{c}{CV score or AICc value} \\ \hline
+    \makecell{Algorithm \\ (coefficient)} & ADM $MP_{\beta}$ & \multicolumn{4}{c}{Weighted least squares} \\ \hline
+    \makecell{Algorithm \\ (bandwidth)} & ADM $MP_{\gamma}$ & \multicolumn{4}{c}{Golden section search or binary search} \\ \hline 
+    Subset selection & MIQP & N/A & Forward selection & None & Lasso \\ \hline 
+    Selected subset & Homogeneous & N/A & Homogeneous & None & Heterogeneous \\  \hline
+    Bandwidth type & \makecell{Global or local \\ (varies by focal point)} & N/A & Global & \makecell{Multiscale \\ (for each IV)} & Global \\ \hline
+    Bandwidth function & \makecell{Exponential function} & Various functions & Various functions & Various functions & Various functions \\ \bottomrule
+    \end{tabular}%
+  }
+\end{table}%

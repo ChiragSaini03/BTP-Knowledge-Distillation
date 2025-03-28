@@ -1,0 +1,54 @@
+\begin{table}[ht!]
+\vspace{-2em}
+\centering
+\begin{minipage}[t]{0.49\linewidth}
+\caption{\small \textbf{Transformer-based Time Series Classification Tasks.} We comprehensively assess the performance and parameter efficiency of transformer-based models using NdLinear layers for classification tasks across six diverse datasets and measure the F1 score. 
+Alongside the standard Linear configuration, we include a smaller Linear variant (denoted Linear$^\star$) that matches the first transform dimension of NdLinear, allowing a direct comparison of hidden dimensionality and architecture.
+We observe that the NdLinear-based models reduces the number of parameters by up to 47\% compared to traditional Linear layers, while consistently achieving a superior F1 score.}
+\label{tab:ts_tf_classify}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\centering
+\vspace{0pt}  %
+\renewcommand{\arraystretch}{1.15}
+\setlength\extrarowheight{0pt}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{cccc}
+\toprule
+\textbf{Dataset} & \textbf{Method} & \textbf{Num Params} & \textbf{F1 Score} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{ECGFiveDay}  
+    & Linear        & 3363  & \underline{0.7668} \\ 
+    & Linear$^\star$ & 1779 & 0.7624 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 1804 & \cellcolor{LightCyan} \textbf{0.7783} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{HeartBeat}  
+    & Linear        & 4323  & \underline{0.7250} \\ 
+    & Linear$^\star$ & 2739 & 0.7214 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 2752 & \cellcolor{LightCyan} \textbf{0.7363} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{\makecell{Chlorine\\Concentration}}  
+    & Linear        & 12900 & 0.4436 \\ 
+    & Linear$^\star$ & 6660  & \underline{0.4440} \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 6709  & \cellcolor{LightCyan} \textbf{0.4571} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{ECG5000}  
+    & Linear        & 12966 & \underline{0.8886} \\ 
+    & Linear$^\star$ & 6726 & 0.8878 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 6823 & \cellcolor{LightCyan} \textbf{0.9058} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{LSST}  
+    & Linear        & 29343 & \underline{0.5928} \\ 
+    & Linear$^\star$ & 15375 & 0.5907 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 15472 & \cellcolor{LightCyan} \textbf{0.6486} \\ 
+\midrule
+\multirow{3.5}{*}[0.5ex]{Sleep}  
+    & Linear        & 12966 & \underline{0.4911} \\ 
+    & Linear$^\star$ & 6726 & 0.4897 \\ 
+    & \cellcolor{LightCyan} NdLinear & \cellcolor{LightCyan} 6823 & \cellcolor{LightCyan} \textbf{0.4978} \\ 
+\bottomrule
+\end{tabular}
+}
+\end{minipage}
+\end{table}

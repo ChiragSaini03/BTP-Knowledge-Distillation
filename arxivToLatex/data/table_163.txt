@@ -1,0 +1,22 @@
+\begin{table*}
+\caption{\textbf{Comparison of ipTM and VINA docking scores for designed peptide binders and scrambled negative control to protein targets with no known binders.} The ipTM and pTM scores are calculated by AlphaFold3 and docking scores are calculated by AutoDock VINA for peptides designed by Gumbel-Softmax FM with STGFlow. Designed sequences are randomly permuted to generate a scrambled negative control for comparison. *No PDB structure available. Used AlphaFold3 predicted structure for docking.}
+\label{table:Peptide No Existing Binder}
+\begin{center}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}lllccccccc@{}}
+\toprule
+\textbf{PDB ID} & \textbf{Protein Name} & \textbf{Disease}  &\multicolumn{2}{c}{\textbf{ipTM ($\uparrow$)}} & \multicolumn{2}{c}{\textbf{pTM ($\uparrow$)}} & \multicolumn{2}{c}{\textbf{VINA Docking Score (kcal/mol) ($\downarrow$)}} \\
+\midrule
+& & & designed & scramble & designed & scramble & designed & scramble \\
+\midrule
+ 6A9P & GFAP & Alexander Disease  & 0.62 & 0.38 & 0.31 & 0.29 & -5.9 & -3.7   \\
+ 6CAJ & eIF2B & Vanishing White Matter Disease & 0.61 & 0.39 & 0.77 & 0.76 & -9.1 & -9.0 \\
+ 3HVE & Gigaxonin & Giant Axonal Neuropathy  & 0.75 & 0.54 & 0.83 & 0.82 & -6.8 & -6.2 \\
+ 6W5V & NPC2 & Niemann-Pick Disease Type C  & 0.80 & 0.34 & 0.79 & 0.77 & -6.5 & -5.6 \\
+ * & JPH3 & Huntington’s Disease-Like 2 (HDL2)  & 0.72 & 0.60 & 0.49 & 0.49 & -7.9 & -7.8  \\
+ 2CKL & BMI1 & Medulloblastoma & 0.71 & 0.43 & 0.81 & 0.73 & -6.8 & -6.2 \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table*}

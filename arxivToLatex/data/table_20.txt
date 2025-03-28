@@ -1,0 +1,17 @@
+% \begin{table}[h!]
+% \centering
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{lrrrrrrr}
+% \toprule
+% \textbf{Status} & \textbf{Autoland} & \textbf{Firefox Android} & \textbf{Mozilla Beta} & \textbf{Mozilla Central} & \textbf{Mozilla Release} & \textbf{Total} \\
+% \midrule
+% FN & 261 & 12 & 9 & 2 & 0 & 284 \\
+% FP & 703 & 20 & 123 & 0 & 0 & 846 \\
+% SP & 5323 & 1 & 1339 & 0 & 1 & 6664 \\
+% TP & 7306 & 763 & 2126 & 0 & 0 & 10195 \\
+% \bottomrule
+% \end{tabular}%
+% }
+% \caption{Alert status count in alerts per repository}
+% \label{tab:alert_status_stat_per_project}
+% \end{table}

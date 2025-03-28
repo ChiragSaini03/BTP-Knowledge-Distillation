@@ -1,0 +1,26 @@
+\begin{table*}[!th]
+    \centering
+    \setlength{\tabcolsep}{6pt}
+    \caption{Employed CNN details including number of trainable parameters in millions, input shape, feature extraction layer, and related feature vector size.}
+    \label{tab:cnn_info}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{lcclc}
+        \toprule
+        \textbf{Reference} &\textbf{Parameters (M)} & \textbf{Input shape} & \textbf{Feature layer}& \textbf{\# Features} \\
+        \midrule
+         AlexNet & 60 & $224\times224$ & Pen. FC & 4,096 \\
+         DarkNet-19 & 20.8 & $224\times224$ & Conv19 & 1,000 \\
+         DarkNet-53 & 20.8 & $224\times224$ & Conv53 & 1,000 \\
+         DenseNet-201 & 25.6 & $224\times224$ & Avg. Pool & 1,920 \\
+         EfficientNetB0 & 5.3 & $224\times224$ & Avg. Pool & 1,280 \\
+         Inception-v3 & 21.8 & $299\times299$ & Last FC & 1,000 \\
+         Inception-ResNet-v2 & 55 & $299\times299$ & Avg. pool & 1,536 \\
+         ResNet-18 & 11.7 & $224\times224$ & Pool5 & 512 \\
+         ResNet-50 & 26 & $224\times224$ & Avg. Pool & 1,024 \\
+         ResNet-101 & 44.6  & $224\times224$ & Pool5 & 1,024 \\
+         VGG19 & 144 & $224\times224$ & Pen. FC & 4,096 \\
+         XceptionNet & 22.9 & $299\times299$ & Avg. Pool & 2,048 \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table*}

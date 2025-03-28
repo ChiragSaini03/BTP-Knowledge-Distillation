@@ -1,0 +1,24 @@
+\begin{table}[h!]
+  \centering
+  \small
+	\caption{Variables in US Census Dataset}
+	\label{tab:table_us_census}
+    \scalebox{0.8}{
+    \begin{tabular}{c|c|l}
+    \toprule
+    Variable name & Class & Description \\ \midrule
+    $MEDINC$ & DV & Estimate of median household income, 2021 (divided by 1000) \\ \midrule 
+    $RUC\_code$ & \multirow{11}{*}{IV} & Rural-Urban Continuum Code, 2013 \\
+    $Pctpovall$ & &Estimated percent of people of all ages in poverty 2021  \\
+    $Metro$ & & Metro nonmetro dummy 0=Nonmetro 1=Metro (Based on 2013 OMB Metropolitan Area delineation)  \\
+    $Civilian\_labor\_force$ & & Civilian labor force annual average, 2021 [log-scaled] \\
+    $Unemployment\_rate$ & & Unemployment rate, 2021  \\
+    $Pct\_Adults\_Less\_High$ & & Percent of adults with less than a high school diploma, 2017-21 \\
+    $Pct\_Adults\_Bachelor$ & & Percent of adults with a bachelor's degree or higher, 2017-21 \\
+    $Economic\_typology$ & & County economic types, 2015 edition. Non-overlapping economic-dependence county indicator \\
+    $POP\_ESTIMATE$ & & Resident total population estimate, 7/1/2021 [log-scaled] \\
+    $R\_NATURAL\_CHG$ & & Natural increase rate in period 7/1/2020 to 6/30/2021 \\
+    $R\_NET\_MIG$ & & Net migration rate in period 7/1/2020 to 6/30/2021 \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}%

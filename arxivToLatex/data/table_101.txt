@@ -1,0 +1,6 @@
+\begin{table}[t]
+\caption{\small Lower and upper bounds of finding $x$ such that $\E[\|\nabla f(x)\|]$ is no larger than the Byzantine error plus the optimization error $\epsilon$ in strongly convex stochastic optimization. Notations: $n$ is the number of nodes; $\delta \in [0,1/2)$ is the estimated fraction of Byzantine nodes that is no smaller than the true fraction of Byzantine nodes; \( \sigma^2 \) bounds the variance of the stochastic gradient estimates (see Assumption \ref{ass:u}), with \( \sigma^2 = 0 \) corresponding to deterministic optimization; \(\zeta^2\) bounds the stochastic gradient dissimilarity between the nodes (see Assumption \ref{ass:i}), with \(\zeta^2 = 0\) corresponding to homogeneous data distribution;
+$\rho \ge 0$ is the coefficient to measure the robustness of an aggregator (see Definition \ref{d:agg});
+$R = \|x^0 - \arg\min_x f(x)\|$; $L$ is the Lipschitz smoothness constant; $\mu$ is the strongly convex constant; $\kappa:={L}/{\mu}$ is the condition number; $\tilde \Omega(\cdot)$ and $\tilde O(\cdot)$ hide constants and logarithmic factors.
+}
+    \centering

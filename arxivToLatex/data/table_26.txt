@@ -1,0 +1,18 @@
+% \begin{table}
+% \caption{Test Suite and Tests count per framework}
+% \label{tab:test_suite_test_per_framework}
+% \begin{tabular}{lrr}
+% \toprule
+% Framework & Test Suite Count & Test Count \\
+% \midrule
+% AWSY~\cite{awsy} & 9 & 9 \\
+% Browsertime~\cite{browsertime} & 91 & 33 \\
+% Build Metrics~\cite{build-metrics} & 9 & 12 \\
+% Devtools~\cite{devtools} & 11 & 131 \\
+% Mozperftest~\cite{mozperftest} & 4 & 4 \\
+% Platform Microbenchmarks~\cite{microbench} & 12 & 168 \\
+% Talos~\cite{talos} & 50 & 170 \\
+% Total & 186 & 527 \\
+% \bottomrule
+% \end{tabular}
+% \end{table}

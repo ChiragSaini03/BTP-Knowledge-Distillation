@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+    \centering
+    \caption{The performance's decrease range of the model for the four datasets, moving from the lowest (\textsf{HD}=0) to the highest (\textsf{HD}=0.9) levels of non-IIDness and considering FedAvg. 
+    % \daniel{[I reduced the table proposed for clarity. Check if the conclusion is correct when Mehrdad updates the Physionet information.]}
+    } 
+    \resizebox{0.5\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c||}
+    \hline
+    Dataset & (\textsf{HD}=0) - (\textsf{HD}=0.9) \\
+    \hline\hline
+    CIFAR10 & 22.9\% \\
+    \hline
+    FMNIST & 10.31\% \\
+    \hline
+    Physionet & 16.62\% \\
+    \hline
+    Covtype & 35.85\% \\
+    \hline
+    \end{tabular}}
+    \label{tab:CL_to_FL_datasets}
+\end{table}

@@ -1,0 +1,26 @@
+%\begin{table*}[htbp]
+ %   \centering
+  %  \caption{Time in seconds that required for FedAvg, Rand, FedProx, POC, and MOON to achieve 90\% of the accuracy reached in different levels of non-IID cases as determined by HD over CIFAR10 \daniel{[I am unsure if adding the training time gives a different message than the convergence rounds of the previous subsection. LET?S DISCUSS THIS IN OUR NEXT MEETING WITH THE PROFESSORS.]}} 
+   % \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+    %\hline
+    %Category& Dataset & Aggregation algorithm & HD = 0 & HD = 0.25 & HD = 0.5 & HD = 0.75 & HD = 0.9 \\[1ex]
+    %\hline\hline
+
+    % FedAvg
+    %\multirow[c]{5}{*}{Label distribution skew} & \multirow[c]{5}{*}{CIFAR10}& FedAvg & 355s & 333s & 389s & 574s & 958s \\ \cline{3-8}
+
+    % Rand
+    %& & Rand & 235s & 234s & 281 & 484s & 795s \\ \cline{3-8}
+
+    % FedProx
+    %& & FedProx & 342s & 335s & 396s & 579s & 968s \\ \cline{3-8}
+
+    % POC
+    %& & POC & 214s & 210s & 250s & 352s & 785s \\ \cline{3-8}
+
+    % MOON
+    %& & MOON & 1037s & 1048s & 1357s & 1746s & 3135s \\ \cline{1-8}
+    
+    %\end{tabular}
+    %\label{tab:time_to_max_accuracy}
+%\end{table*}

@@ -1,0 +1,12 @@
+% \begin{table*}[h]
+% \caption{\label{tab:parameters} Table of all parameters use in the manuscript. The value for $\varepsilon$ in the FitzHugh-Nagumo is taken for all figures except where the model is used except when indicated otherwise.}
+% \begin{ruledtabular}
+% \begin{tabular}{lll}
+% Model           & Parameter & Values \\ \hline
+% FitzHugh-Nagumo, see Ref.~\cite{Cebrian-Lacasa2024}  & $a,b,c,d,\varepsilon$&    $0,0.5,0.3,1,1$    \\
+% Bicubic, see Ref.~\cite{Prokop2024b}& $a,b,c,d,e,f,g$ & $1,1,-1,-0.5, 0.5, -0.33, 1$        \\
+% Gene expression, see Ref.~\cite{Novak2008} & $k_1, S, K_d, k_du, k_dv, k_2, E_T K_m, K_I, n$ &  $1, 0.05,  1, 0.05,   1, 0.05,  1,  1, 0.1,  2, 4$      \\
+% Delay oscillator & $\beta, \tau, n$  & $4,10,2$      
+% \end{tabular}
+% \end{ruledtabular}
+% \end{table*}

@@ -1,0 +1,52 @@
+\begin{table*}
+\caption{Dataset statistics by repository.}
+\label{tab:dataset_summary_stats}
+\centering
+% \scriptsize % Further reduce font size to fit
+\begin{tabular}{lrr|rrr|rr}
+\toprule
+& 
+&
+&
+\multicolumn{3}{c|}{\textbf{Custom Alert Labels}}
+& 
+& 
+\\
+
+\textbf{Repository} & 
+\textbf{Time Series} &
+\textbf{Alerts} & 
+\textbf{True} & 
+\textbf{False} & 
+\textbf{Uncertain} & 
+ \textbf{Alert Summaries} & 
+\textbf{Bugs} \\
+
+\midrule
+
+Autoland & 3833 & 13593 & 1779 & 431 & 1109 & 3319 & 438 \\ 
+Mozilla Beta  & 1477 & 3597 & 317 & 45 & 110 & 472 & 25 \\ 
+Firefox Android & 342 & 796 & 105 & 12 & 1 & 118 & 25 \\ 
+Mozilla Central & 2 & 2 & 2 & 0 & 0 & 2 & 2 \\ 
+Mozilla Release & 1 & 1 & 0 & 0 & 1 & 1 & 1 \\ 
+\midrule
+\textbf{Total} & \textbf{5655} & \textbf{17989} & \textbf{2203} & \textbf{488} & \textbf{1221} & \textbf{3912} & \textbf{482} \\ 
+
+\bottomrule
+
+% \textbf{Repository} & 
+% \textbf{Alerts} & 
+% \textbf{Time Series} & 
+% \textbf{Alert Summaries} & 
+% \textbf{Bugs} \\
+% \midrule
+% Autoland & 13,593 & 3,833 & 3,319 & 438 \\ 
+% Firefox Android & 796 & 342 & 118 & 25 \\ 
+% Mozilla Beta & 3,597 & 1,477 & 472 & 25 \\ 
+% Mozilla Central & 2 & 2 & 2 & 2 \\ 
+% Mozilla Release & 1 & 1 & 1 & 1 \\ \
+% \textbf{Total} & \textbf{17,989} & \textbf{5,655} & \textbf{3,912} & 
+% \textbf{482} \\ 
+% \bottomrule
+\end{tabular}
+\end{table*}

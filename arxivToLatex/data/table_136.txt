@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+    \centering
+    \caption{The number of cases in which each aggregation algorithm achieved the best performance for each type of dataset} 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c||}
+    \hline
+    Dataset type &  \#Cases & FedAvg & Rand & FedProx & POC & MOON\\
+    \hline\hline
+    Image &  34 & 7 & 3 & 15 & 9 & 0 \\ \cline{1  - 7}
+    Tabular & 44 & 1 & 0 & 3 &  9 & 31 \\ \cline{1  - 7}
+    \cline{1  - 7}
+    \multicolumn{2}{||c|}{Total best performance} & 8 & 3 & 18 & 18 & 31 \\ 
+\cline{ 1 - 7}  
+   
+    \end{tabular}
+    }
+\label{tab:Bestperformance_dist_dataset}
+\end{table}

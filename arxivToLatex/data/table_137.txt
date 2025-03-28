@@ -1,0 +1,17 @@
+\begin{table}[h]
+\centering
+\caption{Training hyperparameters}
+\begin{tabular}{lcc}
+\hline
+Parameter & Ising Model & J1-J2 Model \\
+\hline
+Learning rate & 0.01 & 0.01 \\
+Training steps & 200 & 200 \\
+System size (spins) & 8 & 12 \\
+Hidden layer ratio ($\alpha$) & 1 & 2 \\
+Coupling increment ($\Delta h$ or $\Delta J_2/J_1$) & 0.025 & 0.01 \\
+Coupling range & $[0,3]$ & $[0,1]$ \\
+Network weights type & Real & Complex \\
+\hline
+\end{tabular}
+\end{table}

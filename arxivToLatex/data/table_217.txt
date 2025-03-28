@@ -1,0 +1,20 @@
+\begin{table}[t!]
+\centering
+%\captionsetup{format=myformat}
+\caption{Certified accuracy of Tiny-ImageNet smoothed classifiers at various $\ell_2$ radii.}
+\label{tab:2}
+\vspace{1mm}
+\renewcommand\arraystretch{1.35}
+\scalebox{0.7}{
+\begin{tabular}{lccccccccc}
+\specialrule{.1em}{.075em}{.075em} 
+\multicolumn{1}{c}{$\ell_2$ radius} && \multicolumn{2}{c}{0.} && \multicolumn{2}{c}{0.05} && \multicolumn{2}{c}{0.15} \\ 
+\multicolumn{1}{c}{Accuracy (\%)} && Overall & Worst && Overall & Worst && Overall & Worst   \\ 
+\cline{1-1} \cline{3-4} \cline{6-7} \cline{9-10} 
+Baseline  && 64.8 & 26 && 48.6 & 12 && \bf 37.2 & 2   \\
+\;\; + Ours && \bf 65.0 & \bf 32 && \bf 49.2 & \bf 18 && \bf 37.2 & \bf 4  \\
+\specialrule{.1em}{.075em}{.075em} 
+\end{tabular}
+}
+\vspace{-2mm}
+\end{table}

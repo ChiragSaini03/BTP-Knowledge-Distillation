@@ -1,0 +1,28 @@
+\begin{table}[h!]
+  \centering
+  \small
+	\caption{Variables in Ohio Dataset}
+	\label{tab:table3}
+    \scalebox{0.8}{
+    \begin{tabular}{c|c|l}
+    \toprule
+    Variable name & Class & Description \\ \midrule
+    $cfexp\_per\_org$ & DV & Total expenditure per organization in the county [log-scaled] \\ \midrule 
+    $totpop$ & \multirow{15}{*}{IV} & Total population of the county [log-scaled] \\
+    $tothse$ & & Total household of the county [log-scaled] \\
+    $popdensity$ & & Population density in the county [log-scaled] \\
+    $fct\_complement$ & & Factor score for complement facilities (bar, restaurant, accommodation) in the county \\
+    $medhinc$ & & Median household income (in thousands of dollars) in the county [log-scaled] \\
+    $meanhinc$ & & Mean household income (in thousands of dollars) in the county [log-scaled] \\
+    $educ\_grad$ & & Percentage of population with a graduate degree in the county \\
+    $educ\_bach$ & & Percentage of population with bachelor's degree or above in the county \\
+    $econ\_unemp$ & & Percentage of unemployed population in the county\\
+    $econ\_poverty$ & & Poverty rate in percentage in the county \\
+    $income\_GE100k$ & & Percentage of population with income $\geq$ 100k in the county \\
+    $income\_GE200k$ & & Percentage of population with income $\geq$ 200k in the county \\
+    $race\_white$ & & Percentage of the white population in the county \\
+    $age\_GE65$ & & Percentage of population aged $\geq$ 65 in the county \\
+    $age\_LE18$ & & Percentage of population aged $\leq$ 18 in the county \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}%

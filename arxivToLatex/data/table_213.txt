@@ -1,0 +1,20 @@
+\begin{table}[]
+\caption{Evaluation of the $\Delta$-spread metric with 256 sampled designs on \texttt{ZDT} subtask, part of the \textbf{synthetic} task. Results are averaged over 5 different random seeds. Lower values are better.}
+\label{tab:divzdt}
+\begin{tabular}{l|ccccc}
+\hline
+\textbf{Method}                   & \multicolumn{1}{c|}{\textbf{ZDT1}} & \multicolumn{1}{c|}{\textbf{ZDT2}} & \multicolumn{1}{c|}{\textbf{ZDT3}} & \multicolumn{1}{c|}{\textbf{ZDT4}} & \textbf{ZDT6}          \\ \hline
+MultiHead-GradNorm                & 0.96 $\pm$ 0.19                     & 0.94 $\pm$ 0.16                     & 0.93 $\pm$ 0.17                     & 0.79 $\pm$ 0.15                     & 0.77 $\pm$ 0.16         \\
+MultiHead-PcGrad                  & 0.83 $\pm$ 0.1                      & 0.98 $\pm$ 0.13                     & 0.79 $\pm$ 0.03                     & 0.67 $\pm$ 0.04                     & 0.82 $\pm$ 0.11         \\
+MultiHead                         & 1.13 $\pm$ 0.08                     & 1.04 $\pm$ 0.05                     & 0.83 $\pm$ 0.06                     & 0.68 $\pm$ 0.03                     & 1.22 $\pm$ 0.07         \\
+MultipleModels-COM                & 0.89 $\pm$ 0.04                     & 0.79 $\pm$ 0.11                     & 0.83 $\pm$ 0.05                     & 0.64 $\pm$ 0.03                     & 1.0 $\pm$ 0.09          \\
+MultipleModels-ICT                & 1.1 $\pm$ 0.02                      & 1.01 $\pm$ 0.07                     & 0.86 $\pm$ 0.06                     & 0.69 $\pm$ 0.07                     & 0.98 $\pm$ 0.06         \\
+MultipleModels-IOM                & 0.94 $\pm$ 0.1                      & 0.9 $\pm$ 0.05                      & 0.81 $\pm$ 0.07                     & 0.73 $\pm$ 0.04                     & \textbf{0.46 $\pm$ 0.1} \\
+MultipleModels-RoMA               & 0.64 $\pm$ 0.06                     & 0.92 $\pm$ 0.1                      & 0.79 $\pm$ 0.07                     & 0.69 $\pm$ 0.02                     & 0.78 $\pm$ 0.06         \\
+MultipleModels-TriMentoring       & 0.86 $\pm$ 0.03                     & 0.86 $\pm$ 0.06                     & 0.9 $\pm$ 0.04                      & 0.73 $\pm$ 0.02                     & 0.78 $\pm$ 0.06         \\
+MultipleModels                    & 1.07 $\pm$ 0.06                     & 1.01 $\pm$ 0.03                     & 0.84 $\pm$ 0.03                     & 0.7 $\pm$ 0.05                      & 1.19 $\pm$ 0.04         \\ \hline
+ParetoFlow                        & 1.46 $\pm$ 0.03                     & 1.19 $\pm$ 0.1                      & 1.46 $\pm$ 0.14                     & 1.31 $\pm$ 0.1                      & 0.71 $\pm$ 0.05         \\ \hline
+\textbf{PGD-MOO + DataPruning (Ours)} & \textbf{0.66 $\pm$ 0.08}            & \textbf{0.61 $\pm$ 0.03}            & \textbf{0.6 $\pm$ 0.03}             & \textbf{0.6 $\pm$ 0.04}             & 0.8 $\pm$ 0.05          \\
+\textbf{PGD-MOO (Ours)}               & \textbf{0.68 $\pm$ 0.07}            & 0.78 $\pm$ 0.09                     & 0.65 $\pm$ 0.03                     & \textbf{0.6 $\pm$ 0.03}             & 0.76 $\pm$ 0.03        
+\end{tabular}
+\end{table}

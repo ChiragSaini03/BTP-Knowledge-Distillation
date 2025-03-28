@@ -1,0 +1,23 @@
+\begin{table}[]
+	\centering
+	\caption{Matminer featurizers generating the features selected for defining the heterogeneity metric between datasets.
+    A brief description and the source of the data is also provided.}
+    \setlength{\tabcolsep}{3pt}% column separation
+
+	\begin{tabular}{p{3.8cm}p{8cm}}
+    \hline
+    \hline
+	Matminer Featurizer              &  Description \\ 
+    \hline
+	$\bullet$ Miedema                & Formation enthalpies of intermetallic compounds~\cite{miedema_zhang_2016}.\\
+    $\bullet$ ElementProperty        & Weighted elemental statistics~\cite{Ward2016}.\\
+    \0 (“magpie” preset)             & \\
+	$\bullet$ OxidationStates        & Statistics about the oxidation states for each specie.
+    Features are concentration-weighted statistics of the oxidation states.\\
+	$\bullet$ AtomicOrbitals         & Estimation of the highest occupied molecular orbital (HOMO) and lowest unoccupied molecular orbital (LUMO) energies based on the composition and the atomic orbital energies~\cite{Svetlana}.\\ 
+	$\bullet$ GlobalSymmetryFeatures & Symmetry information.\\
+    \hline
+    \hline
+	\end{tabular}
+	\label{tab:fd47}
+\end{table}	

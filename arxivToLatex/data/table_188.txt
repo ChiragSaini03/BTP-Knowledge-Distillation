@@ -1,0 +1,62 @@
+\begin{table}[ht!]
+\centering
+\caption{\small\textbf{Comparison of Fully Connected Layer vs.\ NdLinear (\cref{sec:complexity,sec:implementation}). }
+$n$: number of dimensions (excluding batch),
+$B$: batch size,
+$D_i$: size of input dimension~$i$,
+$H_i$: size of output dimension~$i$.}
+\label{tab:fc_vs_nd}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}C{0.18\linewidth} C{0.38\linewidth} C{0.38\linewidth}@{}}
+\toprule
+\textbf{Aspect} 
+ & \textbf{Fully Connected Layer} 
+ & \textbf{NdLinear} \\
+\midrule
+
+\makecell{Parameter\\ Space} 
+ & $\bigl(\prod_{i=1}^{n} D_i\bigr)\,\times\,\bigl(\prod_{i=1}^{n} H_i\bigr)$ 
+ & $\sum_{i=1}^{n} \bigl(D_i \times H_i\bigr)$ \\
+\midrule
+
+\makecell{Time\\ Complexity}
+ & $O\bigl(B\,\prod_{i=1}^{n}D_i\,\prod_{i=1}^{n}H_i\bigr)$
+ & $O\Bigl(B \sum_{i=1}^{n}\bigl(\prod_{j \neq i} D_j\bigr)\,D_i\,H_i\Bigr)$ \\
+\midrule
+
+\makecell{Dimensional\\ Growth} 
+ & Large polynomial growth in $\prod_i D_i \cdot \prod_i H_i$
+ & Grows roughly linearly in $n$; each dimension transformed separately \\
+\midrule
+
+\makecell{Structural\\ Assumptions}  %
+ & Unrestricted linear mapping \hspace{1em} (flattens data)
+ & Factorized mapping across\hspace{3em}  each dimension \hspace{4em} (preserves tensor structure) \\
+\midrule
+
+\makecell{Representational\\ Power} 
+ & Can represent any linear \hspace{1em} transform in $\mathbb{R}^{\prod D_i \to \prod H_i}$
+ & Factorizable transforms only; not every arbitrary linear mapping \\
+\midrule
+
+\makecell{Regularization\\ Effect} 
+ & Potentially over-parameterized; prone to overfitting 
+ & Fewer parameters; structured bias often improves generalization \\
+\midrule
+
+\makecell{Practical\\ Benefits} 
+ & Straightforward but expensive \hspace{2em} for large $n$ 
+ & Efficient in memory/compute; retains multi-dimensional \hspace{1em}inductive bias \\
+\midrule
+
+\makecell{Expressiveness\\ vs.\ Efficiency} 
+ & Maximum expressiveness at \hspace{2em} high parameter cost 
+ & Slightly reduced expressiveness with big gains in efficiency \\
+\midrule
+
+\makecell{Extensibility,\\ Deep Architectures} 
+ & Extra layers can explode \hspace{1em} parameter count 
+ & Stacking multiple NdLinear \hspace{1em} layers yields richer functions with fewer parameters \\
+\bottomrule
+\end{tabular}
+\end{table}

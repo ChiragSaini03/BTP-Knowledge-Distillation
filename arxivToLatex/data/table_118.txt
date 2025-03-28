@@ -1,0 +1,19 @@
+% \begin{table}[htbp]
+%     \centering
+%     \caption{Mean and standard deviation of the models' accuracy after running each for ten trials.}
+%     \begin{tabular}{||c|c||}
+%     \hline
+%     Dataset& Accuracy\\[1ex]
+%     \hline\hline
+%     Physionet & 51.5\% $\pm$ 0.4\%\\ 
+%     \hline
+%     CIFAR10 & 70.5\% $\pm$ 0.6\%\\
+%     \hline
+%     FMNIST & 90.9\% $\pm$ 0.2\%\\
+%     \hline
+%     Covtype &  95.6\% $\pm$ 0.1\%\\
+%     \hline
+    
+%     \end{tabular}
+%     \label{tab:centralized_setting}
+% \end{table}

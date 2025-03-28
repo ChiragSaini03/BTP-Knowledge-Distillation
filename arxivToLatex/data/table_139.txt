@@ -1,0 +1,14 @@
+\begin{table}[b!]
+    \centering
+    \begin{tabularx}{0.48\textwidth}{|X|c|c|c||c|}
+       \hline
+       \textbf{Method} & \textbf{Failure} & \textbf{Infeasible} & \textbf{Feasible} & \textbf{Total} \\
+       \hline\hline
+        Sobol & $23\:(36\%)$ & $31\:(48\%)$ & $10\:(16\%)$ & $64$
+        \\\hline
+        BO & $4\:(6\%)$ & $37\:(58\%)$ & $23\:(36\%)$ & $64$
+        \\\hline
+    \end{tabularx}
+    \caption{The number (and percentage) of samples from each sampling method that lie in failure, infeasible, or feasible regions.}
+    \label{tab:convergence}
+\end{table}

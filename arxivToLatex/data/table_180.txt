@@ -1,0 +1,89 @@
+\begin{table}[h]
+\centering
+\resizebox{1.\textwidth}{!}{%}
+\begin{tabular}{ccc|ccccccc|cc}
+%\midrule
+%\tabalign{\textsc{}}      & \tabalign{\textsc{Similarity}}    & WikiText-2 & PTB & C4   &   {SNIPS}   & {AlpacaEval}   & {MCTest} 
+%& {CMRC (CN)} & {AlpacaEval (JP)}   & \\ \midrule
+%\tabalign{\textsc{}}      & \tabalign{\textsc{}}    & \textcolor{gray}{0.94 (0.04)} & \textcolor{gray}{0.59 (0.17)} & \textcolor{gray}{0.75 (0.19)}   &  \textcolor{gray}{0.52 (0.23)}  & \textcolor{gray}{0.72 (0.19)}   & \textcolor{gray}{0.58 (0.22)}
+%& \textcolor{mylightbluetext}{0.46 (0.19)} & \textcolor{mylightbluetext}{0.45 (0.2)}   & 
+%\\ 
+%\midrule
+\midrule
+\tabalign{\textsc{Ratio}}      & \tabalign{\textsc{Method}}    & WikiText-2 & PTB & C4   &   {SNIPS}   & {AlpacaEval}   & {MCTest} 
+& {CMRC (CN)} & {AlpacaEval (JP)}   & Avg. Impro.
+\\ \midrule
+\tabalign{\textcolor{gray}{0\%}}  & \tabalign{\textcolor{gray}{Original}} & \textcolor{gray}{5.68}   &  \textcolor{gray}{8.35}     & \textcolor{gray}{7.34}   
+& \textcolor{gray}{5.88}  & \textcolor{gray}{3.39}  & \textcolor{gray}{1.97}    & \textcolor{gray}{5.77}    & \textcolor{gray}{5.36}   & --
+\\ \midrule
+\topaa  & \tabalign{SVD}     & 2778.92 & 4011.84 & 4062.66 & 2135.73 & 2318.94 & 3163.11 & 37554.17 & 4894.34 & --    \\
+\toppp  & \tabalign{ASVD-0}  & 26.95 & 41.91 & 37.65 & 18.82 & 11.59 & 3.41 & 85.55 & 123.64 & --  \\
+\toppp  & \tabalign{ASVD-I}  & 7.07  & 12.42 & 12.04 & 7.84 & 4.81 & 2.21  & 14.05 & 15.93& -- \\
+\cmidrule{2-10} 
+\toppp  & \tabalign{\asvdii}  & 7.07  & 12.41 & 12.03 & 7.84 & 4.81 & 2.21 & 14.05 & 15.93 & --  \\
+\toppp  & \tabalign{\nestdecom} & {7.08} (\textcolor{mylightbluetext}{$\uparrow$0.1\%})  & \textbf{12.03} (\textcolor{mylightbluetext}{$\downarrow$3.1\%})& \textbf{11.58} (\textcolor{mylightbluetext}{$\downarrow$3.8\%})    & \textbf{7.74}  (\textcolor{mylightbluetext}{$\downarrow$1.3\%}) 
+& \textbf{4.66}  (\textcolor{mylightbluetext}{$\downarrow$3.1\%})  & \textbf{2.19}  (\textcolor{mylightbluetext}{$\downarrow$0.9\%}) &
+\textbf{12.54}  (\textcolor{mylightbluetext}{$\downarrow$10.7\%})  & \textbf{14.89}  (\textcolor{mylightbluetext}{$\downarrow$6.5\%}) & 4.2\% \\
+\toppp  & \tabalign{\nestdecomii} & {7.08} (\textcolor{mylightbluetext}{$\uparrow$0.1\%})  & \textbf{12.03} (\textcolor{mylightbluetext}{$\downarrow$3.1\%})& \textbf{11.58} (\textcolor{mylightbluetext}{$\downarrow$3.8\%})    & \textbf{7.74}  (\textcolor{mylightbluetext}{$\downarrow$1.3\%}) 
+& \textbf{4.67}  (\textcolor{mylightbluetext}{$\downarrow$2.9\%})  & \textbf{2.19}  (\textcolor{mylightbluetext}{$\downarrow$0.9\%}) &
+\textbf{12.54}  (\textcolor{mylightbluetext}{$\downarrow$10.7\%})  & \textbf{14.89}  (\textcolor{mylightbluetext}{$\downarrow$6.5\%}) & 4.2\%
+\\ \midrule
+\topbb  & \tabalign{SVD}    & 20083.00  & 20436.32  & 18827.16 & 39417.77 & 12539.73 & 18853.27 & 127786.81 & 123109.21 & --     \\
+\toppp  & \tabalign{ASVD-0} & 91.85  & 133.18  & 129.77 & 54.27 & 50.18 & 8.66  & 721.09 & 908.54 & --      \\
+\toppp  & \tabalign{ASVD-I} & 7.89   & 16.54  & 15.93  & 10.50 & 6.14 & 2.44 & 48.09 & 38.31 & --\\
+\cmidrule{2-10}   
+\toppp  & \tabalign{\asvdii} & 7.89   & 16.49  & 15.95  & 10.51 & 6.15 & 2.44 & 48.13 & 38.32 & --\\
+\toppp  & \tabalign{\nestdecom} & {7.92} (\textcolor{mylightbluetext}{$\uparrow$0.4\%})  & \textbf{15.44} (\textcolor{mylightbluetext}{$\downarrow$6.7\%})& \textbf{15.23} (\textcolor{mylightbluetext}{$\downarrow$4.4\%})   & \textbf{9.93}  (\textcolor{mylightbluetext}{$\downarrow$5.4\%})
+& \textbf{5.85}  (\textcolor{mylightbluetext}{$\downarrow$4.7\%})   & \textbf{2.40}  (\textcolor{mylightbluetext}{$\downarrow$1.6\%}) 
+&  \textbf{34.49}  (\textcolor{mylightbluetext}{$\downarrow$28.3\%}) & \textbf{34.51}  (\textcolor{mylightbluetext}{$\downarrow$9.9\%})& 8.7\%\\
+\toppp  & \tabalign{\nestdecomii} & {7.93} (\textcolor{mylightbluetext}{$\uparrow$0.5\%})  & \textbf{15.41} (\textcolor{mylightbluetext}{$\downarrow$6.8\%})& \textbf{15.27} (\textcolor{mylightbluetext}{$\downarrow$4.1\%})     & \textbf{9.95}  (\textcolor{mylightbluetext}{$\downarrow$5.2\%})
+&\textbf{5.86} (\textcolor{mylightbluetext}{$\downarrow$4.6\%})     & \textbf{2.40}  (\textcolor{mylightbluetext}{$\downarrow$1.6\%}) 
+& \textbf{34.51}  (\textcolor{mylightbluetext}{$\downarrow$28.2\%}) & \textbf{34.51}  (\textcolor{mylightbluetext}{$\downarrow$9.9\%}) & 8.6\%
+\\ \midrule
+\topcc  & \tabalign{SVD}    & 13183.07  & 17321.18  & 21055.10 & 6899.56 & 16912.55 & 19886.18 & 203777.87 & 160611.69 & --   \\
+\toppp  & \tabalign{ASVD-0} & 228.77 & 326.20 & 312.18 & 115.65 & 157.33 & 42.37 & 1406.88 & 1359.26 & --           \\
+\toppp  & \tabalign{ASVD-I} & 9.51   & 27.11  & 25.81   & 17.89 & 9.45 & 3.06  & 688.23 & 813.23 & --\\
+\cmidrule{2-10}   
+\toppp  & \tabalign{\asvdii} & 9.51   & 27.15  & 25.81   & 17.95 & 9.45 & 3.06 & 689.93 & 814.98 & --\\
+\toppp  & \tabalign{\nestdecom} & {9.64} (\textcolor{mylightbluetext}{$\uparrow$1.4\%})  & \textbf{25.19} (\textcolor{mylightbluetext}{$\downarrow$7.1\%})& \textbf{24.41} (\textcolor{mylightbluetext}{$\downarrow$5.4\%})    
+& \textbf{15.74} (\textcolor{mylightbluetext}{$\downarrow$12.1\%})    
+& \textbf{8.85} (\textcolor{mylightbluetext}{$\downarrow$6.3\%})    & \textbf{3.02} (\textcolor{mylightbluetext}{$\downarrow$1.3\%})  
+& \textbf{577.63} (\textcolor{mylightbluetext}{$\downarrow$16.1\%}) & \textbf{367.69} (\textcolor{mylightbluetext}{$\downarrow$54.8\%})& 14.7\% \\
+\toppp  & \tabalign{\nestdecomii} & {9.65} (\textcolor{mylightbluetext}{$\uparrow$1.5\%})  & \textbf{25.31} (\textcolor{mylightbluetext}{$\downarrow$6.6\%})
+& \textbf{24.51} (\textcolor{mylightbluetext}{$\downarrow$5.0\%})   & \textbf{15.80} (\textcolor{mylightbluetext}{$\downarrow$11.7\%})    
+& \textbf{8.88} (\textcolor{mylightbluetext}{$\downarrow$6.0\%})    & \textbf{3.02} (\textcolor{mylightbluetext}{$\downarrow$1.3\%})  
+& \textbf{579.14} (\textcolor{mylightbluetext}{$\downarrow$15.9\%})  & \textbf{373.64} (\textcolor{mylightbluetext}{$\downarrow$54.1\%})  & 14.4\%
+\\ \midrule
+\topdd  & \tabalign{SVD}    & 52415.35  & 59743.13  & 47712.12 & 48902.68 & 34563.55 & 50406.63 & 138049.05 & 159592.52 & --   \\
+\toppp  & \tabalign{ASVD-0} & 681.86 & 1255.66   & 829.90 & 351.98 & 434.39 & 294.58  & 9518.03 & 50113.53 & --       \\
+\toppp  & \tabalign{ASVD-I} & 13.74  & 62.82  & 55.55   & 38.96 & 19.72 & 4.78   & 20629.84 & 35974.28 & -- \\ 
+\cmidrule{2-10}  
+\toppp  & \tabalign{\asvdii} & 13.74  & 62.88  & 55.47   & 38.84 & 19.83 & 4.80  & 20816.34 & 35994.52& --  \\  
+\toppp  & \tabalign{\nestdecom} & {14.24} (\textcolor{mylightbluetext}{$\uparrow$3.6\%})  & \textbf{61.16} (\textcolor{mylightbluetext}{$\downarrow$2.6\%})
+& \textbf{54.22} (\textcolor{mylightbluetext}{$\downarrow$2.4\%})  & \textbf{35.57} (\textcolor{mylightbluetext}{$\downarrow$8.7\%})
+& \textbf{18.88} (\textcolor{mylightbluetext}{$\downarrow$4.3\%})  & \textbf{4.75} (\textcolor{mylightbluetext}{$\downarrow$0.6\%}) 
+& \textbf{11899.94} (\textcolor{mylightbluetext}{$\downarrow$42.3\%}) & \textbf{11729.03} (\textcolor{mylightbluetext}{$\downarrow$67.4\%}) & 18.3\% \\
+\toppp  & \tabalign{\nestdecomii} & {14.29} (\textcolor{mylightbluetext}{$\uparrow$4.0\%})  & \textbf{61.57} (\textcolor{mylightbluetext}{$\downarrow$2.0\%})& \textbf{54.18} (\textcolor{mylightbluetext}{$\downarrow$2.5\%})   
+& \textbf{35.37} (\textcolor{mylightbluetext}{$\downarrow$9.2\%})
+& \textbf{18.99} (\textcolor{mylightbluetext}{$\downarrow$3.7\%}) & \textbf{4.76} (\textcolor{mylightbluetext}{$\downarrow$0.4\%}) 
+& \textbf{11917.10} (\textcolor{mylightbluetext}{$\downarrow$42.2\%}) & \textbf{11886.94} (\textcolor{mylightbluetext}{$\downarrow$67.0\%}) & 18.1\%
+\\ \midrule
+\topee  & \tabalign{SVD}    & 131872.88  & 86942.90  & 79661.03 & 52970.02 & 62037.18 & 100978.91 & 296638.73 & 607005.28 & --   \\
+\toppp  & \tabalign{ASVD-0} & 1266.12 & 2448.33 & 1373.45 & 956.99 & 889.06 & 1029.50  & 142270.06 & 301097.83 & --     \\ 
+\toppp  & \tabalign{ASVD-I} & 26.61   & 182.81 & 151.83   & 92.57 & 65.07 & 13.81 & 87327.64 & 210253.49  & --\\
+\cmidrule{2-10}   
+\toppp  & \tabalign{\asvdii} & 26.78   & 183.15 & 152.01   & 93.08 & 65.04 & 13.71 & 87538.71 & 210129.23 & --\\
+\toppp  & \tabalign{\nestdecom} &{28.53} (\textcolor{mylightbluetext}{$\uparrow$7.2\%})  & \textbf{180.56} (\textcolor{mylightbluetext}{$\downarrow$1.2\%})& \textbf{146.62} (\textcolor{mylightbluetext}{$\downarrow$3.4\%}) & \textbf{89.91} (\textcolor{mylightbluetext}{$\downarrow$2.9\%}) 
+& \textbf{62.81} (\textcolor{mylightbluetext}{$\downarrow$3.4\%}) & \textbf{13.11} (\textcolor{mylightbluetext}{$\downarrow$5.1\%}) 
+& \textbf{60518.94} (\textcolor{mylightbluetext}{$\downarrow$30.7\%}) & \textbf{110191.48} (\textcolor{mylightbluetext}{$\downarrow$47.6\%})  & 13.5\% \\
+\toppp  & \tabalign{\nestdecomii} &{28.73} (\textcolor{mylightbluetext}{$\uparrow$8.0\%})  & \textbf{180.60} (\textcolor{mylightbluetext}{$\downarrow$1.2\%})& \textbf{147.80} (\textcolor{mylightbluetext}{$\downarrow$2.7\%}) & \textbf{90.64} (\textcolor{mylightbluetext}{$\downarrow$2.1\%}) 
+& \textbf{62.35} (\textcolor{mylightbluetext}{$\downarrow$4.2\%}) & \textbf{13.01} (\textcolor{mylightbluetext}{$\downarrow$5.8\%}) 
+& \textbf{61064.03} (\textcolor{mylightbluetext}{$\downarrow$30.1\%}) & \textbf{110091.03} (\textcolor{mylightbluetext}{$\downarrow$47.6\%}) & 13.4\%
+\\ \midrule
+\end{tabular}
+}
+\captionof{table}{Zero-shot performance of LLaMA-7B compressed using NSVD-I and various baselines evaluated under compression ratios ranging from 10\% to 50\%, across \textcolor{black}{eight} language modeling datasets (measured by perplexity  (\textcolor{mylightbluetext}{$\downarrow$})). The best performance on each dataset is highlighted in bold. The relative performance gain compared to the best-performing baseline (here, ASVD-I) is indicated in blue text within bracket.
+In all scenarios, we apply  NSVD-I or NSVD-II with $k_1=0.95\cdot k$, $k_2=k-k_1$, where $k$ is the low-rank parameter used in  ASVD approaches.
+}
+\label{tab:nsce_ppl1}
+\end{table}

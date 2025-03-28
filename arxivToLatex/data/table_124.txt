@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+    \centering
+    \caption{The number of rounds required for FedAvg, Rand, FedProx, POC, and MOON to achieve 90\% of the maximum accuracy reached in different levels of non-IID cases as determined by \textsf{HD} over CIFAR10 for K = 30.} 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+    \hline
+    Category& Dataset & \makecell{Aggregation \\algorithm} & \textsf{HD} = 0 & \textsf{HD} = 0.25 & \textsf{HD} = 0.5 & \textsf{HD} = 0.75 & \textsf{HD} = 0.9 \\
+    \hline\hline
+
+    % FedAvg
+    \multirow[c]{5}{*}{\makecell{Label \\distribution \\skew}} & \multirow[c]{5}{*}{CIFAR10}& FedAvg & 5 & 5 & 6 & 9 & 15 \\ \cline{3-8}
+
+    % Rand
+    & & Rand & 5 & 5 & 6 & 10 & 14 \\ \cline{3-8}
+
+    % FedProx
+    & & FedProx & 5 & 5 & 6 & 9 & 15 \\ \cline{3-8}
+
+    % POC
+    & & POC & 5 & 5 & 6 & 8 & 15 \\ \cline{3-8}
+
+    % MOON
+    & & MOON & 8 & 8 & 10 & 12 & 20 \\ \cline{1-8}
+    
+    \end{tabular}}
+    \label{tab:Round_to_max_accuracy}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{table}[b!]
+    \centering
+    \begin{tabularx}{0.49\textwidth}{|X|c|c|}
+        \hline
+         \textbf{Objective/constraint} & \textbf{Sample $\bm{110}$} & \textbf{Sample $\bm{71}$} \\
+         \hline\hline
+         $V$  & $77.6$ [$\mathrm{m}^3$] & $85.1$ [$\mathrm{m}^3$] \\
+         \hline
+         ICL & $96.9$ [$\mathrm{m}$] & $108$ [$\mathrm{m}$] \\
+         \hline
+         OCL & $70.3$ [$\mathrm{m}$] & $71.8$ [$\mathrm{m}$] \\
+         \hline\hline
+         LCFS area ratio & $0.0117$ & $0.0103$ \\
+         \hline
+         Outer strike distance & $0.0957$ [$\mathrm{m}$] & $0.0962$ [$\mathrm{m}$] \\
+         \hline
+         Inner strike distance & $0.0233$ [$\mathrm{m}$] & $0.0305$ [$\mathrm{m}$] \\
+         \hline
+         X-point distance & $0.00394$ [$\mathrm{m}$] & $0.000919$ [$\mathrm{m}$]\\
+         \hline
+         $J_{\text{max}}$ & $82.4$ [$\mathrm{MA}/\mathrm{m}^2$] & $98.8$ [$\mathrm{MA}/\mathrm{m}^2$] \\
+         \hline\hline
+         Inner $\langle B_p \rangle$ & $0.413$ [$\mathrm{T}$] & $0.373$ [$\mathrm{T}$] \\
+         \hline
+         Outer $\langle B_p \rangle$ & $0.537$ [$\mathrm{T}$] & $0.530$ [$\mathrm{T}$] \\
+         \hline
+    \end{tabularx}
+    \caption{The objectives and constraint values (to three significant figures) returned for two of the Pareto optimal solutions shown in \cref{fig:pareto_equilibria}.
+    Also shown are the inner and outer line-averaged poloidal magnetic field readings.
+    }
+    \label{tab:key-quantities}
+\end{table}

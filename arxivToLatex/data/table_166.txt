@@ -1,0 +1,19 @@
+\begin{table*}[h!]
+\caption{\textbf{KL divergences of toy experiment for increasing simplex dimensions compared to benchmark models.} The sequence length is set to a constant of 4 across all experiments. The toy models are trained on 100K sequences from a random distribution. KL divergence is evaluated for 51.2K sequences after 50K training steps.}
+\label{table:Toy Experiment}
+\begin{center}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\textbf{Simplex Dimension $K$} & 20 & 40 & 60 & 80 & 100 & 120 & 140 & 160 & 512 \\
+\midrule
+Linear FM & 0.013 & 0.046 & 0.070 & 0.100 & 0.114 & 0.112 & 0.156 & 0.146 & 0.479 \\
+Dirichlet FM & 0.007 & 0.017 & 0.032 & 0.035 & 0.028 & 0.024 & 0.039 & 0.053 & 0.554 \\
+Fisher FM (Optimal Transport) & 0.0004 & 0.007 & 0.007 & 0.007 & 0.008 & 0.043 & 0.013 & 0.013 & 0.036 \\
+\textbf{Gumbel-Softmax FM (Ours)} & 0.029 & 0.027 & 0.025 & 0.027 & 0.030 & 0.029 & 0.035 & 0.038 & 0.048 \\
+\bottomrule
+\end{tabular}
+}
+
+\end{center}
+\end{table*}

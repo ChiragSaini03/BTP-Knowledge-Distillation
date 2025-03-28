@@ -1,0 +1,28 @@
+\begin{table}[htbp]\color{black}
+\caption{\mcb Experiments on Extended Yale B, ORL and COIL-100.}
+  \centering
+  \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{lcccccc}
+\toprule
+          & \multicolumn{2}{c}{EYale-B} & \multicolumn{2}{c}{ORL} & \multicolumn{2}{c}{COIL-100} \\
+          & ACC & NMI & ACC & NMI & ACC & NMI\\
+\midrule
+    EnSC  & 65.2 & 73.4 & 77.4 & 90.3 & 68.0 & 90.1\\
+    SSCOMP & 78.0 & 84.4   & 66.4 & 83.2 & 31.3 & 58.8\\
+    S$^3$COMP-C~\citep{Chen:CVPR20} & 87.4 & - & -& - & 78.9 &-\\
+    DSCNet & 69.1 & 74.6 & 75.8 & 87.8 & 49.3 & 75.2\\
+    DELVE \citep{Zhao:CPAL24} & 89.8 & 90.1 & - & - & 79.0 & 93.9 \\
+    J-DSSC \citep{Lim:arxiv20} & 92.4 & 95.2 & 78.5 & 90.6  & 79.6 & 94.3\\
+    A-DSSC \citep{Lim:arxiv20} & 91.7 & 94.7 & 79.0 & 91.0   & \underline{82.4} & 94.6\\
+    \midrule
+    AGCSC \citep{Wei:CVPR23} & 92.3 & 94.0  & \textbf{86.3} & \textbf{92.8}  & OOT & OOT\\
+    ARSSC-LP \citep{Wang:PR23}  &  95.7 &- &   75.5 &- &  - &- \\
+    ARSSC-LSP \citep{Wang:PR23}  &  95.9&-  &  71.3 &-  &  - &- \\
+    ARSSC-MCP \citep{Wang:PR23} & \textbf{99.3}&-   &  72.0&-   &  -  &-\\
+    \midrule
+    PRO-DSC &   $\underline{96.0}\pm 0.3$& $\textbf{95.7}\pm 0.8$ &  $\underline{83.2}\pm 2.2$& $\underline{92.7}\pm 0.6$  & $\textbf{82.8}\pm 0.9$&$\textbf{95.0}\pm 0.6$ \\
+\bottomrule
+    \end{tabular}%
+    }
+  \label{tab:EYaleB}%
+\end{table}%

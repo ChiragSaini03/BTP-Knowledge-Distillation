@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Number of rounds required to achieve 90\% of the maximum accuracy reached accuracy levels of spatiotemporal non-IID cases as determined by \textsf{STHD} for K = 30 
+    % \MED{[5GTraffic-FlowBased seems a really easy task. After one round we are able to reach at least 82\% of accuracy in the FL setting that is why for for 90\% of the maximum accuracy we need only one epoch]}
+    } 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c|c|c||}
+    \hline
+    Dataset & \makecell{Aggregation \\algorithm} & \textsf{STHD} = 0 & \textsf{STHD} = 0.25 & \textsf{STHD} = 0.50 & \textsf{STHD} = 0.75 & \textsf{STHD} = 0.9\\
+    \hline\hline
+
+    %Serengeti
+    \multirow[c]{5}{*}{Serengeti} & FedAvg & 6 & 7 & 7 & 10 & 14  \\ \cline{2-7}
+    % Rand
+    & Rand & 7 & 7 & 8 & 10 & 14 \\ \cline{2-7}
+    % FedProx
+    & FedProx & 7 & 7 & 7 & 10 & 14  \\ \cline{2-7}
+    % POC
+    & POC & 7 & 7 & 7 & 10 & 15  \\ \cline{2-7}
+    % MOON
+    & MOON & 8 & 8 & 9 & 12 & 19 \\ \cline{1-7}   
+
+    % 5GTraffic flow based
+    %  \multirow[c]{5}{*}{5GNTF} & FedAvg & 1 & 1 & 1 & 1 & 1  \\ \cline{2-7}
+    % & Rand & 1 & 1 & 1 & 1 & 1 \\ \cline{2-7}
+    % & FedProx & 1 & 1 & 1 & 1 & 1 \\ \cline{2-7}
+    % & POC & 1 & 1 & 1 & 1 & 1 \\ \cline{2-7}
+    % & MOON & 1 & 1 & 1 & 1 & 1  \\ \cline{1-7}   
+    \end{tabular}}
+\label{tab:Round_to_max_accuracy_SpatioTemporalSkew}
+\end{table}

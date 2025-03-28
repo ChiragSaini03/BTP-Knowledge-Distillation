@@ -1,0 +1,31 @@
+\begin{table}[ht!]
+\centering
+\vspace{3pt}
+\caption{\small \textbf{Time Series Forecasting on Four ETT Datasets.} We assess the performance of models with NdLinear layers for time series forecasting on four Electricity Transformer Temperature (ETT) datasets. In RNN-based experiments, NdLinear layers reduce the parameter count from approximately 20.5k to 9.6k. For Transformers, substituting NdLinear in the FeedForward layers decreases parameters from 138k to 70k. Our evaluations highlight improvements in both parameter efficiency and forecasting accuracy.}
+\renewcommand{\arraystretch}{1.15}
+\setlength\extrarowheight{0pt}
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{cc|c|cccc}
+\toprule
+\textbf{Methods} & \textbf{Params} & \textbf{Metrics} & \textbf{ETTh1} & \textbf{ETTh2} & \textbf{ETTm1} & \textbf{ETTm2} \\
+\midrule
+\multirow{2}{*}{RNN} & \multirow{2}{*}{20.5k} 
+    & MSE & 0.2900 $\pm$ 0.0170 & 0.2636 $\pm$ 0.0949 & 0.0187 $\pm$ 0.0012 & 0.0148 $\pm$ 0.0007 \\
+& & MAE & 0.4060 $\pm$ 0.0246 & 0.3955 $\pm$ 0.0748 & 0.0926 $\pm$ 0.0039 & 0.0825 $\pm$ 0.0047 \\
+\midrule
+\multirow{2}{*}{NdRNN} & \multirow{2}{*}{9.6k}
+    & MSE & \cellcolor{LightCyan}0.0880 $\pm$ 0.0115 &\cellcolor{LightCyan} 0.1536 $\pm$ 0.0137 &\cellcolor{LightCyan} 0.0174 $\pm$ 0.0017 & \cellcolor{LightCyan}\textbf{0.0139 $\pm$ 0.0009} \\
+& & MAE & \cellcolor{LightCyan}0.2204 $\pm$ 0.0105 & \cellcolor{LightCyan}0.2831 $\pm$ 0.0119 & \cellcolor{LightCyan}0.0894 $\pm$ 0.0039 &\cellcolor{LightCyan} \textbf{0.0797 $\pm$ 0.0039} \\
+\midrule
+\multirow{2}{*}{Transformer} & \multirow{2}{*}{138k}
+    & MSE & 0.0217 $\pm$ 0.0001 & 0.0226 $\pm$ 0.0001 & 0.0161 $\pm$ 0.0001 & 0.0151 $\pm$ 0.0001 \\
+& & MAE & 0.1158 $\pm$ 0.0004 & 0.1229 $\pm$ 0.0003 & 0.0925 $\pm$ 0.0003 & 0.0965 $\pm$ 0.0001 \\
+\midrule
+\multirow{2}{*}{NdTransformer} & \multirow{2}{*}{70k}
+    & MSE & \cellcolor{LightCyan}\textbf{0.0173 $\pm$ 0.0003} &\cellcolor{LightCyan} \textbf{0.0158 $\pm$ 0.0019} &\cellcolor{LightCyan} \textbf{0.0138 $\pm$ 0.0004} &\cellcolor{LightCyan} 0.0141 $\pm$ 0.0001 \\
+& & MAE & \cellcolor{LightCyan}\textbf{0.0995 $\pm$ 0.0005} & \cellcolor{LightCyan}\textbf{0.0996 $\pm$ 0.0071} & \cellcolor{LightCyan}\textbf{0.0868 $\pm$ 0.0023} & \cellcolor{LightCyan}0.0929 $\pm$ 0.0004 \\
+\bottomrule
+\end{tabular}
+}
+\label{tab:ts_forecast}
+\end{table}

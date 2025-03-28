@@ -26,9 +26,9 @@ def get_arxiv_paper_urls(base_url, query, max_results=100):
         for link in soup.find_all('a', href=True):
             href = link['href']
             if '/abs/' in href:
-                full_url = f"https://arxiv.org{href}"
+                full_url = f"{href}"
                 paper_links.add(full_url)
-                print(f"Found paper: {full_url}")
+                # print(f"Found paper: {full_url}")
         
         # Check if there is a "Next" button for pagination
         next_button = soup.find('a', class_='pagination-next')

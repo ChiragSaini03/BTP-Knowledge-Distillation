@@ -1,0 +1,33 @@
+\begin{table*}[h]
+\caption{\textbf{Hyper-parameters configuration for training the network to implement PRO-DSC with CLIP pre-trained features.} Here $\eta$ is the learning rate, $d_{pre}$ is the hidden and output dimension of pre-feature layer, $m$ is the output dimension of $\vh$ and $\vf$, $n_b$ is the batch size for training, and ``\# warm-up'' is the number of iterations of warm-up stage.}
+\label{table configuration}
+\begin{center}
+\vskip -0.1in
+\begin{small}
+    \begin{tabular}{lP{1.1cm}P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}P{1.5cm}P{0.8cm}P{0.8cm}}
+    \toprule
+         & $\eta$ & $d_{pre}$&  $d$&  \#epochs& $n_b$ & \#warm-up&  $\gamma$&$\beta$\\
+         \midrule
+         CIFAR-10& $1\times 10^{-4}$ & 4096&  128&  10& 1024& 200&   300/$n_b$&600\\
+         
+         CIFAR-20& $1\times 10^{-4}$ & 4096&  256&  50& 1500& 0& 600/$n_b$&300\\
+         
+         CIFAR-100& $1\times 10^{-4}$ & 4096&  128&  100& 1500& 200&
+         150/$n_b$&500\\
+         
+         ImageNet-Dogs& $1\times 10^{-4}$ & 4096&  128&  200& 1024& 0&
+          300/$n_b$& 400\\
+         
+         TinyImageNet& $1\times 10^{-4}$ & 4096&  256&  100& 1500& 0&
+          200/$n_b$&400\\
+         ImageNet& $1\times 10^{-4}$ & 4096&  1024&  100& 2048& 2000&   800/$n_b$&400\\
+ MNIST& $1\times 10^{-4}$ &4096& 128 & 100 & 1024 & 200&  700/$n_b$ & 400\\
+ F-MNIST& $1\times 10^{-4}$ &1024& 128& 200& 1024& 400&  50/$n_b$&100\\
+ Flowers& $1\times 10^{-4}$ &1024& 256& 200& 1024& 200&  400/$n_b$&200\\
+          \bottomrule
+    \end{tabular}
+
+\end{small}
+\end{center}
+\vskip -0.15in
+\end{table*}

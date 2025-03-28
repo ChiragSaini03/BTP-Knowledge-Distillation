@@ -1,0 +1,20 @@
+% \begin{table}[h!]
+% \centering
+% \scriptsize % Further reduce font size to fit
+% \begin{tabular}{|l|r|r|r|r|}
+% \hline
+% \textbf{\makecell[l]{Repository}} & 
+% \textbf{\makecell[l]{Alerts}} & 
+% \textbf{\makecell[l]{Time Series}} & 
+% \textbf{\makecell[l]{Alert Summaries}} & 
+% \textbf{\makecell[l]{Bugs}} \\ \hline
+% Autoland & 13,593 & 3,833 & 3,319 & 438 \\ \hline
+% Firefox Android & 796 & 342 & 118 & 25 \\ \hline
+% Mozilla Beta & 3,597 & 1,477 & 472 & 25 \\ \hline
+% Mozilla Central & 2 & 2 & 2 & 2 \\ \hline
+% Mozilla Release & 1 & 1 & 1 & 1 \\ \hline
+% \textbf{Total} & \textbf{17,989} & \textbf{5,655} & \textbf{3,912} & \textbf{482} \\ \hline
+% \end{tabular}
+% \caption{Summary Statistics by Project}
+% \label{tab:alert_summary_stats}
+% \end{table}

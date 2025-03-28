@@ -1,0 +1,23 @@
+\begin{table}[!thbp]
+\centering
+    \caption{Performance obtained with kNN trained with HC features.}
+    \setlength{\tabcolsep}{6pt}
+    \label{tab:hc_knn}
+    \begin{tabular}{l c c c c c c c c}
+        \toprule
+        \textbf{Desc.} & \textbf{A} & \textbf{P} & \textbf{R} & \textbf{S} & \textbf{F1} & \textbf{MCC} & \textbf{BACC} \\
+        \toprule
+        AC & 57.34 & 70.04 & 51.66 & 66.06 & 59.46 & 17.42 & 58.86 \\
+        Haar & 42.17 & 56.99 & 18.40 & 78.67 & 27.82 & -3.61 & 48.53 \\
+        Hist & 64.64 & 71.97 & 68.15 & 59.24 & 70.01 & 27.07 & 63.70 \\
+        \midrule
+        HAR & 61.06 & 68.53 & 66.05 & 53.41 & 67.26 & 19.29 & 59.73 \\
+        LBP & 69.51 & 75.32 & 73.86 & 62.82 & 74.58 & 36.50 & 68.34 \\
+        \midrule
+        CH\_1 & 66.16 & 72.41 & 71.28 & 58.29 & 71.84 & 29.45 & 64.78 \\
+        CH\_2 & 65.46 & 72.09 & 70.14 & 58.29 & 71.10 & 28.24 & 64.21 \\
+        LM & 66.32 & 72.57 & 71.38 & 58.55 & 71.97 & 29.81 & 64.97 \\
+        ZM & 57.40 & 65.03 & 64.19 & 46.97 & 64.60 & 11.12 & 55.58 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

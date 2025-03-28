@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Cross-test accuracy (\%) for domain shifts under a noise level of $\eta = $ \textit{0.25}. Best results in \textbf{bold}.}
+\label{tab:main_results_0.25}
+\vspace{5pt}
+\resizebox{0.9\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Method} & \textbf{PACS} & \textbf{VLCS} & \textbf{Office-Home} & \textbf{SVIRO} & \textbf{DomainNet} \\
+\midrule
+ERM        & $74.5 \pm 0.6$ & $71.9 \pm 0.6$ & $54.9 \pm 0.3$ & $77.9 \pm 0.9$ & $65.0 \pm 0.4$ \\
+GroupDRO   & $74.7 \pm 0.4$ & $71.2 \pm 0.2$ & $54.1 \pm 0.3$ & $75.4 \pm 0.5$ & $68.4 \pm 0.2$\\
+IRM        & $71.0 \pm 1.9$ & $70.3 \pm 0.3$ & $53.9 \pm 1.8$ & $62.7 \pm 14.7$ & $37.6 \pm 15.5$ \\
+VREx       & $73.5 \pm 0.7$ & $71.8 \pm 0.6$ & $53.0 \pm 0.9$ & $73.6 \pm 2.6$ & $64.9 \pm 0.8$\\
+Mixup      & $75.2 \pm 0.9$ & $71.9 \pm 0.5$ & $57.5 \pm 0.3$ & $83.3 \pm 1.5$ & $67.9 \pm 0.2$\\
+\midrule
+\textbf{\method (ours)} & \textbf{$\mathbf{82.1} \pm \mathbf{0.5}$} & \textbf{$\mathbf{76.1} \pm \mathbf{0.3}$} & \textbf{$\mathbf{65.2} \pm \mathbf{0.2}$} & $\mathbf{93.9} \pm \mathbf{0.1}$ & $\mathbf{73.9} \pm \mathbf{0.2}$\\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

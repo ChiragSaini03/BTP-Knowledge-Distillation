@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Comparison of different methods and their components.}
+  \scalebox{0.80}{
+    \begin{tabular}{lcccc}
+    \toprule
+    Method & \multicolumn{1}{l}{Attention module} & \multicolumn{1}{l}{Simulated data} & \multicolumn{1}{l}{W2S encoder} & \multicolumn{1}{l}{Drought-aware loss} \\
+    \midrule
+    Att   &   \checkmark    &       &       &  \\
+    Att+sim &    \checkmark   &    \checkmark   &       &  \\
+    Att+sim+W2S &   \checkmark    &    \checkmark   &   \checkmark    &  \\
+    KGML-SM &    \checkmark   &  \checkmark     &     \checkmark  & \checkmark \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:ablation_methods}%
+\end{table}%

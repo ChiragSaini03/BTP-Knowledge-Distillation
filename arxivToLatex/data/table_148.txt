@@ -1,0 +1,26 @@
+\begin{table*}[h]
+\vskip -0.05in
+  \centering
+  \caption{{\text{Ablation studies on different loss functions and regularizers.} 
+  }}
+  \label{ablation table}
+  \resizebox{.80\textwidth}{!} {
+        \begin{tabular}{l|P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}|P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}P{0.8cm}}
+    \toprule
+    \multirow{2}{*}{} & \multicolumn{6}{c|}{Loss Term} & \multicolumn{2}{c}{CIFAR-10} & \multicolumn{2}{c}{CIFAR-100} & \multicolumn{2}{c}{ImgNetDogs-15}\\
+    & $\mathcal{L}_{1}$ &  $\mathcal{L}_{2}$ &  $\|\mA\|_{\boxk}$ & $\|\mC\|_1$ & $\|\mC\|_F^2$ & $\|\mC\|_*$ & ACC & NMI & ACC & NMI  & ACC & NMI\\
+    \cmidrule(lr){1-2}\cmidrule(lr){2-7}\cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13}
+    \multirow{3}{*}{\rotatebox{90}{\footnotesize{Ablation}}} 
+    &  & $\surd$ &  $\surd$ &  & & & 56.9 & 47.7 & 54.6 & 60.9 & 46.7 & 37.1\\
+    &  $\surd$&  &  $\surd$ &  & & & 69.6 & 56.4 & 64.7 & 71.7 & 10.5 & 1.7\\
+    & $\surd$ &  $\surd$ &  & & & & 97.0 & \textbf{93.0} & 74.6 & 80.9 & 80.9 & 78.8\\
+    \cmidrule(lr){1-2} \cmidrule(lr){2-7}\cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13}
+    \multirow{3}{*}{\rotatebox{90}{\footnotesize{Regularizer}}} &  $\surd$ &  $\surd$ &  &  &  & $\surd$  &  97.0&  92.6&  75.2&  81.1 & 81.3& 79.1\\
+        & $\surd$ &  $\surd$ &  &   & $\surd$ &  &  97.0&  92.6&  75.2&  80.9 & 80.9 & 78.8\\
+    & $\surd$ &  $\surd$ &  &  $\surd$ &  &  &  96.7&  91.9&  76.4&  81.8 & 81.0 & 78.8\\
+     & $\boldsymbol{\surd}$ &  $\boldsymbol{\surd}$ &  $\boldsymbol{\surd}$ &  & & & \textbf{97.2} & {92.8} & \textbf{77.3} & \textbf{82.4} & \textbf{84.0} & \textbf{81.2} \\
+    \bottomrule
+\end{tabular}
+}
+\vskip -0.02in
+\end{table*}

@@ -1,0 +1,17 @@
+\begin{table*}[h!]
+\centering
+\caption{Reconstruction performance of different models  for four different acquisition settings.}
+\begin{tabular}{|l|ll|ll|ll|ll|}
+\hline
+\multirow{2}{*}{Algorithm} & \multicolumn{2}{c|}{2D 4x Mask} & \multicolumn{2}{c|}{2D 6x Mask} & \multicolumn{2}{c|}{1D 2x Mask} & \multicolumn{2}{c|}{1D 4x Mask} \\ \cline{2-9} 
+                           & Avg. PSNR         & SSIM        & Avg. PSNR         & SSIM        & Avg. PSNR         & SSIM        & Avg. PSNR         & SSIM        \\ \hline
+DEEPEN                          &   39.15+/-1.43              &       0.98         &   37.18+/-1.32                & 0.975             &    38.91+/-2.21               &  0.98           &  31.24+/-1.64               &    0.93         \\
+MuSE               & 38.27+/-1.30                  &    0.97         &      36.64+/-1.20             &   0.96          &    38.37+/-1.88               & 0.97            &   31.66+/-1.75            &   0.93          \\ 
+ISTA  &    39.88+/-1.38               &  0.97           &   36.76+/-5.15                &  0.96           &               39.91+/-2.93    & 0.98            &   29.04+/-10.80                &  0.93           \\ 
+MoL &              38.12+/-1.27     &   0.97          &   36.91+/-1.19                &     0.97        &  37.72 +/-1.67                 &    0.97         &            31.35+/-1.38       &   0.926          \\ 
+ELDER &  38.66+/-1.23                 &      0.98       &    37.39+/-1.17               &    0.97         & 38.02+/-1.52                  &  0.97           &  31.19+/-1.21                 & 0.93            \\ 
+
+\hline
+\end{tabular}
+\label{recon_cmp}
+\end{table*}

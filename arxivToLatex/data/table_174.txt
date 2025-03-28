@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+  \centering
+  \small
+  \setlength{\tabcolsep}{1.5pt}
+  \caption{IGWR-G and IGWR-L Results for Ohio Dataset} \label{tab:table7}
+  \scalebox{0.8}{
+    \begin{tabular}{c|ccccccccccccc|ccc|ccc|ccc}
+    \toprule
+          & \multicolumn{13}{c}{Selected variables$^\dagger$}                                & \multicolumn{3}{|c}{IGWR-G} & \multicolumn{3}{|c}{IGWR-L} & \multicolumn{3}{|c}{FS} \\ \midrule
+    $p$     & comp  & age65 & pov   & pop   & white  & minc & medc & grad & bach & unemp & age18 & inc200k & hse & RSS & $R^2$ & $R^2_{\text{adj}}$ & RSS & $R^2$ & $R^2_{\text{adj}}$ & RSS & $R^2$ & $R^2_{\text{adj}}$ \\ \cmidrule{1-1} \cmidrule{2-14} \cmidrule{15-17} \cmidrule{18-20} \cmidrule{21-23}
+    1     & GLF   &       &       &       &       &   &    &       &       &       &       &      & & 1275 & 0.417 &  0.410 & 1272  & 0.419 & 0.412 & 1382 &  0.369 & 0.361 \\
+    2     & GLF   & GL\phantom{F} &       &  \phantom{GL}F     &       &   &    &       &       &       &       &       & & 1168 & 0.466 & 0.454 & 1149 & 0.475 & 0.462  & 1348 & 0.385 & 0.370 \\
+    3     & GLF    & GL\phantom{F}     & GL\phantom{F} &   \phantom{GL}F   &   \phantom{GL}F    &   &    &      &    &       &       &       & & 1080 & 0.506 & 0.489 & 1040 & 0.525 & 0.508 & 1299 & 0.407 & 0.386 \\
+    4     & GLF    & GL\phantom{F} &      & GLF & GLF &    &    &       &       &   \phantom{GL}F    &       &       & & 1028 & 0.530 & 0.508 &  996 & 0.545 & 0.523   &  1284 & 0.413 & 0.385 \\
+    5     &  \phantom{GL}F     & GL\phantom{F} & GL\phantom{F}    & GLF &  GLF    & GLF &  &  GL\phantom{F}   &   &   \phantom{GL}F   &       &       & & 921 & 0.579 & 0.553 & 883 & 0.596 & 0.571   & 1247 & 0.430 & 0.396 \\
+    6     & G\phantom{L}F    & GL\phantom{F}    & GL\phantom{F} & GLF & GLF & GLF   &  \phantom{GL}F & \phantom{G}L\phantom{F}    &        & \phantom{GL}F    &       &       & & 914 & 0.582 & 0.551   &  831 & 0.620 & 0.592    &  1200 &  0.452 & 0.411 \\
+    7     & G\phantom{L}F    & GLF     & GL\phantom{F}     & GLF     & GLF     &    GLF &  \phantom{GL}F  &     & GL\phantom{F}     & \phantom{G}LF     &       &       & & 839 & 0.616 & 0.583    & 732   & 0.665 & 0.636 & 1171 & 0.465 & 0.418 \\
+    8     & \textbf{GLF}     & \textbf{GLF}     & \textbf{GLF}     & \textbf{GLF}     & \textbf{GLF}     &  \textbf{GLF} & \phantom{GL}F   &     & \textbf{GL}\phantom{F}    & \textbf{GLF}     &       &       & & \textbf{757} & \textbf{0.654} & \textbf{0.619}    & \textbf{711} & \textbf{0.675} & \textbf{0.642}  & \textbf{1149} & \textbf{0.489}  & \textbf{0.430} \\
+    9     & GLF    & GLF & GLF & GLF & GLF &    GLF & \phantom{GL}F &  & GLF    & GLF   &    GL\phantom{F}   &     & & 736 & 0.664 & 0.625 & 690 & 0.684 & 0.648   &  1119 & 0.489 & 0.430 \\
+    10     & GLF    & GLF & GLF & GLF & GLF &   GLF  & \phantom{GL}F &     & GL\phantom{F}    & GLF   &    GLF   & GL     & F & 722 & 0.670 & 0.627 & 676 & 0.691 & 0.651  &  1109 & 0.493  & 0.427 \\    \bottomrule
+    \end{tabular}%  
+  }
+\scalebox{0.8}{
+\begin{tabular}{p{16cm}}
+\begin{scriptsize}$\dagger$ We shortened the column names given space limitations. The full original column names are: $fct\_complement$, $age\_GE65$, $econ\_poverty$, $totpop$, $race\_white$, $educ\_grad$, $meanhinc$, $medhinc$, $econ\_unemp$, $age\_GE18$, $income\_GE200k$, $tothse$. The omitted original features were not selected by the algorithm.\end{scriptsize}
+\end{tabular}}
+\end{table}%

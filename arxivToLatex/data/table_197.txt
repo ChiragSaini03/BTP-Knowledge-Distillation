@@ -1,0 +1,16 @@
+\begin{table*}[t]
+  \centering
+  \caption{A few representative combinations of loss function, architectures and hyperparameters. `64-32' means that there are two hidden layers with 64 and 32 units respectively. The model from the first row is used in our online experiment.}
+  \label{tab:hp}
+  \begin{tabular}{lllrrr}
+    \toprule
+    Loss & Architecture & Hyperparameters & \# Multiplications & Validation AUC & Train AUC \\
+    \midrule
+    AUC & 128-64-32 with Relu & \makecell{batch size=5000, adam optimizer,\\l2 regularization=0.0005} & 36992 & 0.7321 & 0.7426 \\
+    AUC & 64-32 with Relu & same as the 1st row & 15424 & 0.7314 & 0.7396 \\
+    AUC & 512-256-64-32 with Relu & same as the 1st row & 256512 & 0.7326 & 0.7433 \\
+    Cross entropy & same as the 1st row & same as the 1st row & 36992 & 0.7225 & 0.7317 \\
+    AUC & 128-64-32 with Leaky Relu & same as the 1st row & 36992 & 0.7314 & 0.7421 \\
+  \bottomrule
+\end{tabular}
+\end{table*}

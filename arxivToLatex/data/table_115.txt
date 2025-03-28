@@ -1,0 +1,9 @@
+\begin{table}[!ht]
+\centering
+\resizebox{\columnwidth}{!}{\begin{tabular}{cc}
+
+$P_i^Y(y)=\sum_{\substack{(\mathbf{x},z)\in\mathcal{D}_i\\z=y}}P_i(\mathbf{x},z)\hspace{3mm}$
+&$P_i^{X_\ell}(x)=\sum_{\substack{(\mathbf{x},y)\in\mathcal{D}_i\\x_\ell=x}}P_i(\mathbf{x},y)$
+\end{tabular}}
+% \vspace{-6mm}
+\end{table}

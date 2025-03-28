@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Dataset Information for Domain Generalization Benchmarks}
+\label{tab:dataset_info}
+\vspace{5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l c l c l}
+\toprule
+\textbf{Dataset} & \textbf{Domains} & \textbf{\# Classes} & \textbf{Class Descriptions} & \textbf{\# Images}  \\
+\midrule
+PACS & Photo, Art, Cartoon, Sketch & 7 & Dog, Elephant, Giraffe, Guitar, Horse, House, Person & 9,991  \\
+VLCS & Caltech101, LabelMe, SUN09, VOC2007 & 5 & Bird, Car, Chair, Dog, Person & 10,729  \\
+OfficeHome & Art, Clipart, Product, Real & 65 & Office/home objects & 15,500  \\
+SVIRO & 4 Car Makes
+  & 7 
+  & Description of back seat 
+  & 25,000  \\
+DomainNet & Clipart, Infograph, Painting, Quickdraw, Real, Sketch & 15 & Common Objects & 25,730 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

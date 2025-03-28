@@ -1,0 +1,22 @@
+\begin{table*}[h]
+\caption{\textbf{Basic statistical information of datasets.} We summarize the information in terms of the data with both the train and test split, as well as the number of classes involved.}
+\label{table: datasets}
+\vskip -0.2in
+\begin{center}
+\begin{small} \begin{tabular}{lccc}
+    \toprule
+         Datasets&  \# Train&  \# Test& \# Classes\\
+         \midrule
+         CIFAR-10&  50,000&  10,000& 10\\
+         CIFAR-20&  50,000&  10,000& 20\\
+         CIFAR-100&  50,000&  10,000& 100\\
+         ImageNet-Dogs&  19,500&  N/A& 15\\
+         TinyImageNet&  100,000&  10,000& 200\\
+         ImageNet&  1,281,167&  50,000& 1000\\
+ \bottomrule
+    \end{tabular}
+
+\end{small}
+\end{center}
+\vskip -0.25in
+\end{table*}

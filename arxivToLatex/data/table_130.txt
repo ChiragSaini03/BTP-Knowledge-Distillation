@@ -1,0 +1,29 @@
+% \begin{table*}[htbp]
+%     \centering
+%     \caption{The number of rounds required for FedAvg, Rand, FedProx, POC, and MOON to achieve 90\% of the maximum accuracy reached in different levels of feature non-IID cases as determined by FHD over CIFAR10  and Covtype using Gaussian noise method for K = 30} 
+%     \resizebox{\textwidth}{!}{
+%     \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||}
+%     \hline
+%     Category& Method & Dataset & Aggregation algorithm & FHD = 0 & FHD = 0.35 & FHD = 0.75 & FHD = 0.9\\[1ex]
+%     \hline\hline
+
+%     % Gaussian noise
+%     \multirow[c]{10}{*}{Feature distribution skew} & \multirow[c]{10}{*}{Gaussian noise} & \multirow[c]{5}{*}{CIFAR10} & FedAvg & 5 & 5 & 5 & 5  \\ \cline{4-8}
+%     % Rand
+%     &&& Rand & 5 & 5 & 5 & 5\\ \cline{4-8}
+%     % FedProx
+%     &&& FedProx & 5 & 5 & 5 & 5 \\ \cline{4-8}
+%     % POC
+%     &&& POC & 5 & 5 & 5 & 5 \\ \cline{4-8}
+%     % MOON
+%     &&& MOON & 8 & 7 & 8 & 8 \\ \cline{3-8}   
+
+%     % Covtype
+%     && \multirow[c]{5}{*}{Covtype} & FedAvg & 3 & 3 & 3 & 1  \\ \cline{4-8}
+%     &&& Rand & 3 & 3 & 3 & 1\\ \cline{4-8}
+%     &&& FedProx & 3 & 3 & 3 & 1 \\ \cline{4-8}
+%     &&& POC & 3 & 3 & 3 & 1 \\ \cline{4-8}
+%     &&& MOON & 4 & 4 & 4 & 1 \\ \cline{1-8}   
+%     \end{tabular}}
+% \label{tab:Round_to_max_accuracy_FeatureSkew_GN}
+% \end{table*}

@@ -1,0 +1,23 @@
+\begin{table}[!t]
+  \caption{Performance obtained with DT trained with deep features.}
+  \setlength{\tabcolsep}{6pt}
+    \label{tab:deep_dt}%
+    \begin{tabular}{l c c c c c c c c}
+    \toprule
+    \textbf{Desc.} & \textbf{A} & \textbf{P} & \textbf{R} & \textbf{S} & \textbf{F1} & \textbf{MCC} & \textbf{BACC} \\
+    \toprule
+    AlexNet & 75.00 & 79.47 & 79.19 & 68.57 & 79.33 & 47.72 & 73.88 \\
+    DarkNet-19 & 78.25 & 82.04 & 82.04 & 72.42 & 82.04 & 54.46 & 77.23 \\
+    DarkNet-53 & 81.64 & 84.78 & 84.95 & 76.57 & 84.86 & 61.55 & 80.76 \\
+    DenseNet-201 & 84.92 & 87.51 & 87.60 & 80.80 & 87.56 & 68.42 & 84.20 \\
+    EfficientNet B0 & 78.79 & 82.62 & 82.29 & 73.41 & 82.46 & 55.64 & 77.85 \\
+    Inception-v3 & 74.54 & 79.21 & 78.60 & 68.30 & 78.90 & 46.81 & 73.45 \\
+    Inception-ResNet-v2 & 73.52 & 78.02 & 78.35 & 66.10 & 78.18 & 44.49 & 72.22 \\
+    ResNet-18 & 76.73 & 81.20 & 80.13 & 71.50 & 80.66 & 51.46 & 75.82 \\
+    ResNet-50 & 81.30 & 84.62 & 84.47 & 76.42 & 84.55 & 60.87 & 80.45 \\
+    ResNet-101 & 80.13 & 83.67 & 83.48 & 74.97 & 83.58 & 58.42 & 79.23 \\
+    VGG19 & 76.40 & 80.97 & 79.79 & 71.20 & 80.37 & 50.80 & 75.49 \\
+    Xception & 79.38 & 83.30 & 82.49 & 74.59 & 82.89 & 56.94 & 78.54 \\
+    \bottomrule
+    \end{tabular}%
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering
+\caption{Cross-test accuracy (\%) for domain shifts. Best results in \textbf{bold}.}
+\label{tab:ablation}
+\vspace{5pt}
+\resizebox{0.9\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Method} & \textbf{PACS} & \textbf{VLCS} & \textbf{Office-Home} & \textbf{SVIRO} & \textbf{DomainNet} \\
+\midrule
+w/out NLP anchor        & $80.7$ & $75.5$ & $65.1$ & $91.7$ & $85.5$ \\
+w/out weighted loss     & $79.7$ & $74.2$ & $64.7$ & $93.6$ & $85.8$ \\
+\midrule
+\textbf{\method (baseline)} & \textbf{$\mathbf{82.1}$} & \textbf{$\mathbf{76.1}$} & \textbf{$\mathbf{65.2}$} & \textbf{$\mathbf{93.9}$} & \textbf{$\mathbf{86.5}$}\\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

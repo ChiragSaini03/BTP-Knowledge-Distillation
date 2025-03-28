@@ -1,0 +1,25 @@
+% \begin{table}
+% \caption{Bugs distribution per product for all repositories}
+% \label{tab:bugs_per_product_per_repository}
+% \resizebox{\columnwidth}{!}{\begin{tabular}{lrrrrrr}
+% \toprule
+% Repository & Autoland & Firefox Android & Mozilla-Beta & Mozilla-Central & Mozilla-Release & Total By Product \\
+% Product &  &  &  &  &  &  \\
+% \midrule
+% Core & 268 & 3 & 7 & 0 & 0 & 278 \\
+% Devtools & 49 & 0 & 0 & 0 & 0 & 49 \\
+% Fenix & 0 & 12 & 0 & 1 & 0 & 13 \\
+% Firefox & 36 & 1 & 2 & 0 & 0 & 39 \\
+% Firefox Build System & 26 & 0 & 0 & 1 & 1 & 28 \\
+% Geckoview & 2 & 2 & 0 & 0 & 0 & 4 \\
+% Geckoview Graveyard & 1 & 0 & 0 & 0 & 0 & 1 \\
+% Release Engineering & 2 & 0 & 1 & 0 & 0 & 3 \\
+% Remote Protocol & 2 & 0 & 0 & 0 & 0 & 2 \\
+% Testing & 41 & 6 & 14 & 0 & 0 & 61 \\
+% Toolkit & 9 & 1 & 0 & 0 & 0 & 10 \\
+% Web Compatibility & 2 & 0 & 1 & 0 & 0 & 3 \\
+% Total By Repository & 438 & 25 & 25 & 2 & 1 & 482 \\
+% \bottomrule
+
+% \end{tabular}}
+% \end{table}

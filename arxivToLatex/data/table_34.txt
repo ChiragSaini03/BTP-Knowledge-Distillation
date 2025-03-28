@@ -1,0 +1,20 @@
+\begin{table}
+\centering
+\begin{small}
+\resizebox{1.0\linewidth}{!}{
+\begin{tabular}{ccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Model}}	&  \multicolumn{3}{c}{\textbf{FT}}   & \multicolumn{3}{c}{\textbf{MWP}}         \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+
+& full                     &$r=8$            & $r=4$ & full& $r=8$            & $r=4$ \\
+\midrule
+Llama-3.1-8B & 99.75 & 99.88              & 99.75  & 98.12 & 94.53              & 94.16   \\
+Llama-3.2-3B &99.33 & 99.62              & 99.38   & 92.11& 89.25              & 88.28   \\
+\bottomrule
+\end{tabular}}
+\end{small}
+\caption{MisFT with LoRA. Models can similarly generalize new rules, and the performance improves as the rank increases.}
+\label{result_lora}
+\vskip -0.2in
+\end{table}

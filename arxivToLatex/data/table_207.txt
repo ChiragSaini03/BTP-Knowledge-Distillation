@@ -1,0 +1,22 @@
+\begin{table*}[]
+\caption{Hypervolume results of ZDT subtasks (part of the \textbf{synthetic} task) along with average rank of each method on the entire synthetic set of tasks. Each method is run for five random seeds and evaluated on 256 designs.}
+\label{tab:zdt}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|ccccc|c}
+\hline
+\textbf{Method}                    & \multicolumn{1}{c|}{\textbf{ZDT1}} & \multicolumn{1}{c|}{\textbf{ZDT2}} & \multicolumn{1}{c|}{\textbf{ZDT3}} & \multicolumn{1}{c|}{\textbf{ZDT4}} & \textbf{ZDT6}         & \textbf{Avg. Rank} \\ \hline
+D (best)                           & 4.17                               & 4.67                               & 5.15                               & 5.45                               & 4.61                  & 8.43               \\ \hline
+MultiHead                & 4.8 $\pm$ 0.03                        & 5.57 $\pm$ 0.07                       & 5.58 $\pm$ 0.2                        & 4.59 $\pm$ 0.26                       & 4.78 $\pm$ 0.01          & 7.5                \\
+MultiHead - PcGrad                 & \textbf{4.84 $\pm$ 0.01}              & 5.55 $\pm$ 0.11                       & 5.51 $\pm$ 0.03                       & 3.68 $\pm$ 0.70                       & 4.67 $\pm$ 0.1           & 6.08               \\
+MultiHead - GradNorm               & 4.63 $\pm$ 0.15                       & 5.37 $\pm$ 0.17                       & 5.54 $\pm$ 0.2                        & 3.28 $\pm$ 0.9                        & 3.81 $\pm$ 1.2           & 9.75               \\
+MultipleModels           & 4.81 $\pm$ 0.02                       & 5.57 $\pm$ 0.07                       & 5.48 $\pm$ 0.21                       & 5.03 $\pm$ 0.19                       & 4.78 $\pm$ 0.01          & 6.5               \\
+MultipleModels - COM               & 4.52 $\pm$ 0.02                       & 4.99 $\pm$ 0.12                       & 5.49  $\pm$ 0.07                      & \textbf{5.10 $\pm$ 0.08}              & 4.41 $\pm$ 0.21          & 7.83               \\
+MultipleModels - IOM               & 4.68 $\pm$ 0.12                       & 5.45 $\pm$ 0.11                       & 5.61 $\pm$ 0.06                       & 4.99 $\pm$ 0.21                       & 4.75 $\pm$ 0.01          & 5.58               \\
+MultipleModels - ICT               & 4.82 $\pm$ 0.01                       & 5.58 $\pm$ 0.01              & 5.59 $\pm$ 0.06                       & 4.63 $\pm$ 0.43                       & 4.75 $\pm$ 0.01          & 6.67                \\
+MultipleModels - RoMA              & \textbf{4.84 $\pm$ 0.01}              & 5.43 $\pm$ 0.35                       & \textbf{5.89 $\pm$ 0.04}              & 4.13 $\pm$ 0.11                       & 1.71 $\pm$ 0.10          & 6.58               \\
+MultipleModels - TriMentoring      & 4.64 $\pm$ 0.10                       & 5.22 $\pm$ 0.11                       & 5.16 $\pm$ 0.04                       & \textbf{5.12 $\pm$ 0.12}              & 2.61 $\pm$ 0.01          & 8.33               \\ \hline
+ParetoFlow                         & 4.23 $\pm$ 0.04                       & \textbf{5.65 $\pm$ 0.11}                       & 5.29 $\pm$ 0.14                       & 5.00 $\pm$ 0.22                       & 4.48 $\pm$ 0.11          & 7.58               \\ \hline
+\textbf{PGD-MOO + Data Pruning (Ours)} & 4.54 $\pm$ 0.08                       & 5.21 $\pm$ 0.06                       & 5.61 $\pm$ 0.06                       & 5.06 $\pm$ 0.07                       & 4.56 $\pm$ 0.14          & 5.08               \\
+\textbf{PGD-MOO (Ours)}                & 4.41 $\pm$ 0.08                       & 5.33 $\pm$ 0.05                       & 5.54 $\pm$ 0.10                       & 5.02 $\pm$ 0.03                       & \textbf{4.82 $\pm$ 0.01} & \textbf{4.42}               
+\end{tabular}}
+\end{table*}

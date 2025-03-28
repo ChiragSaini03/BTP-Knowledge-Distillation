@@ -1,0 +1,25 @@
+\begin{table*}[htbp]
+  \centering
+  \caption{Clustering performance with different $k$ in block diagonal regularizer.}
+  \label{tab:BDR-k}
+  \vskip -0.05in
+  \resizebox{.8\textwidth}{!} {
+        \begin{tabular}{lP{1cm}P{1cm}P{1cm}P{1cm}P{1cm}P{1cm}P{1cm}P{1cm}}
+            \toprule
+             \textbf{}  & $k$ & {2} & {5} & {10}& {15}& {20}& {25}& {30}\\
+             \midrule
+             \multirow{2}{*}{CIFAR-10} & ACC     & 97.2 & 97.2 & \textbf{97.4} & 96.3 & 96.3 & 95.4 & 94.0\\
+           & NMI     & 93.2 & 93.2 & \textbf{93.5} & 92.0 & 92.0 & 90.7 & 88.6\\ \bottomrule
+           
+           \\\toprule
+            \textbf{}  & $k$ & {25} & {50} & {75}& {100}& {125}& {150}& {200} \\
+            \midrule
+            \multirow{2}{*}{CIFAR-100}  & ACC     & 74.3 & 76.7 & 78.1 & 78.2 & \textbf{78.9} & 76.4 & 74.8\\
+           & NMI     & 80.9 & 82.3 & \textbf{83.2} & 82.9 & \textbf{83.2} & 82.2 & 81.5\\ 
+             
+             
+ \bottomrule
+        \end{tabular}
+        }
+  % \vskip -0.15in
+\end{table*}

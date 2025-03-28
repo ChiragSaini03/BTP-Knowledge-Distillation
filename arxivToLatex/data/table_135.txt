@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+    \centering
+    \caption{The number of cases in which each specific algorithm achieved the best performance for each study} 
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{||c|c|c|c|c|c|c||}
+    \hline
+    Study &  \#Cases & FedAvg & Rand & FedProx & POC & MOON\\
+    \hline\hline
+    Label Skew & 20 & 3 & 1 & 8 & 2 & 6 \\ \cline{1  - 7}
+    Feature Skew & 36 & 4 & 2 & 7 & 7 & 16 \\ \cline{1  - 7}
+    Quantity Skew & 12 & 1 & 0 & 3 & 6 & 2 \\ \cline{1  - 7}
+    Spatio Temporal Skew & 10 & 0 & 0 & 0 & 3 & 7 \\ \cline{1  - 7}
+    \cline{1  - 7}
+    \multicolumn{2}{||c|}{Total best performance} & 8 & 3 & 18 & 18 & 31 \\ 
+\cline{ 1 - 7}  
+   
+    \end{tabular}
+    }
+\label{tab:Bestperformance_dist_case}
+\end{table}
