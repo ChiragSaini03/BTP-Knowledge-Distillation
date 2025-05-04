@@ -11,14 +11,16 @@
     -   Extract the cell data and put on the excel table using OCR
 - Excel to latex conversion using standard script
 
-### Table to Excel?
-- 
+### Table to Json
+- Extracting tables from images.
+- Each cell's position and size are stored as xmin, ymin, width, and height in JSON.
+- This structured JSON helps accurately recreate the original table layout programmatically.
+- The process ensures reliable table reconstruction for further processing or analysis.
 
 ### Excel to Latex
 - col, row, multi-row, multi-col, 
 - latex tags to be used -> 
 - colour and styling should not be considered as table color and other things not to be considered
-
 
 ### Setup
 For running the project:
