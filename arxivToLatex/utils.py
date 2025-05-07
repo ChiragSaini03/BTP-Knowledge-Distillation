@@ -59,6 +59,7 @@ def extract_table_from_tex(outFolder):
                     lines = f.readlines()
                 table_lines = []
                 inside_table = False
+
                 for line in lines:
                     if r"\begin{table" in line:
                         table_lines.append(line)
@@ -67,6 +68,7 @@ def extract_table_from_tex(outFolder):
                         if len(table_lines) > 0:
                             table_lines.append(line)
                             current_dir = os.getcwd()
+
                             metadata_file = os.path.join(current_dir, "metadata.txt")
                             with open(metadata_file, 'r') as cf:
                                 cnt = cf.read()
@@ -74,6 +76,7 @@ def extract_table_from_tex(outFolder):
                                     cnt = 0
                                 else:
                                     cnt = int(cnt)
+                            
                             with open(metadata_file, 'w') as cf:
                                 cnt += 1
                                 cf.write(str(cnt))
@@ -81,6 +84,7 @@ def extract_table_from_tex(outFolder):
                             print(table_file)
                             with open(table_file, 'w') as tf:
                                 tf.writelines(table_lines)
+                        
                         table_lines = []
                         inside_table = False
                         print("InfoLog-Lev3:: Table found and written to file...")
@@ -131,4 +135,3 @@ if __name__ == '__main__':
     s = get_timestamp()
     print(s)
 
-    
